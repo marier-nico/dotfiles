@@ -34,4 +34,5 @@ polybar look and terminal colors taken from https://github.com/t60r/dots
 
 ## Icons
 - Moka (for rofi)
+
 Note : the icons need to be in ~/.local/share/icons instead of the install location (/usr/share/icons)
