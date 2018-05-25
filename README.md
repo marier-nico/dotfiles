@@ -11,6 +11,7 @@ polybar look and terminal colors taken from https://github.com/t60r/dots
 
 ## Programs Used
 - arandr
+- xrandr
 - feh
 - srandrd (aur) : runs a script when a display is connected / disconnected
 - zsh
@@ -25,6 +26,7 @@ polybar look and terminal colors taken from https://github.com/t60r/dots
 - rofi
 - firefox
 - lightdm
+- compton
 
 ## Fonts Used
 - Wuncon Siji
