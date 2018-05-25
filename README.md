@@ -30,10 +30,12 @@ rofi theme taken from https://github.com/DaveDavenport/rofi-themes/blob/master/U
 - compton
 
 ## Fonts Used
-- Wuncon Siji
-- SF Pro Display
-- Source Code Pro
-- Maboroshi no Nijimi Mincho (polybar japanese characters)
+- Wuncon Siji https://github.com/stark/siji
+- SF Pro Display https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts
+- Source Code Pro https://github.com/adobe-fonts/source-code-pro
+- Maboroshi no Nijimi Mincho (polybar japanese characters) http://www.fontna.com/blog/1912/
+
+Note : for the japanese font, look above the social sharing icons, there's a button-looking thing, which is the download button.
 
 fonts go in /usr/share/fonts/
 
