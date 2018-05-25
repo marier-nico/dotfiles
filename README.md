@@ -35,6 +35,10 @@ rofi theme taken from https://github.com/DaveDavenport/rofi-themes/blob/master/U
 - Source Code Pro
 - Maboroshi no Nijimi Mincho (polybar japanese characters)
 
+fonts go in /usr/share/fonts/
+
+don't forget to fc-cache -vf /usr/share/fonts
+
 ## Icons
 - Moka (for rofi)
 
