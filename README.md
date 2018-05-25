@@ -8,6 +8,7 @@ more wallpapers from that guy https://www.artstation.com/arsenixc
 
 polybar look and terminal colors taken from https://github.com/t60r/dots
 
+rofi theme taken from https://github.com/DaveDavenport/rofi-themes/blob/master/User%20Themes/arc-red-dark.rasi
 
 ## Programs Used
 - arandr
