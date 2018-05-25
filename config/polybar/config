@@ -47,13 +47,14 @@ font-2 = MaboroshinoNijimiMincho,幻ノにじみ明朝:style=Regular
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = volume wlan memory cpu date battery powermenu
+modules-right = volume wlan memory cpu date battery
 
 tray-position = right
 tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
 
+; Cover the bar when in full screen
 wm-restack = bspwm
 ;wm-restack = i3
 
@@ -99,7 +100,7 @@ font-2 = MaboroshinoNijimiMincho,幻ノにじみ明朝:style=Regular
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = volume wlan memory cpu date battery powermenu
+modules-right = volume wlan memory cpu date battery
 
 tray-position = right
 tray-padding = 2
@@ -349,35 +350,6 @@ ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.text-alt}
-
-[module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.text-alt}
-
-menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
-menu-0-1 = power off
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot now
-
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
