@@ -39,9 +39,9 @@ else
 	bspc monitor "$(cut -d$'\n' -f1 <<<"$lines")" -d 一 二 三 四 五 六 七 八 九 十
 	polybar left &
 
-	bspc rule -a "TelegramDesktop"	-o desktop='^1'
-	bspc rule -a "Firefox"		-o desktop='^7'
-	bspc rule -a "Termite"		-o desktop='^6'
+	bspc rule -a "TelegramDesktop"	-o desktop='^10'
+	bspc rule -a "Firefox"		-o desktop='^2'
+	bspc rule -a "Termite"		-o desktop='^1'
 fi
 
 #
