@@ -1,0 +1,65 @@
+#!/bin/zsh
+
+# get updated repos
+sudo pacman -Syu
+
+# get git
+sudo pacman -S git
+
+# install yay (for aur help)
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ../
+rm -r yay
+
+# install arandr (display setup gui)
+sudo pacman -S arandr
+
+# install feh (wallpaper setting)
+sudo pacman -S feh
+
+# install srandrd (notification daemon for display connect/disconnect)
+yay -S srandrd
+
+# install zsh (the z shell)
+sudo pacman -S zsh
+
+# install prezto (to make zsh beautiful)
+yay -S prezto-git
+
+# install polybar (status bar)
+yay -S polybar
+
+# install bspwm (window manager)
+sudo pacman -S bspwm
+
+# install sxhkd (hotkey daemon)
+sudo pacman -S sxhkd
+
+# install xScreenSaver (lock screen)
+yay -S xscreensaver-arch-logo
+
+# install backlight (change display brightness)
+git clone https://github.com/baskerville/backlight.git
+cd backlight
+make
+sudo make install
+cd ../
+rm -r backlight
+
+# install pulseaudio (volume support)
+sudo pacman -S pulseaudio
+sudo pacman -S pulseaudio-alsa
+
+# install pavucontrol (volume control) [PulseAudio VolUme CONTROL]
+sudo pacman -S pavucontrol
+
+# install neovim (new and improved vim)
+sudo pacman -S neovim
+
+# install rofi (program launcher and window switcher)
+sudo pacman -S rofi
+
+# install firefox (web browser)
+sudo pacman -S firefox

@@ -1,4 +1,9 @@
 # dotfiles
+## Introduction
+Welcome to my dotfiles' repository. Everything you can see here is free to use, and I've linked credits to where I've gotten different parts of the setup. Feel free to gain inspiration from what you find, or simply copy the configurations that you like.
+
+## Showcase
+
 
 startpage was taken from https://github.com/Jarvvski/Start-Page
 
