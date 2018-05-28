@@ -20,3 +20,6 @@ ZSH_HIGHLIGHT_PATTERNS+=('yay -R*' 'fg=white,bold,bg=red')
 # So that vim starte neovim
 alias vim='nvim'
 alias vi='nvim'
+# So that nvim is the default editor
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
