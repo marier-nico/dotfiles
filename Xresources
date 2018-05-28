@@ -36,3 +36,5 @@ URxvt.color14:      #7dbba8
 URxvt.color7:       #e5e9f0
 URxvt.color15:      #d1d5dc
 
+! Options
+URxvt.scrollBar:    false
