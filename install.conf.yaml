@@ -21,7 +21,6 @@
     ~/.config/rofi: config/rofi
     ~/.config/startpage: config/startpage
     ~/.config/sxhkd: config/sxhkd
-    ~/.config/termite: config/termite
     ~/.config/ranger: config/ranger
     /usr/share/fonts/SF-Pro-Display: usr/share/fonts/SF-Pro-Display
     "/usr/share/fonts/Maboroshi no Nijimi Mincho.otf": "usr/share/fonts/Maboroshi no Nijimi Mincho.otf"
