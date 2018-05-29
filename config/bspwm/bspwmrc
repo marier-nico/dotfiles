@@ -23,7 +23,7 @@ if [ $lineCount -eq 1 ]; then
 
 	bspc rule -a "TelegramDesktop"	-o desktop='^10'
 	bspc rule -a "Firefox"		-o desktop='^2'
-	bspc rule -a "Termite"		-o desktop='^1'
+	bspc rule -a "URxvt"		-o desktop='^1'
 elif [ $lineCount -eq 2 ]; then
 	source $HOME/.config/arandr/home-layout.sh
 	bspc monitor "$(cut -d$'\n' -f1 <<<"$lines")" -d 一 二 三 四 五
@@ -33,7 +33,7 @@ elif [ $lineCount -eq 2 ]; then
 
 	bspc rule -a "TelegramDesktop"	-o desktop='^1'
 	bspc rule -a "Firefox"		-o desktop='^7'
-	bspc rule -a "Termite"		-o desktop='^6'
+	bspc rule -a "URxvt"		-o desktop='^6'
 else
 	source $HOME/.config/arandr/laptop-layout.sh
 	bspc monitor "$(cut -d$'\n' -f1 <<<"$lines")" -d 一 二 三 四 五 六 七 八 九 十
@@ -41,7 +41,7 @@ else
 
 	bspc rule -a "TelegramDesktop"	-o desktop='^10'
 	bspc rule -a "Firefox"		-o desktop='^2'
-	bspc rule -a "Termite"		-o desktop='^1'
+	bspc rule -a "URxvt"		-o desktop='^1'
 fi
 
 #
@@ -55,8 +55,8 @@ feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/japanese-crosswalk.jpg
 if [ ! $(pidof firefox) ]; then
 	firefox &
 fi
-if [ ! $(pidof termite) ]; then
-	termite &
+if [ ! $(pidof urxvt) ]; then
+	urxvt &
 fi
 if [ ! $(pidof srandrd) ]; then
 	srandrd $HOME/.config/bspwm/bspwmrc &
