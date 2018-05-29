@@ -63,3 +63,6 @@ sudo pacman -S rofi
 
 # install firefox (web browser)
 sudo pacman -S firefox
+
+# install powerline fonts (for prezto prompt)
+yay -S powerline-fonts-git
