@@ -1,6 +1,11 @@
 #!/bin/sh
 
 #
+# set URxvt config
+#
+xrdb ~/.Xresources
+
+#
 # kill running programs
 #
 xscreensaver-command -exit
