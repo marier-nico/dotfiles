@@ -37,4 +37,9 @@ URxvt.color7:       #e5e9f0
 URxvt.color15:      #d1d5dc
 
 ! Options
-URxvt.scrollBar:    false
+URxvt.scrollBar:        false
+URxvt.font:             xft:Source Code Pro for Powerline:style=Semibold:size=9, xft:DejaVu Sans Mono for Powerline:size=9, xft:Noto Sans:style=Regular:size=9
+URxvt.boldFont:         xft:Source Code Pro for Powerline:style=Bold:size=9, xft:DejaVu Sans Mono for Powerline:style=bold:size=9, xft:Noto Sans:style=Bold:size=9
+URxvt.italicFont:       xft:Source Code Pro for Powerline:style=Semibold Italic:size=9, xft:DejaVu Sans Mono for Powerline:style=Oblique:size=9, xft:Noto Sans:style=Italic:size=9
+URxvt.boldItalicFont:   xft:Source Code Pro for Powerline:style=Bold Italic:size=9, xft:DejaVu Sans Mono for Powerline:style=Bold Oblique:size=9, xft: Noto Sans:style=Bold Italic:size=9
+
