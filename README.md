@@ -31,6 +31,7 @@ Welcome to my dotfiles' repository. Everything you can see here is free to use, 
 - [rofi](https://www.archlinux.org/packages/community/x86_64/rofi/)
 - [firefox](https://www.archlinux.org/packages/extra/x86_64/firefox/)
 - [compton](https://www.archlinux.org/packages/community/x86_64/compton/)
+- [powerline-fonts-git](https://aur.archlinux.org/packages/powerline-fonts-git/) (aur)
 
 ## Fonts Used
 - [Wuncon Siji](https://github.com/stark/siji)
