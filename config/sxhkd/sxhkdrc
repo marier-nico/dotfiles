@@ -125,7 +125,7 @@ super + {Left,Down,Up,Right}
 #
 
 # change monitor config
-super + r
+super + u
 	source $HOME/.config/bspwm/bspwmrc
 
 # lock the screen
@@ -139,3 +139,7 @@ XF86MonBrightness{Up,Down}
 # change the volume
 XF86Audio{Raise,Lower}Volume
 	pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo {+,-}10%
+
+# launch ranger
+super + r
+    urxvt -e ranger
