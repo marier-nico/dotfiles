@@ -66,3 +66,6 @@ sudo pacman -S firefox
 
 # install powerline fonts (for prezto prompt)
 yay -S powerline-fonts-git
+
+# install URxvt (as a terminal emulator)
+pacman -S rxvt-unicode
