@@ -32,7 +32,7 @@
     alternate-active-foreground: @active-foreground;
     active-background:           rgba ( 29, 31, 33, 17 % );
     selected-active-background:  rgba ( 204, 87, 93, 100 % );
-    font:                        "Source Code Pro Semibold 12";
+    font:                        "SF Pro Display 12";
 }
 #window {
     background-color: @background;
