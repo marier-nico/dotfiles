@@ -36,7 +36,9 @@ Welcome to my dotfiles' repository. Everything you can see here is free to use, 
 ## Fonts Used
 - [Wuncon Siji](https://github.com/stark/siji)
 - [SF Pro Display](https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts)
-- [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+- Source Code Pro (powerline-fonts) \
+- DejaVu Sans Mono (powerline-fonts) | Source Code Pro is use most places, the others are literally just there so the prompt renders properly in URxvt
+- Noto Sans (powerline-fonts)       /
 - [Maboroshi no Nijimi Mincho](http://www.fontna.com/blog/1912/) (polybar japanese characters)
 
 Note : for the japanese font, look above the social sharing icons, there's a button-looking thing, which is the download button.
