@@ -34,12 +34,12 @@ Welcome to my dotfiles' repository. Everything you can see here is free to use, 
 - [powerline-fonts-git](https://aur.archlinux.org/packages/powerline-fonts-git/) (aur)
 
 ## Fonts Used
-- [Wuncon Siji](https://github.com/stark/siji)
-- [SF Pro Display](https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts)
-- Source Code Pro (powerline-fonts) \
-- DejaVu Sans Mono (powerline-fonts) | Source Code Pro is use most places, the others are literally just there so the prompt renders properly in URxvt
-- Noto Sans (powerline-fonts)       /
-- [Maboroshi no Nijimi Mincho](http://www.fontna.com/blog/1912/) (polybar japanese characters)
+- [Wuncon Siji](https://github.com/stark/siji) -> used in polybar
+- [SF Pro Display](https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts) -> used in rofi and polybar
+- Source Code Pro (powerline-fonts) -> used in URxvt
+- DejaVu Sans Mono (powerline-fonts) -> literally one character of the prompt in URxvt
+- Noto Sans (powerline-fonts) -> literally one character of the prompt in URxvt
+- [Maboroshi no Nijimi Mincho](http://www.fontna.com/blog/1912/) -> used in bspwm and polybar
 
 Note : for the japanese font, look above the social sharing icons, there's a button-looking thing, which is the download button.
 
