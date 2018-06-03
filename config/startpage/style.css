@@ -117,6 +117,21 @@ h3 {
     color: #ff5c57;
 }
 
+.orange {
+    padding: 0;
+    color: #f48024;
+}
+
+.black {
+    padding: 0;
+    color: #141516;
+}
+
+.purple {
+    padding: 0;
+    color: #414172;
+}
+
 form {
     display: inline;
 }
