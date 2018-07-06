@@ -55,7 +55,6 @@ fi
 sxhkd &
 compton &
 xscreensaver &
-telegram-desktop &
 feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/japanese-crosswalk.jpg
 if [ ! $(pidof firefox) ]; then
 	firefox &
