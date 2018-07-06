@@ -8,6 +8,7 @@
 - link:
     ~/.xscreensaver: xscreensaver
     ~/.Xresources: Xresources
+    ~/.xinitrc: xinitrc
     ~/.zlogin: zlogin
     ~/.zlogout: zlogout
     ~/.zpreztorc: zpreztorc
@@ -25,6 +26,7 @@
     /usr/share/fonts/SF-Pro-Display: usr/share/fonts/SF-Pro-Display
     "/usr/share/fonts/Maboroshi no Nijimi Mincho.otf": "usr/share/fonts/Maboroshi no Nijimi Mincho.otf"
     /usr/share/fonts/siji.pcf: usr/share/fonts/siji.pcf
+
 
 - shell:
     - [sudo fc-cache -vf /usr/share/fonts/, Updating font cache]
