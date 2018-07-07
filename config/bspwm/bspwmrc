@@ -55,6 +55,7 @@ fi
 sxhkd &
 compton &
 xscreensaver &
+ xset r rate 125 50
 feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/japanese-crosswalk.jpg
 if [ ! $(pidof firefox) ]; then
 	firefox &
