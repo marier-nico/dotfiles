@@ -36,9 +36,9 @@ elif [ $lineCount -eq 2 ]; then
 	polybar left &
 	polybar right &
 
-	bspc rule -a "TelegramDesktop"	-o desktop='^1'
-	bspc rule -a "Firefox"		-o desktop='^7'
-	bspc rule -a "URxvt"		-o desktop='^6'
+	bspc rule -a "TelegramDesktop"	-o desktop='^10'
+	bspc rule -a "Firefox"		-o desktop='^6'
+	bspc rule -a "URxvt"		-o desktop='^1'
 else
 	source $HOME/.config/arandr/laptop-layout.sh
 	bspc monitor "$(cut -d$'\n' -f1 <<<"$lines")" -d 一 二 三 四 五 六 七 八 九 十
