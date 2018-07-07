@@ -1,3 +1,3 @@
 exec udiskie --tray &
 exec bspwm
-xset r rate 125 50
+exec xset r rate 125 50
