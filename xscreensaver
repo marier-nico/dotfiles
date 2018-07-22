@@ -32,7 +32,7 @@ dpmsOff:	0:20:00
 grabDesktopImages:  False
 grabVideoFrames:    False
 chooseRandomImages: True
-imageDirectory:	/home/nmarier/Pictures/wallpapers
+imageDirectory:	/home/nmarier/Pictures/art/wallpapers/desktop
 
 mode:		one
 selected:	143
