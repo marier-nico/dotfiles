@@ -55,7 +55,6 @@ fi
 sxhkd &
 compton &
 xscreensaver &
-xset r rate 150 50
 feh --no-fehbg --bg-fill $HOME/Pictures/art/wallpapers/desktop/japanese-crosswalk.jpg
 if [ ! $(pidof firefox) ]; then
 	firefox &
@@ -78,6 +77,11 @@ bspc config window_gap			8
 bspc config split_ratio			0.52
 bspc config borderless_monocle		true
 bspc config gapless_monocle		true
+
+#
+# set keyboard config
+#
+xset r rate 150 50
 
 #
 # bspwm rule examples
