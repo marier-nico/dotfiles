@@ -23,3 +23,4 @@ the following things will be installed on your system.
 - [zsh](http://www.zsh.org/)
 - [powerline fonts](https://github.com/powerline/fonts/)
 - [urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
+- [zprezto](https://github.com/sorin-ionescu/prezto)
