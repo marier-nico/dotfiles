@@ -31,4 +31,5 @@ if [ ! -f "$HOME/.zprezto/README.md" ]; then
     cp -rln "${ZDOTDIR:-$HOME}/prezto" "${ZDOTDIR:-$HOME}/.zprezto"
     rm -rf "${ZDOTDIR:-$HOME}/prezto"
     exit
+    chsh -s /bin/zsh
 fi
