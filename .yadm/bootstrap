@@ -6,6 +6,7 @@ sudo apt-get update
 # Install Tools
 dpkg-query -l | grep -qwi git || sudo apt-get --yes install git
 dpkg-query -l | grep -qwi zsh || sudo apt-get --yes install zsh
+dpkg-query -l | grep -qwi "less" || sudo apt-get --yes install "less"
 dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
 dpkg-query -l | grep -qwi rxvt-unicode || sudo apt-get --yes install rxvt-unicode
 
@@ -31,4 +32,17 @@ if [ ! -f "$HOME/.zprezto/README.md" ]; then
     cp -rln "${ZDOTDIR:-$HOME}/prezto" "${ZDOTDIR:-$HOME}/.zprezto"
     rm -rf "${ZDOTDIR:-$HOME}/prezto"
     exit
+fi
+
+# Set the system editor
+if [ "$EDITOR" != "nvim" ]; then
+    export EDITOR="nvim"
+fi
+if [ "$VISUAL" != "nvim" ]; then
+    export VISUAL="nvim"
+fi
+
+# Set the system pager
+if [ "$PAGER" != "less" ]; then
+    export PAGER="less"
 fi
