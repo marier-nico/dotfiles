@@ -11,26 +11,26 @@ dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
 dpkg-query -l | grep -qwi rxvt-unicode || sudo apt-get --yes install rxvt-unicode
 
 # Install powerline patched fonts
+temp_dir=$(mktemp -d)
 if [ ! -f "$HOME/.local/share/fonts/Inconsolata for Powerline.otf" ]; then
-    git clone https://github.com/powerline/fonts.git fonts
-    cd fonts
-    ./install.sh
-    cd ..
-    rm -rf fonts
+    git clone https://github.com/powerline/fonts.git "$temp_dir/fonts"
+    $temp_dir/fonts/install.sh
+    rm -rf "$temp_dir"
 fi
 
 # Install prezto for zsh
+temp_dir=$(mktemp -d)
 if [ ! -f "$HOME/.zprezto/README.md" ]; then
     zsh
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/prezto"
+    git clone --recursive https://github.com/sorin-ionescu/prezto.git "$temp_dir/.zprezto"
 
     setopt EXTENDED_GLOB
     for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
       ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
 
-    cp -rln "${ZDOTDIR:-$HOME}/prezto" "${ZDOTDIR:-$HOME}/.zprezto"
-    rm -rf "${ZDOTDIR:-$HOME}/prezto"
+    cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}/.zprezto"
+    rm -rf "$temp_dir"
     exit
     chsh -s /bin/zsh
 fi
