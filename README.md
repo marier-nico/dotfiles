@@ -24,3 +24,14 @@ the following things will be installed on your system.
 - [powerline fonts](https://github.com/powerline/fonts/)
 - [urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
 - [zprezto](https://github.com/sorin-ionescu/prezto)
+- git
+- [less](https://www.gnu.org/software/less/)
+
+#### Environment varibles
+
+If you use the bootstrap files, these environment variables
+will also be set.
+
+- EDITOR: nvim
+- VISUAL: nvim
+- PAGER: less
