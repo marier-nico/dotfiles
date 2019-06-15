@@ -1,0 +1,48 @@
+#!/bin/sh
+
+# Update system sources
+sudo apt-get update
+
+# Install Tools
+dpkg-query -l | grep -qwi git || sudo apt-get --yes install git
+dpkg-query -l | grep -qwi zsh || (sudo apt-get --yes install zsh && chsh -s /bin/zsh)
+dpkg-query -l | grep -qwi "less" || sudo apt-get --yes install "less"
+dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
+dpkg-query -l | grep -qwi rxvt-unicode || sudo apt-get --yes install rxvt-unicode
+
+# Install powerline patched fonts
+temp_dir=$(mktemp -d)
+if [ ! -f "$HOME/.local/share/fonts/Inconsolata for Powerline.otf" ]; then
+    git clone https://github.com/powerline/fonts.git "$temp_dir/fonts"
+    $temp_dir/fonts/install.sh
+    rm -rf "$temp_dir"
+fi
+
+# Install prezto for zsh
+temp_dir=$(mktemp -d)
+if [ ! -f "$HOME/.zprezto/README.md" ]; then
+    zsh
+    git clone --recursive https://github.com/sorin-ionescu/prezto.git "$temp_dir/.zprezto"
+
+    setopt EXTENDED_GLOB
+    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+    done
+
+    cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}/.zprezto"
+    rm -rf "$temp_dir"
+    exit
+fi
+
+# Set the system editor
+if [ "$EDITOR" != "nvim" ]; then
+    export EDITOR="nvim"
+fi
+if [ "$VISUAL" != "nvim" ]; then
+    export VISUAL="nvim"
+fi
+
+# Set the system pager
+if [ "$PAGER" != "less" ]; then
+    export PAGER="less"
+fi
