@@ -5,7 +5,7 @@ sudo apt-get update
 
 # Install Tools
 dpkg-query -l | grep -qwi git || sudo apt-get --yes install git
-dpkg-query -l | grep -qwi zsh || sudo apt-get --yes install zsh
+dpkg-query -l | grep -qwi zsh || (sudo apt-get --yes install zsh && chsh -s /bin/zsh)
 dpkg-query -l | grep -qwi "less" || sudo apt-get --yes install "less"
 dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
 dpkg-query -l | grep -qwi rxvt-unicode || sudo apt-get --yes install rxvt-unicode
@@ -32,7 +32,6 @@ if [ ! -f "$HOME/.zprezto/README.md" ]; then
     cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}/.zprezto"
     rm -rf "$temp_dir"
     exit
-    chsh -s /bin/zsh
 fi
 
 # Set the system editor
