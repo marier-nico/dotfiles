@@ -1,0 +1,8 @@
+[user]
+	email = software@nmarier.com
+	name = Nicolas Marier
+[core]
+	editor = nvim
+	autocrlf = input
+[commit]
+	template = /home/nmarier/.gitmessage
