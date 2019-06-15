@@ -30,16 +30,3 @@ if [ ! -f "$HOME/.zprezto/README.md" ]; then
     rm -rf "$temp_dir"
     exit
 fi
-
-# Set the system editor
-if [ "$EDITOR" != "nvim" ]; then
-    export EDITOR="nvim"
-fi
-if [ "$VISUAL" != "nvim" ]; then
-    export VISUAL="nvim"
-fi
-
-# Set the system pager
-if [ "$PAGER" != "less" ]; then
-    export PAGER="less"
-fi
