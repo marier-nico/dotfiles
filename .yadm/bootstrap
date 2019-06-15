@@ -7,6 +7,7 @@ sudo apt-get update
 dpkg-query -l | grep -qwi git || sudo apt-get --yes install git
 dpkg-query -l | grep -qwi zsh || sudo apt-get --yes install zsh
 dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
+dpkg-query -l | grep -qwi rxvt-unicode || sudo apt-get --yes install rxvt-unicode
 
 # Install powerline patched fonts
 if [ ! -f "$HOME/.local/share/fonts/Inconsolata for Powerline.otf" ]; then

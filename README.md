@@ -22,3 +22,4 @@ the following things will be installed on your system.
 - [neovim](https://neovim.io/)
 - [zsh](http://www.zsh.org/)
 - [powerline fonts](https://github.com/powerline/fonts/)
+- [urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
