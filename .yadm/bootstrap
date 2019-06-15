@@ -26,7 +26,7 @@ if [ ! -f "$HOME/.zprezto/README.md" ]; then
 
     zsh "$HOME/.yadm/mk-prezto-links"
 
-    cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}/.zprezto"
+    cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}"
     rm -rf "$temp_dir"
     exit
 fi
