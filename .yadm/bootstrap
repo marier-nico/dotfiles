@@ -28,7 +28,6 @@ if [ ! -f "$HOME/.zprezto/README.md" ]; then
 
     cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}"
     rm -rf "$temp_dir"
-    exit
 fi
 
 # Set permissions
