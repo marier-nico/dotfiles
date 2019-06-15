@@ -8,6 +8,7 @@ dpkg-query -l | grep -qwi git || sudo apt-get --yes install git
 dpkg-query -l | grep -qwi zsh || (sudo apt-get --yes install zsh && chsh -s /bin/zsh)
 dpkg-query -l | grep -qwi "less" || sudo apt-get --yes install "less"
 dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
+dpkg-query -l | grep -qwi fontconfig || sudo apt-get --yes install fontconfig
 dpkg-query -l | grep -qwi rxvt-unicode || sudo apt-get --yes install rxvt-unicode
 
 # Install powerline patched fonts

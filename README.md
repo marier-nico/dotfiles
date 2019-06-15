@@ -26,6 +26,7 @@ the following things will be installed on your system.
 - [zprezto](https://github.com/sorin-ionescu/prezto)
 - git
 - [less](https://www.gnu.org/software/less/)
+- [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/)
 
 #### Environment varibles
 
