@@ -30,3 +30,11 @@ if [ ! -f "$HOME/.zprezto/README.md" ]; then
     rm -rf "$temp_dir"
     exit
 fi
+
+# Set permissions
+chmod 755 "$HOME/.local"
+chmod 755 "$HOME/.local/share"
+chmod -R 755 "$HOME/.local/share/fonts"
+chmod -R 755 "$HOME/.config"
+chmod -R 755 "$HOME/.yadm"
+chmod -R 755 "$HOME/.zprezto"
