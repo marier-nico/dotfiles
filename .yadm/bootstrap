@@ -3,12 +3,10 @@
 # Update system sources
 sudo apt-get update
 
-# Install git
+# Install Tools
 dpkg-query -l | grep -qwi git || sudo apt-get --yes install git
-
-# Install command line packages
-dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
 dpkg-query -l | grep -qwi zsh || sudo apt-get --yes install zsh
+dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
 
 # Install powerline patched fonts
 if [ ! -f "$HOME/.local/share/fonts/Inconsolata for Powerline.otf" ]; then
