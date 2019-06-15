@@ -21,13 +21,9 @@ fi
 # Install prezto for zsh
 temp_dir=$(mktemp -d)
 if [ ! -f "$HOME/.zprezto/README.md" ]; then
-    zsh
     git clone --recursive https://github.com/sorin-ionescu/prezto.git "$temp_dir/.zprezto"
 
-    setopt EXTENDED_GLOB
-    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-    done
+    zsh "$HOME/.yadm/mk-prezto-links"
 
     cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}/.zprezto"
     rm -rf "$temp_dir"
