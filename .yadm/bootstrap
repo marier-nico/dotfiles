@@ -17,3 +17,18 @@ if [ ! -f "$HOME/.local/share/fonts/Inconsolata for Powerline.otf" ]; then
     cd ..
     rm -rf fonts
 fi
+
+# Install prezto for zsh
+if [ ! -f "$HOME/.zprezto/README.md" ]; then
+    zsh
+    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/prezto"
+
+    setopt EXTENDED_GLOB
+    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+    done
+
+    cp -rln "${ZDOTDIR:-$HOME}/prezto" "${ZDOTDIR:-$HOME}/.zprezto"
+    rm -rf "${ZDOTDIR:-$HOME}/prezto"
+    exit
+fi
