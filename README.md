@@ -28,6 +28,13 @@ the following things will be installed on your system.
 - [less](https://www.gnu.org/software/less/)
 - [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/)
 - [curl](https://curl.haxx.se/)
+- [vim-plug](https://github.com/junegunn/vim-plug)
+
+#### Vim plugins
+
+- [onedark](https://github.com/joshdick/onedark.vim)
+- [lightline](https://github.com/itchyny/lightline.vim)
+- [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 
 #### Environment varibles
 
