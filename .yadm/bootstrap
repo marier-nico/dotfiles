@@ -5,6 +5,7 @@ sudo apt-get update
 
 # Install Tools
 dpkg-query -l | grep -qwi git || sudo apt-get --yes install git
+dpkg-query -l | grep -qwi curl || sudo apt-get --yes install curl
 dpkg-query -l | grep -qwi zsh || (sudo apt-get --yes install zsh && chsh -s /bin/zsh)
 dpkg-query -l | grep -qwi "less" || sudo apt-get --yes install "less"
 dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
