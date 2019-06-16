@@ -5,9 +5,11 @@ sudo apt-get update
 
 # Install Tools
 dpkg-query -l | grep -qwi git || sudo apt-get --yes install git
+dpkg-query -l | grep -qwi curl || sudo apt-get --yes install curl
 dpkg-query -l | grep -qwi zsh || (sudo apt-get --yes install zsh && chsh -s /bin/zsh)
 dpkg-query -l | grep -qwi "less" || sudo apt-get --yes install "less"
 dpkg-query -l | grep -qwi neovim || sudo apt-get --yes install neovim
+dpkg-query -l | grep -qwi fontconfig || sudo apt-get --yes install fontconfig
 dpkg-query -l | grep -qwi rxvt-unicode || sudo apt-get --yes install rxvt-unicode
 
 # Install powerline patched fonts
@@ -21,28 +23,18 @@ fi
 # Install prezto for zsh
 temp_dir=$(mktemp -d)
 if [ ! -f "$HOME/.zprezto/README.md" ]; then
-    zsh
     git clone --recursive https://github.com/sorin-ionescu/prezto.git "$temp_dir/.zprezto"
 
-    setopt EXTENDED_GLOB
-    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-    done
+    zsh "$HOME/.yadm/mk-prezto-links"
 
-    cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}/.zprezto"
+    cp -rln "$temp_dir/.zprezto" "${ZDOTDIR:-$HOME}"
     rm -rf "$temp_dir"
-    exit
 fi
 
-# Set the system editor
-if [ "$EDITOR" != "nvim" ]; then
-    export EDITOR="nvim"
-fi
-if [ "$VISUAL" != "nvim" ]; then
-    export VISUAL="nvim"
-fi
-
-# Set the system pager
-if [ "$PAGER" != "less" ]; then
-    export PAGER="less"
-fi
+# Set permissions
+chmod 755 "$HOME/.local"
+chmod 755 "$HOME/.local/share"
+chmod -R 755 "$HOME/.local/share/fonts"
+chmod -R 755 "$HOME/.config"
+chmod -R 755 "$HOME/.yadm"
+chmod -R 755 "$HOME/.zprezto"
