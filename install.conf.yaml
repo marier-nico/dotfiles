@@ -1,0 +1,13 @@
+- defaults:
+        link:
+                create: true
+                relink: true
+
+- clean: ["~"]
+
+- link:
+        ~/.gitconfig: gitconfig
+        ~/.gitmessage: gitmessage
+
+- shell:
+        - [git submodule update --init --recursive, Installing submodules]
