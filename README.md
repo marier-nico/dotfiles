@@ -30,5 +30,6 @@ haven't had the time to do yet.
 - [ ] Add dwm autostart script to dots
 - [ ] Add dwm and st patches to the readme
 - [ ] Make packages for dwm and st with patches and config
-- [ ] Customise rofi
+- [ ] Customize rofi
 - [ ] Make dotbot pull the wallpaper (shell command)
+- [ ] Customize st colors
