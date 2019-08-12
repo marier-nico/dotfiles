@@ -10,6 +10,8 @@ will also contain links to most resources used with this config (wallpapers, the
 ### Programs
 
 - dwm
+	- autostart
+	- titlecolor
 - st
 - git
 - feh
