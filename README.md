@@ -7,12 +7,16 @@ This README will serve as a reference for all the tools used in making this rice
 as credits for inspiration and the location where specific tips and tricks were found. It
 will also contain links to most resources used with this config (wallpapers, themes, etc.)
 
-### Used programs
+### Programs
 
 - dwm
 - st
 - git
 - feh
+
+### Credits
+
+- Wallpaper : https://www.reddit.com/r/wallpapers/comments/8r7p27/surviving_mars_3840x2160/
 
 ### Notes
 
