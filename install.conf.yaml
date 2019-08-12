@@ -9,6 +9,7 @@
         ~/.gitconfig: gitconfig
         ~/.gitmessage: gitmessage
         ~/.apps/dwm/config.def.h: config/dwm/config.def.h
+        ~/.apps/st/config.def.h: config/st/config.def.h
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
