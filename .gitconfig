@@ -5,4 +5,4 @@
 	editor = nvim
 	autocrlf = input
 [commit]
-	template = /home/nmarier/.gitmessage
+	template = ~/.gitmessage
