@@ -14,3 +14,9 @@ config (wallpapers, themes, etc.)
 - dwm
 - st
 - git
+
+### Notes
+
+#### dwm and st
+
+Don't forget to edit the `Makefile` to remove `config.h` in the clean target and only edit `config.def.h`.
