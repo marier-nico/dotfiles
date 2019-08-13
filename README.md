@@ -7,6 +7,20 @@ This README will serve as a reference for all the tools used in making this rice
 as credits for inspiration and the location where specific tips and tricks were found. It
 will also contain links to most resources used with this config (wallpapers, themes, etc.)
 
+### Installation
+
+**This is really important**: commands that are run by dotbot (in `install.conf.yaml`)
+will be ran using the shell specified in `$SHELL`. I use [fish](fishshell.com), so the
+shell commands will probably not work on other shells. Before running the install script,
+edit the commands for your own shell, or switch to fish!
+
+To install my configurations, you just have to clone this repo and run `./install`. I
+recomment checking the `install.conf.yaml` file before blindly installing because it
+will expect specific directories to exist which you might not have.
+
+Also, don't forget to actually install the programs that I use with this configuration.
+They are listed just below, and that list is kept up to date with what I use.
+
 ### Programs
 
 - dwm
@@ -19,10 +33,17 @@ will also contain links to most resources used with this config (wallpapers, the
 	- scrollback (not yet added)
 - git
 - feh
+- rofi
+
+### Fonts
+
+All the special fonts I use will be listed here, such as patched fonts and icon fonts.
+
+- [Hack](https://sourcefoundry.org/hack/)
 
 ### Credits
 
-- Wallpaper : https://www.reddit.com/r/wallpapers/comments/8r7p27/surviving_mars_3840x2160/
+- Wallpaper: [Surviving Mars](https://www.reddit.com/r/wallpapers/comments/8r7p27/surviving_mars_3840x2160/)
 
 ### Notes
 
@@ -50,5 +71,4 @@ haven't had the time to do yet.
 
 - [ ] Make packages for dwm and st with patches and config
 - [ ] Customize rofi
-- [ ] Make dotbot pull the wallpaper (shell command)
 - [ ] Customize st colors
