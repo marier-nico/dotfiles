@@ -10,7 +10,7 @@ will also contain links to most resources used with this config (wallpapers, the
 ### Installation
 
 **This is really important:** commands that are run by dotbot (in `install.conf.yaml`)
-will be ran using the shell specified in `$SHELL`. I use [fish](fishshell.com), so the
+will be ran using the shell specified in `$SHELL`. I use [fish](https://fishshell.com), so the
 shell commands will probably not work on other shells. Before running the install script,
 edit the commands for your own shell, or switch to fish!
 
