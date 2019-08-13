@@ -13,6 +13,10 @@ will also contain links to most resources used with this config (wallpapers, the
 	- autostart
 	- titlecolor
 - st
+	- alpha (not yet added)
+	- anysize (not yet added)
+	- delkey (not yet added)
+	- scrollback (not yet added)
 - git
 - feh
 
@@ -32,9 +36,6 @@ Don't forget to edit the `Makefile` to remove `config.h` in the clean target and
 This is just a list of things that are I should get around to doing with my dotfiles but
 haven't had the time to do yet.
 
-- [ ] Speed up keyboard repeat and lower time to trigger repeats
-- [ ] Add dwm autostart script to dots
-- [ ] Add dwm and st patches to the readme
 - [ ] Make packages for dwm and st with patches and config
 - [ ] Customize rofi
 - [ ] Make dotbot pull the wallpaper (shell command)
