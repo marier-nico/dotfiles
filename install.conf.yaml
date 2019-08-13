@@ -13,4 +13,5 @@
         ~/.apps/st/config.def.h: config/st/config.def.h
 
 - shell:
-        - [git submodule update --init --recursive, Installing submodules]
+        - ["git submodule update --init --recursive", Installing submodules]
+        - ["test -e $HOME/Pictures/*.{png,jpg} || wget -q (cat current-wall-url) -P $HOME/Pictures/", Downloading wallpaper]
