@@ -34,6 +34,7 @@ They are listed just below, and that list is kept up to date with what I use.
 - git
 - feh
 - rofi
+- yay (AUR helper)
 
 ### Fonts
 
