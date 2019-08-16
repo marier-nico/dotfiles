@@ -64,12 +64,3 @@ directory in your `$HOME`.
 The command that is run to set the wallpaper is in `config/dwm/autostart.sh`, and it sets
 the first file in the directory as the wallpaper (I think). So only one file should be at
 the top level of the `$HOME/Pictures` directory.
-
-### TODO
-
-This is just a list of things that are I should get around to doing with my dotfiles but
-haven't had the time to do yet.
-
-- [ ] Make packages for dwm and st with patches and config
-- [ ] Customize rofi
-- [ ] Customize st colors
