@@ -69,4 +69,4 @@ the top level of the `$HOME/Pictures` directory.
 
 #### pulseaudio
 
-Pulseaudio should be installed to get audio output.
+Pulseaudio should be installed to get audio output. A nice cli front-end for it is [pulsemixer](https://www.archlinux.org/packages/community/any/pulsemixer/).
