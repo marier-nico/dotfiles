@@ -69,4 +69,4 @@ the top level of the `$HOME/Pictures` directory.
 
 #### pulseaudio
 
-Pulseaudio should be installed to get audio output. A nice cli front-end for it is [pulsemixer](https://www.archlinux.org/packages/community/any/pulsemixer/).
+Pulseaudio should be installed to get audio output. A nice cli front-end for it is [pulsemixer](https://www.archlinux.org/packages/community/any/pulsemixer/). To get volume media keys to work, see the following [gist](https://gist.github.com/palopezv/efd34059af6126ad970940bcc6a90f2e).
