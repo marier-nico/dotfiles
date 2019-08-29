@@ -29,6 +29,11 @@ They are listed just below, and that list is kept up to date with what I use.
 - feh
 - rofi
 - yay (AUR helper)
+- firefox
+
+### Firefox
+
+To get my firefox theme, you can go to [this](https://color.firefox.com/?theme=XQAAAAIWAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhZYnAOn732nRq7cirz0ZuRwWq8W8Ouc_F0d-XEYZ_m2BKnldLTO0uJZe6andGnDj__jNufhqhMNf-QEvobYYRGK9Y-eJY00jtKmCshIEMuWEKcExB0kxk5CaoEtGB7GjJ2daxKypppjV8rh6dLuhR0EWmJigu-32akzGruxyAnW3V8Q7QqN56zlQRTHVroCwUaLdgeFQhbGbCJyJ633Jht-_HwIA) link.
 
 ### Fonts
 
