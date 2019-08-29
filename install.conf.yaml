@@ -6,13 +6,13 @@
 - clean: ["~"]
 
 - link:
-        ~/.gitconfig: gitconfig
-        ~/.gitmessage: gitmessage
+        ~/.config/nvim/init.vim: config/nvim/init.vim
         ~/.dwm/autostart.sh: config/dwm/autostart.sh
         ~/.dwm/dwm_status.sh: config/dwm/dwm_status.sh
+        ~/.gitconfig: gitconfig
+        ~/.gitmessage: gitmessage
         ~/.gnupg/gpg.conf: gpg.conf
         ~/.Xresources: Xresources
-        ~/.config/nvim/init.vim: config/nvim/init.vim
 
 - shell:
         - ["git submodule update --init --recursive", Installing submodules]
