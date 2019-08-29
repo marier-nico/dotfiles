@@ -23,14 +23,8 @@ They are listed just below, and that list is kept up to date with what I use.
 
 ### Programs
 
-- dwm
-	- autostart
-	- titlecolor
-- st
-	- alpha (not yet added)
-	- anysize (not yet added)
-	- delkey (not yet added)
-	- scrollback (not yet added)
+- [dwm](https://github.com/marier-nico/dwm)
+- [st](https://github.com/marier-nico/st)
 - git
 - feh
 - rofi
@@ -47,11 +41,6 @@ All the special fonts I use will be listed here, such as patched fonts and icon 
 - Wallpaper: [Surviving Mars](https://www.reddit.com/r/wallpapers/comments/8r7p27/surviving_mars_3840x2160/)
 
 ### Notes
-
-#### dwm and st
-
-Don't forget to edit the `Makefile` to remove `config.h` in the clean target and only edit
-`config.def.h`.
 
 #### wallpaper
 
