@@ -12,6 +12,7 @@
         ~/.dwm/dwm_status.sh: config/dwm/dwm_status.sh
         ~/.gnupg/gpg.conf: gpg.conf
         ~/.Xresources: Xresources
+        ~/.config/nvim/init.vim: config/nvim/init.vim
 
 - shell:
         - ["git submodule update --init --recursive", Installing submodules]
