@@ -10,6 +10,8 @@
         ~/.gitmessage: gitmessage
         ~/.dwm/autostart.sh: config/dwm/autostart.sh
         ~/.dwm/dwm_status.sh: config/dwm/dwm_status.sh
+        ~/.gnupg/gpg.conf: gpg.conf
+        ~/.Xresources: Xresources
 
 - shell:
         - ["git submodule update --init --recursive", Installing submodules]

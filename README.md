@@ -39,6 +39,7 @@ All the special fonts I use will be listed here, such as patched fonts and icon 
 ### Credits
 
 - Wallpaper: [Surviving Mars](https://www.reddit.com/r/wallpapers/comments/8r7p27/surviving_mars_3840x2160/)
+- Terminal colorscheme: https://github.com/szorfein/dotfiles/blob/master/theme-empire/.colors/color
 
 ### Notes
 
