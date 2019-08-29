@@ -9,6 +9,7 @@
         ~/.gitconfig: gitconfig
         ~/.gitmessage: gitmessage
         ~/.dwm/autostart.sh: config/dwm/autostart.sh
+        ~/.dwm/dwm_status.sh: config/dwm/dwm_status.sh
 
 - shell:
         - ["git submodule update --init --recursive", Installing submodules]
