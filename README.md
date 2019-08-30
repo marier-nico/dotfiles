@@ -23,13 +23,14 @@ They are listed just below, and that list is kept up to date with what I use.
 
 ### Programs
 
+- dunst
 - [dwm](https://github.com/marier-nico/dwm)
-- [st](https://github.com/marier-nico/st)
-- git
 - feh
-- rofi
-- yay (AUR helper)
 - firefox
+- git
+- rofi
+- [st](https://github.com/marier-nico/st)
+- yay (AUR helper)
 
 ### Firefox
 

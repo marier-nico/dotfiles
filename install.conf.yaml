@@ -6,6 +6,7 @@
 - clean: ["~"]
 
 - link:
+        ~/.config/dunst/dunstrc: config/dunst/dunstrc
         ~/.config/nvim/init.vim: config/nvim/init.vim
         ~/.dwm/autostart.sh: config/dwm/autostart.sh
         ~/.dwm/dwm_status.sh: config/dwm/dwm_status.sh
