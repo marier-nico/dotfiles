@@ -66,3 +66,16 @@ the top level of the `$HOME/Pictures` directory.
 #### pulseaudio
 
 Pulseaudio should be installed to get audio output. A nice cli front-end for it is [pulsemixer](https://www.archlinux.org/packages/community/any/pulsemixer/). To get volume media keys to work, see the following [gist](https://gist.github.com/palopezv/efd34059af6126ad970940bcc6a90f2e).
+
+#### backups
+
+A backup solution is really important these days, so [cron](https://wiki.archlinux.org/index.php/Cron) should be used to run daily backups.
+Those backups can be made using the `backup.sh` script in this repo. For this to work, a few things
+have to be setup.
+
+1. Have the [cronie](https://www.archlinux.org/packages/?name=cronie) package installed.
+2. Have a [borg](https://borgbackup.readthedocs.io/en/stable/index.html) repo located at `~/.backup`.
+3. Have your passphrase for the repo stored in `~/.config/borg/passphrase`
+4. Edit the line in `backup.sh` where the backup is uploaded to amazon s3 to make sure that
+    - You are using a bucket that you own.
+    - You are using a profile with write access to that bucket.
