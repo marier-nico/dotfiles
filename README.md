@@ -75,7 +75,7 @@ have to be setup.
 
 1. Have the [cronie](https://www.archlinux.org/packages/?name=cronie) package installed.
 2. Have a [borg](https://borgbackup.readthedocs.io/en/stable/index.html) repo located at `~/.backup`.
-3. Have your passphrase for the repo stored in `~/.config/borg/passphrase`
-4. Edit the line in `backup.sh` where the backup is uploaded to amazon s3 to make sure that
+3. Have your passphrase for the repo stored in `~/.config/borg/passphrase`.
+4. Edit the line in `backup.sh` where the backup is uploaded to amazon s3 to make sure that :
     - You are using a bucket that you own.
     - You are using a profile with write access to that bucket.
