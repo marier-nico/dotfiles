@@ -30,6 +30,7 @@ They are listed just below, and that list is kept up to date with what I use.
 - git
 - rofi
 - [st](https://github.com/marier-nico/st)
+- vscode
 - yay (AUR helper)
 
 ### Firefox
@@ -41,6 +42,7 @@ To get my firefox theme, you can go to [this](https://color.firefox.com/?theme=X
 All the special fonts I use will be listed here, such as patched fonts and icon fonts.
 
 - [Hack](https://sourcefoundry.org/hack/)
+- [Fira Code](https://github.com/tonsky/FiraCode)
 
 ### Credits
 
