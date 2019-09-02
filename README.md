@@ -61,6 +61,15 @@ The command that is run to set the wallpaper is in `config/dwm/autostart.sh`, an
 the first file in the directory as the wallpaper (I think). So only one file should be at
 the top level of the `$HOME/Pictures` directory.
 
+#### fish shell
+
+The fish shell is what I use, and it is also what these dotfiles assume to be used.
+So, my `config.fish` is linked and it installs [Fisher](https://github.com/jorgebucaran/fisher)
+as well as the plugins I use.
+
+Plugin list :
+- [fish-ssh-agent](https://github.com/danhper/fish-ssh-agent)
+
 ### For a full setup
 
 #### pulseaudio
