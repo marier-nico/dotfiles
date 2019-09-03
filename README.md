@@ -30,6 +30,7 @@ They are listed just below, and that list is kept up to date with what I use.
 - git
 - rofi
 - [st](https://github.com/marier-nico/st)
+- vscode
 - yay (AUR helper)
 
 ### Firefox
@@ -41,6 +42,7 @@ To get my firefox theme, you can go to [this](https://color.firefox.com/?theme=X
 All the special fonts I use will be listed here, such as patched fonts and icon fonts.
 
 - [Hack](https://sourcefoundry.org/hack/)
+- [Fira Code](https://github.com/tonsky/FiraCode)
 
 ### Credits
 
@@ -60,6 +62,15 @@ directory in your `$HOME`.
 The command that is run to set the wallpaper is in `config/dwm/autostart.sh`, and it sets
 the first file in the directory as the wallpaper (I think). So only one file should be at
 the top level of the `$HOME/Pictures` directory.
+
+#### fish shell
+
+The fish shell is what I use, and it is also what these dotfiles assume to be used.
+So, my `config.fish` is linked and it installs [Fisher](https://github.com/jorgebucaran/fisher)
+as well as the plugins I use.
+
+Plugin list :
+- [fish-ssh-agent](https://github.com/danhper/fish-ssh-agent)
 
 ### For a full setup
 

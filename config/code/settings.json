@@ -1,0 +1,9 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.minimap.enabled": false,
+    "workbench.tree.indent": 12,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.rendererType": "dom",
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontLigatures": true,
+}
