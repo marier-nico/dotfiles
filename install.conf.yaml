@@ -11,6 +11,8 @@
         ~/.config/fish/config.fish: config/fish/config.fish
         ~/.config/fish/fishfile: config/fish/fishfile
         ~/.config/nvim/init.vim: config/nvim/init.vim
+        ~/.config/spicetify/config.ini: config/spicetify/config.ini
+        ~/.config/spicetify/Themes: config/spicetify/Themes
         ~/.dwm/autostart.sh: config/dwm/autostart.sh
         ~/.dwm/dwm_status.sh: config/dwm/dwm_status.sh
         ~/.gitconfig: gitconfig

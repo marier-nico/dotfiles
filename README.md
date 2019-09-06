@@ -29,6 +29,7 @@ They are listed just below, and that list is kept up to date with what I use.
 - firefox
 - git
 - rofi
+- spotify
 - [st](https://github.com/marier-nico/st)
 - vscode
 - yay (AUR helper)
@@ -36,6 +37,12 @@ They are listed just below, and that list is kept up to date with what I use.
 ### Firefox
 
 To get my firefox theme, you can go to [this](https://color.firefox.com/?theme=XQAAAAIWAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhZYnAOn732nRq7cirz0ZuRwWq8W8Ouc_F0d-XEYZ_m2BKnldLTO0uJZe6andGnDj__jNufhqhMNf-QEvobYYRGK9Y-eJY00jtKmCshIEMuWEKcExB0kxk5CaoEtGB7GjJ2daxKypppjV8rh6dLuhR0EWmJigu-32akzGruxyAnW3V8Q7QqN56zlQRTHVroCwUaLdgeFQhbGbCJyJ633Jht-_HwIA) link.
+
+### Spotify
+
+To use my custom spotify theme, you'll have to install [spicetify](https://github.com/khanhas/spicetify-cli).
+It's an awesome tool that allows the customization of spotify in many different ways, but I just use it for
+custom colors.
 
 ### Fonts
 
