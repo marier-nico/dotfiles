@@ -7,4 +7,5 @@
     "explorer.confirmDragAndDrop": false,
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
+    "terminal.integrated.shell.linux": "/bin/bash",
 }
