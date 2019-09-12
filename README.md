@@ -28,6 +28,7 @@ They are listed just below, and that list is kept up to date with what I use.
 - feh
 - firefox
 - git
+- ranger
 - rofi
 - spotify
 - [st](https://github.com/marier-nico/st)
