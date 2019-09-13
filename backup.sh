@@ -25,7 +25,6 @@ borg create                         \
                                     \
     ::'{hostname}-{now}'            \
     ~/Documents                     \
-    ~/Downloads                     \
     ~/Music                         \
     ~/Pictures                      \
 
