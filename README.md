@@ -32,6 +32,7 @@ They are listed just below, and that list is kept up to date with what I use.
 - rofi
 - spotify
 - [st](https://github.com/marier-nico/st)
+- telegram
 - vscode
 - yay (AUR helper)
 
@@ -44,6 +45,12 @@ To get my firefox theme, you can go to [this](https://color.firefox.com/?theme=X
 To use my custom spotify theme, you'll have to install [spicetify](https://github.com/khanhas/spicetify-cli).
 It's an awesome tool that allows the customization of spotify in many different ways, but I just use it for
 custom colors.
+
+### Telegram
+
+To use my telegram theme, you need to create a zip archive containing the two files inside `config/telegram/`
+and rename it so that it has the `.tdesktop-theme` extension. To use it, simply upload it to any chat, and
+click on the uploaded file. Telegram will then prompt you to use the theme.
 
 ### Fonts
 
