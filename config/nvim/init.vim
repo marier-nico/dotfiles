@@ -1,9 +1,6 @@
 " Set indentation
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
-" Set NERDTree shortcut
-map <C-n> :NERDTreeToggle<CR>
-
 " Set better split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -27,7 +24,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'scrooloose/nerdtree'
 
 call plug#end()
 " --- -------- --- "
