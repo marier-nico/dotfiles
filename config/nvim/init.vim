@@ -1,6 +1,11 @@
 " Set indentation
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+" Leader key configuration
+let mapleader = "\\"
+map <Space> <leader>
+set showcmd
+
 " Set better split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -24,6 +29,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 " --- -------- --- "
@@ -35,3 +41,7 @@ colorscheme default
 let g:lightline = {
   \ 'colorscheme': 'jellybeans',
   \ }
+
+" Change Vimwiki folder
+let g:vimwiki_list = [{'path': '~/Dropbox/wiki/',
+                      \ 'path_html': '~/Dropbox/wiki/html'}]
