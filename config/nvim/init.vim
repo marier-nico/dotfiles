@@ -1,3 +1,6 @@
+" No compatibility with vi
+set nocompatible
+
 " Set indentation
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
@@ -16,13 +19,22 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+" Syntax highlighting
+colorscheme default
+syntax on
+
+" Load plugins to handle specific files
+filetype plugin on
+
+
+" ====== Plugin Configurations ====== "
+
 " Install vim-plug if it's not installed
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
 endif
-
 
 " --- Vim Plug --- "
 call plug#begin('~/.local/share/nvim/plugged')
@@ -34,14 +46,12 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 " --- -------- --- "
 
-
-" Set syntax highlighting
-syntax on
-colorscheme default
+" Lightline configuration
 let g:lightline = {
   \ 'colorscheme': 'jellybeans',
   \ }
 
-" Change Vimwiki folder
-let g:vimwiki_list = [{'path': '~/Dropbox/wiki/',
-                      \ 'path_html': '~/Dropbox/wiki/html'}]
+" Vimwiki configuration
+let g:vimwiki_list = [{'path': '~/Documents/wiki/',
+                      \ 'path_html': '~/Documents/wiki/html'}]
+
