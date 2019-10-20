@@ -159,7 +159,7 @@ ramp-used-2-foreground = ${colors.bad}
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp58s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
