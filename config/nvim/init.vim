@@ -39,17 +39,11 @@ endif
 " --- Vim Plug --- "
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'vimwiki/vimwiki'
 
 call plug#end()
 " --- -------- --- "
-
-" Lightline configuration
-let g:lightline = {
-  \ 'colorscheme': 'jellybeans',
-  \ }
 
 " Vimwiki configuration
 let g:vimwiki_list = [{'path': '~/Documents/wiki/',

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/nmarier/.config/wpg/wallpapers/small-memory.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#04142D",
+        "foreground": "#fffef9",
+        "cursor": "#fffef9"
+    },
+    "colors": {
+        "color0": "#04142D",
+        "color1": "#5AA6B1",
+        "color2": "#2D94A8",
+        "color3": "#E9AD79",
+        "color4": "#1E6D8B",
+        "color5": "#5F7089",
+        "color6": "#58BCC8",
+        "color7": "#d7d2ce",
+        "color8": "#07285b",
+        "color9": "#63e4f7",
+        "color10": "#2cc9e8",
+        "color11": "#ffdf86",
+        "color12": "#1b92bf",
+        "color13": "#6c8ec1",
+        "color14": "#5fffff",
+        "color15": "#fffef9"
+    }
+}

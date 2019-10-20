@@ -1,8 +1,5 @@
 #!/bin/fish
 
-# make the del key work in st
-tput smkx
-
 # make gpg-agent work
 set -g -x GPG_TTY (tty)
 
