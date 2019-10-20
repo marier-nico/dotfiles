@@ -130,7 +130,7 @@ super + x
 
 # change the brightness
 XF86MonBrightness{Up,Down}
-	backlight {+,-}5%
+	xbacklight {+,-}5
 
 # change the volume
 XF86Audio{Raise,Lower}Volume
