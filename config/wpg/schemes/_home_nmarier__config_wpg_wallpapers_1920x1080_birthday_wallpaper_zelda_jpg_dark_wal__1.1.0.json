@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/nmarier/.config/wpg/wallpapers/1920x1080_birthday_wallpaper_zelda.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f1b0a",
+        "foreground": "#dcffff",
+        "cursor": "#dcffff"
+    },
+    "colors": {
+        "color0": "#0f1b0a",
+        "color1": "#80783A",
+        "color2": "#639F30",
+        "color3": "#A7B642",
+        "color4": "#3A8F60",
+        "color5": "#509A62",
+        "color6": "#54AF8F",
+        "color7": "#aadfd0",
+        "color8": "#224016",
+        "color9": "#b2a53f",
+        "color10": "#7fdc30",
+        "color11": "#e5fc45",
+        "color12": "#3ec67b",
+        "color13": "#58d777",
+        "color14": "#5cf4be",
+        "color15": "#dcffff"
+    }
+}

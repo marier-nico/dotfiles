@@ -95,10 +95,15 @@ practice not to run random commands you find.
 - spotify [aur package](https://aur.archlinux.org/packages/spotify/)
 
 **Misc**
+- [acpilight](https://gitlab.com/wavexx/acpilight) [arch package](https://www.archlinux.org/packages/community/any/acpilight/)
 - [yay](https://github.com/Jguer/yay)
-- xorg-xbacklight [arch wiki](https://wiki.archlinux.org/index.php/Backlight#xbacklight)
 
 ## Details
+
+### Backlight
+
+By default, only root has access to change the scren brightness. To allow other users to do it without sudo (which will be
+necessary to use keyboard shortcuts), follow instructions on the [wiki](https://wiki.archlinux.org/index.php/Backlight#ACPI).
 
 ### Firefox
 
