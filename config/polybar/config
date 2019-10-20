@@ -54,7 +54,7 @@ font-1 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = filesystem xbacklight pulseaudio memory cpu wlan eth battery date powermenu
+modules-right = filesystem backlight-acpi pulseaudio memory cpu wlan eth battery date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -115,8 +115,8 @@ card = intel_backlight
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <ramp>
-label = BL %percentage%%
+format = <ramp> <label>
+label = %percentage%%
 
 ramp-0 = 
 ramp-0-foreground = #515151
