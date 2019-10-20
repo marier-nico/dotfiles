@@ -96,6 +96,7 @@ practice not to run random commands you find.
 
 **Misc**
 - [yay](https://github.com/Jguer/yay)
+- xorg-xbacklight [arch wiki](https://wiki.archlinux.org/index.php/Backlight#xbacklight)
 
 ## Details
 
