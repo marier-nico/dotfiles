@@ -12,7 +12,7 @@ killall sxhkd
 wal -R
 sxhkd &
 compton &
-bspc monitor -d web code term remote mail git random junk music comms
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 for m in $(polybar --list-monitors | cut -d":" -f1); do
     MONITOR=$m polybar --reload main &
 done
