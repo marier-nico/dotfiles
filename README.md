@@ -36,6 +36,7 @@ practice not to run random commands you find.
 **Desktop**
 
 - [xfce4](https://xfce.org/) [arch wiki](https://wiki.archlinux.org/index.php/Xfce)
+- [albert](https://albertlauncher.github.io/)
 - [picom](https://github.com/yshui/picom) [arch package](https://www.archlinux.org/packages/community/x86_64/picom/)
 - firefox [arch wiki](https://wiki.archlinux.org/index.php/Firefox)
 - gtk [arch wiki](https://wiki.archlinux.org/index.php/GTK)
