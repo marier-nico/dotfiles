@@ -9,5 +9,9 @@
     "editor.lineNumbers": "relative",
     "terminal.integrated.shell.linux": "/usr/bin/fish",
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Wal"
+    "workbench.colorTheme": "Nord",
+    "python.venvPath": "~/.virtualenvs",
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 200
 }
