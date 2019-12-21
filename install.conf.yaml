@@ -1,7 +1,7 @@
 - defaults:
     link:
-        create: true
-        relink: true
+      create: true
+      relink: true
 
 - clean: ["~"]
 
@@ -18,6 +18,8 @@
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage
     ~/.gnupg/gpg.conf: gpg.conf
+    ~/.Xresources: Xresources
 
 - shell:
     - ["git submodule update --init --recursive", Installing submodules]
+    - ["xrdb ~/.Xresources", Reloading Xresources]
