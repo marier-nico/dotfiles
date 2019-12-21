@@ -259,8 +259,8 @@ colors:
 #   - (macOS) /bin/bash --login
 #   - (Linux) user login shell
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
+shell:
+  program: /usr/bin/fish
 #  args:
 #    - --login
 
