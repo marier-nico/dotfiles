@@ -9,6 +9,9 @@ let mapleader = "\\"
 map <Space> <leader>
 set showcmd
 
+" Relative line numbering
+set relativenumber
+
 " Set better split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -18,10 +21,6 @@ nnoremap <C-H> <C-W><C-H>
 " Set more natural split positions
 set splitbelow
 set splitright
-
-" Syntax highlighting
-colorscheme default
-syntax on
 
 " Load plugins to handle specific files
 filetype plugin on
@@ -40,7 +39,7 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'sheerun/vim-polyglot'
-Plug 'vimwiki/vimwiki'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 " --- -------- --- "
@@ -48,4 +47,8 @@ call plug#end()
 " Vimwiki configuration
 let g:vimwiki_list = [{'path': '~/Documents/wiki/',
                       \ 'path_html': '~/Documents/wiki/html'}]
+
+" Syntax highlighting
+colorscheme nord
+syntax on
 

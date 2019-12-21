@@ -6,22 +6,15 @@
 - clean: ["~"]
 
 - link:
-    ~/.config/bspwm/bspwmrc: config/bspwm/bspwmrc
+    ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
     ~/.config/Code - OSS/User/settings.json: config/code/settings.json
-    ~/.config/dunst/dunstrc: config/dunst/dunstrc
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fishfile: config/fish/fishfile
-    ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
     ~/.config/mimeapps.list: config/mimeapps.list
     ~/.config/nvim/init.vim: config/nvim/init.vim
-    ~/.config/polybar/config: config/polybar/config
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/ranger/rifle.conf: config/ranger/rifle.conf
-    ~/.config/rofi/config.rasi: config/rofi/config.rasi
     ~/.config/spicetify/Themes: config/spicetify/Themes
-    ~/.config/sxhkd/sxhkdrc: config/sxhkd/sxhkdrc
-    ~/.config/wpg/schemes: config/wpg/schemes
-    ~/.config/wpg/wpg.conf: config/wpg/wpg.conf
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage
     ~/.gnupg/gpg.conf: gpg.conf
