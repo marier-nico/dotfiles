@@ -11,7 +11,5 @@
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Nord",
     "python.venvPath": "~/.virtualenvs",
-    "editor.formatOnSave": true,
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 200
+    "editor.formatOnSave": true
 }
