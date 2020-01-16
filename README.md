@@ -44,8 +44,7 @@ practice not to run random commands you find.
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - [ranger](https://ranger.github.io/) [arch wiki](https://wiki.archlinux.org/index.php/Ranger)
 - **Fonts**
-  - [fira code](https://github.com/tonsky/FiraCode)
-  - [hack](https://github.com/source-foundry/Hack)
+  - [Iosevka](https://typeof.net/Iosevka/)
 
 **Shell & Term**
 

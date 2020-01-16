@@ -102,34 +102,22 @@
 # Font configuration
 font:
   normal:
-    family: Fira Code
+    family: Iosevka
     style: Regular
 
   bold:
-    family: Fira Code
+    family: Iosevka
     style: Bold
 
   # Italic font face
-  #italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Italic
+  italic:
+    family: Iosevka
+    style: Italic
 
   # Bold italic font face
-  #bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
+  bold_italic:
+    family: Iosevka
+    style: Bold Italic
 
   # Point size
   size: 10.0
