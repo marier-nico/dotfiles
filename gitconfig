@@ -18,3 +18,5 @@
 	rb = rebase -i
 	s  = status
 	st = stash
+[push]
+	default = current
