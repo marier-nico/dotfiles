@@ -10,7 +10,7 @@
     ~/.config/Code - OSS/User/settings.json: config/code/settings.json
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fishfile: config/fish/fishfile
-    ~/.config/fish/functions/custom.fish: config/fish/functions/custom.fish
+    ~/.config/fish/functions/clip.fish: config/fish/functions/clip.fish
     ~/.config/mimeapps.list: config/mimeapps.list
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
