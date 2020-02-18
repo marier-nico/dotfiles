@@ -97,6 +97,7 @@ practice not to run random commands you find.
 
 - [acpilight](https://gitlab.com/wavexx/acpilight) [arch package](https://www.archlinux.org/packages/community/any/acpilight/)
 - [yay](https://github.com/Jguer/yay)
+- [xclip](https://github.com/astrand/xclip) [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/)
 
 ## Details
 
