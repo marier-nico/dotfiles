@@ -35,14 +35,14 @@ practice not to run random commands you find.
 
 **Desktop**
 
-- [xfce4](https://xfce.org/) [arch wiki](https://wiki.archlinux.org/index.php/Xfce)
+- [xfce4](https://xfce.org/) | [arch wiki](https://wiki.archlinux.org/index.php/Xfce)
 - [albert](https://albertlauncher.github.io/)
-- [picom](https://github.com/yshui/picom) [arch package](https://www.archlinux.org/packages/community/x86_64/picom/)
+- [picom](https://github.com/yshui/picom) | [arch package](https://www.archlinux.org/packages/community/x86_64/picom/)
 - firefox [arch wiki](https://wiki.archlinux.org/index.php/Firefox)
 - gtk [arch wiki](https://wiki.archlinux.org/index.php/GTK)
 - lxappearance [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/)
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
-- [ranger](https://ranger.github.io/) [arch wiki](https://wiki.archlinux.org/index.php/Ranger)
+- [ranger](https://ranger.github.io/) | [arch wiki](https://wiki.archlinux.org/index.php/Ranger)
 - **Fonts**
   - [Iosevka](https://typeof.net/Iosevka/)
 
@@ -54,10 +54,10 @@ practice not to run random commands you find.
 
 **Editor & Code**
 
-- [git](https://github.com/git/git) [arch wiki](https://wiki.archlinux.org/index.php/Git)
+- [git](https://github.com/git/git) | [arch wiki](https://wiki.archlinux.org/index.php/Git)
 - [neovim](https://github.com/neovim/neovim)
 - [vim-plug](https://github.com/junegunn/vim-plug)
-- [vscode](https://github.com/microsoft/vscode) [arch wiki](https://wiki.archlinux.org/index.php/Visual_Studio_Code)
+- [vscode](https://github.com/microsoft/vscode) | [arch wiki](https://wiki.archlinux.org/index.php/Visual_Studio_Code)
 
 **Plugins**
 
@@ -75,11 +75,11 @@ practice not to run random commands you find.
 
 - [awscli](https://github.com/aws/aws-cli)
 - [borg](https://github.com/borgbackup/borg)
-- [syncthing](https://github.com/syncthing/syncthing) [arch package](https://www.archlinux.org/packages/community/x86_64/syncthing/)
+- [syncthing](https://github.com/syncthing/syncthing) | [arch package](https://www.archlinux.org/packages/community/x86_64/syncthing/)
 
 **Documents**
 
-- [xreader](https://github.com/linuxmint/xreader/) [arch package](https://www.archlinux.org/packages/community/x86_64/xreader/)
+- [xreader](https://github.com/linuxmint/xreader/) | [arch package](https://www.archlinux.org/packages/community/x86_64/xreader/)
 - [xournal++](https://github.com/xournalpp/xournalpp)
 
 **Media**
@@ -95,8 +95,9 @@ practice not to run random commands you find.
 
 **Misc**
 
-- [acpilight](https://gitlab.com/wavexx/acpilight) [arch package](https://www.archlinux.org/packages/community/any/acpilight/)
+- [acpilight](https://gitlab.com/wavexx/acpilight) | [arch package](https://www.archlinux.org/packages/community/any/acpilight/)
 - [yay](https://github.com/Jguer/yay)
+- [xclip](https://github.com/astrand/xclip) | [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/)
 
 ## Details
 
@@ -141,5 +142,4 @@ in this repo. For this to work, a few things have to be setup.
 Environment variables should be modified to make sure everything works well in this setup.
 
 1. `set -Ux SHELL /usr/bin/fish`
-2. `set -Ux fish_user_paths $HOME/.dots/bin $fish_user_paths` (this repo's `bin/` folder)
-3. `set -Ux XDG_CONFIG_HOME \$HOME/.config
+2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
