@@ -11,5 +11,6 @@
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Nord",
     "python.venvPath": "~/.virtualenvs",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "latex-workshop.view.pdf.viewer": "tab"
 }
