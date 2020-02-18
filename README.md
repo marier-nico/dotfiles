@@ -142,5 +142,4 @@ in this repo. For this to work, a few things have to be setup.
 Environment variables should be modified to make sure everything works well in this setup.
 
 1. `set -Ux SHELL /usr/bin/fish`
-2. `set -Ux fish_user_paths $HOME/.dots/bin $fish_user_paths` (this repo's `bin/` folder)
-3. `set -Ux XDG_CONFIG_HOME \$HOME/.config
+2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
