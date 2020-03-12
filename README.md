@@ -45,6 +45,7 @@ practice not to run random commands you find.
 - [ranger](https://ranger.github.io/) | [arch wiki](https://wiki.archlinux.org/index.php/Ranger)
 - **Fonts**
   - [Iosevka](https://typeof.net/Iosevka/)
+  - [JoyPixels](https://www.joypixels.com/) (emoji) | [AUR](https://www.archlinux.org/packages/community/any/ttf-joypixels/)
 
 **Shell & Term**
 
