@@ -12,5 +12,6 @@
     "workbench.colorTheme": "Nord",
     "python.venvPath": "~/.virtualenvs",
     "editor.formatOnSave": true,
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "window.zoomLevel": 1
 }
