@@ -99,6 +99,7 @@ practice not to run random commands you find.
 - [acpilight](https://gitlab.com/wavexx/acpilight) | [arch package](https://www.archlinux.org/packages/community/any/acpilight/)
 - [yay](https://github.com/Jguer/yay)
 - [xclip](https://github.com/astrand/xclip) | [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/)
+- xrandr | [arch wiki](https://wiki.archlinux.org/index.php/Xrandr)
 
 ## Details
 
@@ -111,6 +112,21 @@ necessary to use keyboard shortcuts), follow instructions on the [wiki](https://
 
 The Firefox theme I use is [Humble Nord](https://addons.mozilla.org/en-US/firefox/addon/humble-nord/)
 
+### Fish Functions
+
+I added some functions to Fish for convenience. Some are just aliases, some are small scripts which just make
+life that much easier.
+
+- `clip.fish` | A nice alias for the X clipboard. Things can be piped to it to add them to the clipboard.
+- `ranger.fish` | A simple alias for ranger to remain in the same directory on exit.
+- `wacom.fish` | A small script to map my Wacom tablet to a given display. If you choose to use this, make
+                 sure you edit it so it works with your tablet. It's very simple to do, just edit the `awk` command.
+                 You should change what I put there for the name of your own stylus. You can find it with `xinput list`.
+
+### Slack
+
+A Nord theme for Slack can be found [here](https://www.nordtheme.com/docs/ports/slack/installation).
+
 ### Spotify
 
 A nice nord theme for spotify can be found [here](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord).
@@ -118,10 +134,6 @@ A nice nord theme for spotify can be found [here](https://github.com/morpheusthe
 ### Telegram
 
 A nice Nord theme for Telegram can be found [here](https://github.com/gilbertw1/telegram-nord-theme).
-
-### Slack
-
-A Nord theme for Slack can be found [here](https://www.nordtheme.com/docs/ports/slack/installation).
 
 ### Notes
 
@@ -141,6 +153,8 @@ in this repo. For this to work, a few things have to be setup.
 #### env variables
 
 Environment variables should be modified to make sure everything works well in this setup.
+Make sure those variables don't exist before running the command or it won't work. If they
+already exist, follow the instructions [here](https://fishshell.com/docs/current/faq.html#why-doesn-t-set-ux-exported-universal-variables-seem-to-work).
 
 1. `set -Ux SHELL /usr/bin/fish`
 2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
