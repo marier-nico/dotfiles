@@ -37,46 +37,46 @@ practice not to run random commands you find.
 
 - [awscli](https://github.com/aws/aws-cli)
 - [borg](https://github.com/borgbackup/borg)
-- [syncthing](https://github.com/syncthing/syncthing) | [arch package](https://www.archlinux.org/packages/community/x86_64/syncthing/)
+- [syncthing](https://github.com/syncthing/syncthing) [ [arch package](https://www.archlinux.org/packages/community/x86_64/syncthing/) ]
 
 **Desktop**
 
-- [xfce4](https://xfce.org/) | [arch wiki](https://wiki.archlinux.org/index.php/Xfce)
+- [xfce4](https://xfce.org/) [ [arch wiki](https://wiki.archlinux.org/index.php/Xfce) ]
 - [albert](https://albertlauncher.github.io/)
-- [picom](https://github.com/yshui/picom) | [arch package](https://www.archlinux.org/packages/community/x86_64/picom/)
-- firefox [arch wiki](https://wiki.archlinux.org/index.php/Firefox)
-- gtk [arch wiki](https://wiki.archlinux.org/index.php/GTK)
-- lxappearance [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/)
+- [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
+- firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
+- gtk [ [arch wiki](https://wiki.archlinux.org/index.php/GTK) ]
+- lxappearance [ [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/) ]
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
-- [ranger](https://ranger.github.io/) | [arch wiki](https://wiki.archlinux.org/index.php/Ranger)
+- [ranger](https://ranger.github.io/) [ [arch wiki](https://wiki.archlinux.org/index.php/Ranger) ]
 - **Fonts**
   - [Iosevka](https://typeof.net/Iosevka/)
-  - [JoyPixels](https://www.joypixels.com/) (emoji) | [AUR](https://www.archlinux.org/packages/community/any/ttf-joypixels/)
+  - [JoyPixels](https://www.joypixels.com/) (emoji) [ [AUR](https://www.archlinux.org/packages/community/any/ttf-joypixels/) ]
 
 **Documents**
 
-- [xreader](https://github.com/linuxmint/xreader/) | [arch package](https://www.archlinux.org/packages/community/x86_64/xreader/)
+- [xreader](https://github.com/linuxmint/xreader/) [ [arch package](https://www.archlinux.org/packages/community/x86_64/xreader/) ]
 - [xournal++](https://github.com/xournalpp/xournalpp)
 
 **Editor & Code**
 
-- [git](https://github.com/git/git) | [arch wiki](https://wiki.archlinux.org/index.php/Git)
+- [git](https://github.com/git/git) [ [arch wiki](https://wiki.archlinux.org/index.php/Git) ]
 - [neovim](https://github.com/neovim/neovim)
 - [vim-plug](https://github.com/junegunn/vim-plug)
-- [vscode](https://github.com/microsoft/vscode) | [arch wiki](https://wiki.archlinux.org/index.php/Visual_Studio_Code)
+- [vscode](https://github.com/microsoft/vscode) [ [arch wiki](https://wiki.archlinux.org/index.php/Visual_Studio_Code) ]
 
 **Media**
 
 - [vlc](https://www.videolan.org/vlc/)
 - [spicetify-cli](https://github.com/khanhas/spicetify-cli)
-- spotify [aur package](https://aur.archlinux.org/packages/spotify/)
+- spotify [ [aur package](https://aur.archlinux.org/packages/spotify/) ]
 
 **Misc**
 
-- [acpilight](https://gitlab.com/wavexx/acpilight) | [arch package](https://www.archlinux.org/packages/community/any/acpilight/)
+- [acpilight](https://gitlab.com/wavexx/acpilight) [ [arch package](https://www.archlinux.org/packages/community/any/acpilight/) ]
 - [yay](https://github.com/Jguer/yay)
-- [xclip](https://github.com/astrand/xclip) | [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/)
-- xrandr | [arch wiki](https://wiki.archlinux.org/index.php/Xrandr)
+- [xclip](https://github.com/astrand/xclip) [ [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/) ]
+- xrandr [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr) ]
 
 **Plugins**
 
@@ -86,7 +86,7 @@ practice not to run random commands you find.
 - **vim-plug**
   - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
   - [nord](https://www.nordtheme.com/docs/ports/vim/installation)
-    **Note**: Nord colors have to be installed as the terminal color scheme before using this plugin.
+    [ Nord colors have to be installed as the terminal color scheme before using this plugin. ]
 - **vscode**
   - [Nord](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
 
@@ -120,11 +120,11 @@ necessary to use keyboard shortcuts), follow instructions on the [wiki](https://
 I added some functions to Fish for convenience. Some are just aliases, some are small scripts which just make
 life that much easier.
 
-- `clip.fish` | A nice alias for the X clipboard. Things can be piped to it to add them to the clipboard.
-- `ranger.fish` | A simple alias for ranger to remain in the same directory on exit.
-- `wacom.fish` | A small script to map my Wacom tablet to a given display. If you choose to use this, make
-                 sure you edit it so it works with your tablet. It's very simple to do, just edit the `awk` command.
-                 You should change what I put there for the name of your own stylus. You can find it with `xinput list`.
+- `clip.fish` [ A nice alias for the X clipboard. Things can be piped to it to add them to the clipboard. ]
+- `ranger.fish` [ A simple alias for ranger to remain in the same directory on exit. ]
+- `wacom.fish` [ A small script to map my Wacom tablet to a given display. If you choose to use this, make
+  sure you edit it so it works with your tablet. It's very simple to do, just edit the `awk` command.
+  You should change what I put there for the name of your own stylus. You can find it with `xinput list`. ]
 
 ### Notes
 
