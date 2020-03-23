@@ -33,6 +33,12 @@ practice not to run random commands you find.
 
 ## Install List
 
+**Backup & Sync**
+
+- [awscli](https://github.com/aws/aws-cli)
+- [borg](https://github.com/borgbackup/borg)
+- [syncthing](https://github.com/syncthing/syncthing) | [arch package](https://www.archlinux.org/packages/community/x86_64/syncthing/)
+
 **Desktop**
 
 - [xfce4](https://xfce.org/) | [arch wiki](https://wiki.archlinux.org/index.php/Xfce)
@@ -47,11 +53,10 @@ practice not to run random commands you find.
   - [Iosevka](https://typeof.net/Iosevka/)
   - [JoyPixels](https://www.joypixels.com/) (emoji) | [AUR](https://www.archlinux.org/packages/community/any/ttf-joypixels/)
 
-**Shell & Term**
+**Documents**
 
-- [fish](https://fishshell.com)
-- [fisher](https://github.com/jorgebucaran/fisher)
-- [alacritty](https://github.com/jwilm/alacritty)
+- [xreader](https://github.com/linuxmint/xreader/) | [arch package](https://www.archlinux.org/packages/community/x86_64/xreader/)
+- [xournal++](https://github.com/xournalpp/xournalpp)
 
 **Editor & Code**
 
@@ -59,6 +64,19 @@ practice not to run random commands you find.
 - [neovim](https://github.com/neovim/neovim)
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vscode](https://github.com/microsoft/vscode) | [arch wiki](https://wiki.archlinux.org/index.php/Visual_Studio_Code)
+
+**Media**
+
+- [vlc](https://www.videolan.org/vlc/)
+- [spicetify-cli](https://github.com/khanhas/spicetify-cli)
+- spotify [aur package](https://aur.archlinux.org/packages/spotify/)
+
+**Misc**
+
+- [acpilight](https://gitlab.com/wavexx/acpilight) | [arch package](https://www.archlinux.org/packages/community/any/acpilight/)
+- [yay](https://github.com/Jguer/yay)
+- [xclip](https://github.com/astrand/xclip) | [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/)
+- xrandr | [arch wiki](https://wiki.archlinux.org/index.php/Xrandr)
 
 **Plugins**
 
@@ -72,34 +90,23 @@ practice not to run random commands you find.
 - **vscode**
   - [Nord](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
 
-**Backup & Sync**
+**Shell & Term**
 
-- [awscli](https://github.com/aws/aws-cli)
-- [borg](https://github.com/borgbackup/borg)
-- [syncthing](https://github.com/syncthing/syncthing) | [arch package](https://www.archlinux.org/packages/community/x86_64/syncthing/)
-
-**Documents**
-
-- [xreader](https://github.com/linuxmint/xreader/) | [arch package](https://www.archlinux.org/packages/community/x86_64/xreader/)
-- [xournal++](https://github.com/xournalpp/xournalpp)
-
-**Media**
-
-- [vlc](https://www.videolan.org/vlc/)
-- [spicetify-cli](https://github.com/khanhas/spicetify-cli)
-- spotify [aur package](https://aur.archlinux.org/packages/spotify/)
+- [fish](https://fishshell.com)
+- [fisher](https://github.com/jorgebucaran/fisher)
+- [alacritty](https://github.com/jwilm/alacritty)
 
 **Social**
 
 - [telegram](https://telegram.org/)
 - [slack](https://slack.com/)
 
-**Misc**
+**Themes**
 
-- [acpilight](https://gitlab.com/wavexx/acpilight) | [arch package](https://www.archlinux.org/packages/community/any/acpilight/)
-- [yay](https://github.com/Jguer/yay)
-- [xclip](https://github.com/astrand/xclip) | [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/)
-- xrandr | [arch wiki](https://wiki.archlinux.org/index.php/Xrandr)
+- Firefox [Humble Nord](https://addons.mozilla.org/en-US/firefox/addon/humble-nord/).
+- Slack [Nord](https://www.nordtheme.com/docs/ports/slack/installation).
+- Spotify [Nord](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord).
+- Telegram [Telegram Nord Theme](https://github.com/gilbertw1/telegram-nord-theme).
 
 ## Details
 
@@ -107,10 +114,6 @@ practice not to run random commands you find.
 
 By default, only root has access to change the scren brightness. To allow other users to do it without sudo (which will be
 necessary to use keyboard shortcuts), follow instructions on the [wiki](https://wiki.archlinux.org/index.php/Backlight#ACPI).
-
-### Firefox
-
-The Firefox theme I use is [Humble Nord](https://addons.mozilla.org/en-US/firefox/addon/humble-nord/)
 
 ### Fish Functions
 
@@ -122,18 +125,6 @@ life that much easier.
 - `wacom.fish` | A small script to map my Wacom tablet to a given display. If you choose to use this, make
                  sure you edit it so it works with your tablet. It's very simple to do, just edit the `awk` command.
                  You should change what I put there for the name of your own stylus. You can find it with `xinput list`.
-
-### Slack
-
-A Nord theme for Slack can be found [here](https://www.nordtheme.com/docs/ports/slack/installation).
-
-### Spotify
-
-A nice nord theme for spotify can be found [here](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord).
-
-### Telegram
-
-A nice Nord theme for Telegram can be found [here](https://github.com/gilbertw1/telegram-nord-theme).
 
 ### Notes
 
