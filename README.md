@@ -121,6 +121,10 @@ I added some functions to Fish for convenience. Some are just aliases, some are 
 life that much easier.
 
 - `clip.fish` [ A nice alias for the X clipboard. Things can be piped to it to add them to the clipboard. ]
+- `jsink.fish` [ A script to add/remove/list JACK-enabled PulseAudio sinks. This enables moving audio from
+                 specific applications through JACK easily, which allows fine-grained processing. For example,
+                 sending audio from a music player through a DAW before combining it with a microphone input
+                 for live streaming. ]
 - `ranger.fish` [ A simple alias for ranger to remain in the same directory on exit. ]
 - `wacom.fish` [ A small script to map my Wacom tablet to a given display. If you choose to use this, make
   sure you edit it so it works with your tablet. It's very simple to do, just edit the `awk` command.
