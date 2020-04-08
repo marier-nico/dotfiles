@@ -106,7 +106,7 @@ practice not to run random commands you find.
 **Themes**
 
 - Firefox [Humble Nord](https://addons.mozilla.org/en-US/firefox/addon/humble-nord/).
-- Rofi [Slate](https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/slate.rasi)
+- Rofi [Slate](https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/slate.rasi) (included in this repo).
 - Slack [Nord](https://www.nordtheme.com/docs/ports/slack/installation).
 - Spotify [Nord](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord).
 - Telegram [Telegram Nord Theme](https://github.com/gilbertw1/telegram-nord-theme).
