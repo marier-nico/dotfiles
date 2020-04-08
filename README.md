@@ -42,7 +42,7 @@ practice not to run random commands you find.
 **Desktop**
 
 - [xfce4](https://xfce.org/) [ [arch wiki](https://wiki.archlinux.org/index.php/Xfce) ]
-- [albert](https://albertlauncher.github.io/)
+- [rofi](https://github.com/davatorium/rofi) [ [arch wiki](https://wiki.archlinux.org/index.php/Rofi) ]
 - [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
 - gtk [ [arch wiki](https://wiki.archlinux.org/index.php/GTK) ]
@@ -74,6 +74,8 @@ practice not to run random commands you find.
 **Misc**
 
 - [acpilight](https://gitlab.com/wavexx/acpilight) [ [arch package](https://www.archlinux.org/packages/community/any/acpilight/) ]
+- [bitwarden-cli](https://help.bitwarden.com/article/cli/) [ [AUR](https://aur.archlinux.org/packages/bitwarden-cli/) ]
+- [bitwarden-rofi](https://github.com/mattydebie/bitwarden-rofi) [ [AUR](https://aur.archlinux.org/packages/bitwarden-rofi) ]
 - [yay](https://github.com/Jguer/yay)
 - [xclip](https://github.com/astrand/xclip) [ [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/) ]
 - xrandr [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr) ]
@@ -104,6 +106,7 @@ practice not to run random commands you find.
 **Themes**
 
 - Firefox [Humble Nord](https://addons.mozilla.org/en-US/firefox/addon/humble-nord/).
+- Rofi [Slate](https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/slate.rasi)
 - Slack [Nord](https://www.nordtheme.com/docs/ports/slack/installation).
 - Spotify [Nord](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord).
 - Telegram [Telegram Nord Theme](https://github.com/gilbertw1/telegram-nord-theme).
@@ -167,3 +170,16 @@ already exist, follow the instructions [here](https://fishshell.com/docs/current
 
 1. `set -Ux SHELL /usr/bin/fish`
 2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
+
+### Rofi Commands
+
+Since I use XFCE, there isn't a general configuration file for keyboard shortcuts that is worth
+putting in here. It's less difficult to simply set app shortcuts manually every time you want
+to create a new setup. Here are the commands to start rofi that I use.
+
+Also, I added the bitwarden menu shortcut even though it is not strictly a rofi command because
+it uses rofi internally to present vault items to the user.
+
+- `Mod+p` (app launcher + window switcher): `rofi -combi-modi window,drun -show combi -modi combi`
+- `Mod+s` (ssh launcher): `rofi -show ssh`
+- `Mod+l` (bitwarden launcher): `bwmenu`

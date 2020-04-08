@@ -18,6 +18,8 @@
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/ranger/rifle.conf: config/ranger/rifle.conf
+    ~/.config/rofi/config.rasi: config/rofi/config.rasi
+    ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
     ~/.config/spicetify/Themes: config/spicetify/Themes
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage
