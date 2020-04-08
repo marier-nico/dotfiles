@@ -13,6 +13,7 @@
     ~/.config/fish/functions/clip.fish: config/fish/functions/clip.fish
     ~/.config/fish/functions/jsink.fish: config/fish/functions/jsink.fish
     ~/.config/fish/functions/ranger.fish: config/fish/functions/ranger.fish
+    ~/.config/fish/functions/ssh.fish: config/fish/functions/ssh.fish
     ~/.config/fish/functions/wacom.fish: config/fish/functions/wacom.fish
     ~/.config/mimeapps.list: config/mimeapps.list
     ~/.config/nvim/init.vim: config/nvim/init.vim

@@ -129,6 +129,8 @@ life that much easier.
                  sending audio from a music player through a DAW before combining it with a microphone input
                  for live streaming. ]
 - `ranger.fish` [ A simple alias for ranger to remain in the same directory on exit. ]
+- `ssh.fish` [ An alias for SSH to set `$TERM` to `xterm-256color` to ensure compatibility on remote hosts 
+-              (instead of using `alacritty` which requires adding something to the terminfo entries). ]
 - `wacom.fish` [ A small script to map my Wacom tablet to a given display. If you choose to use this, make
   sure you edit it so it works with your tablet. It's very simple to do, just edit the `awk` command.
   You should change what I put there for the name of your own stylus. You can find it with `xinput list`. ]
