@@ -7,7 +7,7 @@ function wacom --description "Map the tablet to a given monitor"
     end
     read -l -P "Which display should I map it to: " selected
 
-    if ! echo $selected | grep -Pq "^\d+\$" || test $selected -gt (count $displays) || test $selected -lt 1
+    if ! echo $selected | grep -Pq "^\d+\$"; or test $selected -gt (count $displays); or test $selected -lt 1
         echo "Please choose within the list."
         return 1
     end
