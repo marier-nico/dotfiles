@@ -153,8 +153,8 @@ in this repo. For this to work, a few things have to be setup.
    Here is an example :
    - `@daily 5 backup.daily su -c "/usr/bin/flock -n /tmp/lock.backup /home/{path to script}/backup.sh" -s /bin/sh {your username}`
    - The `flock` part is important because you don't want to run two backups at the same time.
-     This will also run the backup script as your own user, so you will still own the borg
-     archive. Also, if you want to receive a notification that the backup completed with logs,
+     This will also run the backup script as your own user, so you will still own the borg archive.
+   - Also, if you want to receive a notification that the backup completed with logs,
      you can add `&& {command to send yourself an email}` after the script, or something similar.
      The other option for emails is to configure a mail server that makes the `sendmail` command
      available, though this option is a lot more complicated to set-up.
@@ -182,4 +182,4 @@ it uses rofi internally to present vault items to the user.
 
 - `Mod+p` (app launcher + window switcher): `rofi -combi-modi window,drun -show combi -modi combi`
 - `Mod+s` (ssh launcher): `rofi -show ssh`
-- `Mod+l` (bitwarden launcher): `bwmenu`
+- `Mod+l` (bitwarden launcher): `bwmenu --auto-lock 1800`
