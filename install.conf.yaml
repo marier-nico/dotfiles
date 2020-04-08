@@ -11,10 +11,15 @@
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fishfile: config/fish/fishfile
     ~/.config/fish/functions/clip.fish: config/fish/functions/clip.fish
+    ~/.config/fish/functions/jsink.fish: config/fish/functions/jsink.fish
+    ~/.config/fish/functions/ranger.fish: config/fish/functions/ranger.fish
+    ~/.config/fish/functions/wacom.fish: config/fish/functions/wacom.fish
     ~/.config/mimeapps.list: config/mimeapps.list
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/ranger/rifle.conf: config/ranger/rifle.conf
+    ~/.config/rofi/config.rasi: config/rofi/config.rasi
+    ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
     ~/.config/spicetify/Themes: config/spicetify/Themes
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage
