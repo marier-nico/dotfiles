@@ -44,10 +44,6 @@ Plug 'arcticicestudio/nord-vim'
 call plug#end()
 " --- -------- --- "
 
-" Vimwiki configuration
-let g:vimwiki_list = [{'path': '~/Documents/wiki/',
-                      \ 'path_html': '~/Documents/wiki/html'}]
-
 " Syntax highlighting
 colorscheme nord
 syntax on
