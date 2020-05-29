@@ -21,6 +21,7 @@
     ~/.config/rofi/config.rasi: config/rofi/config.rasi
     ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
     ~/.config/spicetify/Themes: config/spicetify/Themes
+    ~/.tmux.conf: tmux.conf
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage
     ~/.gnupg/gpg.conf: gpg.conf
