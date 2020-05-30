@@ -85,6 +85,10 @@ practice not to run random commands you find.
 - **fisher**
   - [fish-ssh-agent](https://github.com/danhper/fish-ssh-agent)
   - [pure](https://github.com/rafaelrinaldi/pure)
+- **tmux**
+  - [tpm](https://github.com/tmux-plugins/tpm)
+  - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
+  - [nord-tmux](https://github.com/arcticicestudio/nord-tmux)
 - **vim-plug**
   - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
   - [nord](https://www.nordtheme.com/docs/ports/vim/installation)
@@ -94,9 +98,10 @@ practice not to run random commands you find.
 
 **Shell & Term**
 
+- [alacritty](https://github.com/jwilm/alacritty)
 - [fish](https://fishshell.com)
 - [fisher](https://github.com/jorgebucaran/fisher)
-- [alacritty](https://github.com/jwilm/alacritty)
+- [tmux](https://github.com/tmux/tmux/wiki) [ [arch wiki](https://wiki.archlinux.org/index.php/Tmux) ]
 
 **Social**
 
