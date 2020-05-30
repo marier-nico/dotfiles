@@ -87,6 +87,7 @@ practice not to run random commands you find.
   - [pure](https://github.com/rafaelrinaldi/pure)
 - **tmux**
   - [tpm](https://github.com/tmux-plugins/tpm)
+  - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
   - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
   - [nord-tmux](https://github.com/arcticicestudio/nord-tmux)
 - **vim-plug**
