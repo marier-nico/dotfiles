@@ -25,17 +25,20 @@ nord13 = #ebcb8b
 nord14 = #a3be8c
 nord15 = #b48ead
 
+nord0transparent = #d02e3440
 nord1transparent = #d03b4252
-nord10transparent = #d05e81ac
+nord11transparent = #d0bf616a
 
-[bar/main]
+[bar/left]
 monitor = ${env:MAIN_MONITOR:HDMI-0}
 radius = 6.0
-padding-right = 1
 fixed-center = true
+offset-x = 3
+offset-y = 3
+width = 15%
 height = 27
 
-background = ${colors.nord0}
+background = ${colors.nord0transparent}
 text = ${colors.nord4}
 
 font-0 = Iosevka:style=Mesium:pixelsize=11
@@ -44,11 +47,8 @@ font-2 = Font Awesome 5 Free Solid:style=Solid:pixelsize=12
 font-3 = Font Awesome 5 Brands Regular:style=Regular:pixelsize=12
 
 modules-left = bspwm
-modules-center = title
-modules-right = pulseaudio wireless-network wired-network memory cpu date battery
-module-margin = 1
-
-tray-position = right
+modules-center = 
+modules-right =
 
 ; Cover the bar when in full screen
 wm-restack = bspwm
@@ -56,10 +56,35 @@ wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[bar/middle]
+inherit = bar/left
+width = 33%
+height = 27
+offset-x = 33.5%
+
+modules-left =
+modules-center = title
+modules-right =
+
+[bar/right]
+inherit = bar/left
+width = 24%
+height = 27
+offset-x = 76%:-3
+tray-position = right
+module-margin = 1
+padding-right = 1
+
+modules-left =
+modules-center =
+modules-right = pulseaudio wireless-network wired-network memory cpu date battery
+
 [module/title]
 type = internal/xwindow
 label = %title%
 label-maxlen = 30
+label-empty = 
+label-empty-foreground = ${colors.nord11}
 
 [module/bspwm]
 type = internal/bspwm
@@ -67,7 +92,7 @@ pin-workspaces = false
 
 label-focused = 
 label-focused-foreground = ${colors.nord7}
-label-focused-background = ${colors.nord1}
+label-focused-background = ${colors.nord1transparent}
 label-focused-padding = 1
 
 label-occupied = 
@@ -166,10 +191,10 @@ type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
 label-volume = " "
-label-volume-foreground = ${colors.nord3}
+label-volume-foreground = ${colors.nord13}
 
 format-muted-prefix = " "
-format-muted-foreground = ${colors.nord3}
+format-muted-foreground = ${colors.nord13}
 label-muted = muted
 
 # backup character (unifont?) ━
