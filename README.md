@@ -13,7 +13,7 @@ will also contain links to most resources used with this config (wallpapers, the
 2. Run the install script from this repo, which will just create symlinks from the dotfiles
    in this repo to the correct locations on your system. This is done with
    [dotbot](https://git.io/dotbot).
-3. Download my wallpaper [here](https://www.reddit.com/r/wallpapers/comments/ebvk0q/rocket_launch_1920x1080/).
+3. Download my wallpaper [here](https://www.reddit.com/r/wallpapers/comments/h8ezpz/into_the_woods/).
 4. Download some icons that you like, I use
    [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/).
 5. Download a nice gtk theme, mine is [Nordic](https://github.com/EliverLara/Nordic).

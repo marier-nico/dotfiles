@@ -6,7 +6,6 @@ xrdb ~/.Xresources
 # Kill running programs
 killall polybar
 killall sxhkd
-killall dunst
 
 # Set workspaces
 bspc monitor "HDMI-0" -d 1 2 3 4 5
@@ -16,6 +15,7 @@ bspc monitor "DP-4" -d 6 7 8 9 10
 sxhkd &
 polybar main &
 dunst &
+picom &
 
 # Bspwm config
 bspc config border_width 2
@@ -30,6 +30,9 @@ bspc config gapless_monocle true
 # Keyboard settings
 setxkbmap ca
 xset r rate 150 50
+
+# Other settings
+feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/desktop/into-the-woods-1920×1080.jpg
 
 # Bspwm rule examples
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
