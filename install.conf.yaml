@@ -7,6 +7,7 @@
 
 - link:
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
+    ~/.config/bspwm/bspwmrc: config/bspwm/bspwmrc
     ~/.config/Code - OSS/User/settings.json: config/code/settings.json
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fishfile: config/fish/fishfile
@@ -16,11 +17,13 @@
     ~/.config/fish/functions/ssh.fish: config/fish/functions/ssh.fish
     ~/.config/fish/functions/wacom.fish: config/fish/functions/wacom.fish
     ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.config/polybar/config: config/polybar/config
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/ranger/rifle.conf: config/ranger/rifle.conf
     ~/.config/rofi/config.rasi: config/rofi/config.rasi
     ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
     ~/.config/spicetify/Themes: config/spicetify/Themes
+    ~/.config/sxhkd/sxhkdrc: config/sxhkd/sxhkdrc
     ~/.tmux.conf: tmux.conf
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage

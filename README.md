@@ -41,7 +41,9 @@ practice not to run random commands you find.
 
 **Desktop**
 
-- [xfce4](https://xfce.org/) [ [arch wiki](https://wiki.archlinux.org/index.php/Xfce) ]
+- [bspwm](https://github.com/baskerville/bspwm) [ [arch wiki](https://wiki.archlinux.org/index.php/Bspwm) ]
+- [sxhkd](https://github.com/baskerville/sxhkd) [ [arch wiki](https://wiki.archlinux.org/index.php/sxhkd) ]
+- [polybar](https://github.com/polybar/polybar) [ [arch wiki](https://wiki.archlinux.org/index.php/polybar) ]
 - [rofi](https://github.com/davatorium/rofi) [ [arch wiki](https://wiki.archlinux.org/index.php/Rofi) ]
 - [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
@@ -50,6 +52,7 @@ practice not to run random commands you find.
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - [ranger](https://ranger.github.io/) [ [arch wiki](https://wiki.archlinux.org/index.php/Ranger) ]
 - **Fonts**
+  - [FontAwesome](https://fontawesome.com) [ [arch package](https://www.archlinux.org/packages/community/any/ttf-font-awesome/) ]
   - [Iosevka](https://typeof.net/Iosevka/)
   - [JoyPixels](https://www.joypixels.com/) (emoji) [ [AUR](https://www.archlinux.org/packages/community/any/ttf-joypixels/) ]
 
@@ -79,6 +82,7 @@ practice not to run random commands you find.
 - [yay](https://github.com/Jguer/yay)
 - [xclip](https://github.com/astrand/xclip) [ [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/) ]
 - xrandr [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr) ]
+- arandr [ [arch package](https://www.archlinux.org/packages/community/any/arandr/) ]
 
 **Plugins**
 
@@ -178,16 +182,3 @@ already exist, follow the instructions [here](https://fishshell.com/docs/current
 
 1. `set -Ux SHELL /usr/bin/fish`
 2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
-
-### Rofi Commands
-
-Since I use XFCE, there isn't a general configuration file for keyboard shortcuts that is worth
-putting in here. It's less difficult to simply set app shortcuts manually every time you want
-to create a new setup. Here are the commands to start rofi that I use.
-
-Also, I added the bitwarden menu shortcut even though it is not strictly a rofi command because
-it uses rofi internally to present vault items to the user.
-
-- `Mod+p` (app launcher + window switcher): `rofi -combi-modi window,drun -show combi -modi combi`
-- `Mod+s` (ssh launcher): `rofi -show ssh`
-- `Mod+l` (bitwarden launcher): `bwmenu --auto-lock 1800`
