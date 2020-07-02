@@ -126,7 +126,7 @@ super + u
 
 # lock the screen
 super + x
-	xscreensaver-command -lock
+	betterlockscreen --lock blur
 
 # use bitwarden rofi
 super + p
