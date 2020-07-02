@@ -27,7 +27,7 @@ shell commands will probably not work on other shells. Before running the instal
 edit the commands for your own shell, or switch to fish!
 
 To install my configurations, you just have to clone this repo and run `./install`. I
-recomment checking the `install.conf.yaml` file before blindly installing because it
+recommend checking the `install.conf.yaml` file before blindly installing because it
 will expect specific directories to exist which you might not have. Also it's good
 practice not to run random commands you find.
 
@@ -126,7 +126,7 @@ practice not to run random commands you find.
 
 ### Backlight
 
-By default, only root has access to change the scren brightness. To allow other users to do it without sudo (which will be
+By default, only root has access to change the screen brightness. To allow other users to do it without sudo (which will be
 necessary to use keyboard shortcuts), follow instructions on the [wiki](https://wiki.archlinux.org/index.php/Backlight#ACPI).
 
 ### Fish Functions
