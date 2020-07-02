@@ -9,6 +9,7 @@
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
     ~/.config/bspwm/bspwmrc: config/bspwm/bspwmrc
     ~/.config/Code - OSS/User/settings.json: config/code/settings.json
+    ~/.config/dunst/dunstrc: config/dunst/dunstrc
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fishfile: config/fish/fishfile
     ~/.config/fish/functions/clip.fish: config/fish/functions/clip.fish

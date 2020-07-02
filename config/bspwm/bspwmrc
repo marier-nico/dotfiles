@@ -6,6 +6,7 @@ xrdb ~/.Xresources
 # Kill running programs
 killall polybar
 killall sxhkd
+killall dunst
 
 # Set workspaces
 bspc monitor "HDMI-0" -d 1 2 3 4 5
@@ -14,6 +15,7 @@ bspc monitor "DP-4" -d 6 7 8 9 10
 # Autostart programs
 sxhkd &
 polybar main &
+dunst &
 
 # Bspwm config
 bspc config border_width 2
