@@ -41,6 +41,7 @@ practice not to run random commands you find.
 
 **Desktop**
 
+- [autorandr](https://github.com/phillipberndt/autorandr) [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr#Automatically_switch_configurations_with_autorandr) ]
 - [bspwm](https://github.com/baskerville/bspwm) [ [arch wiki](https://wiki.archlinux.org/index.php/Bspwm) ]
 - [sxhkd](https://github.com/baskerville/sxhkd) [ [arch wiki](https://wiki.archlinux.org/index.php/sxhkd) ]
 - [polybar](https://github.com/polybar/polybar) [ [arch wiki](https://wiki.archlinux.org/index.php/polybar) ]

@@ -8,14 +8,26 @@ killall polybar
 killall sxhkd
 
 # Set workspaces
-bspc monitor "HDMI-0" -d 1 2 3 4 5
-bspc monitor "DP-4" -d 6 7 8 9 10
+case $AUTORANDR_CURRENT_PROFILE in
+"home1" | "home2")
+    bspc monitor "HDMI-0" -d 1 2 3 4 5
+    bspc monitor "DP-4" -d 6 7 8 9 10
+
+    MAIN_MONITOR="HDMI-0" polybar left &
+    MAIN_MONITOR="HDMI-0" polybar middle &
+    MAIN_MONITOR="HDMI-0" polybar right &
+    ;;
+*)
+    bspc monitor "HDMI-0" -d 1 2 3 4 5 6 7 8 9 0
+
+    MAIN_MONITOR="HDMI-0" polybar left &
+    MAIN_MONITOR="HDMI-0" polybar middle &
+    MAIN_MONITOR="HDMI-0" polybar right &
+    ;;
+esac
 
 # Autostart programs
 sxhkd &
-polybar left &
-polybar middle &
-polybar right &
 dunst &
 picom &
 
