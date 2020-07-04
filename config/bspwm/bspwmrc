@@ -27,7 +27,7 @@ case $AUTORANDR_CURRENT_PROFILE in
 esac
 
 # Autostart programs
-sxhkd &
+SXHKD_SHELL='/usr/bin/sh' sxhkd &
 dunst &
 picom &
 
