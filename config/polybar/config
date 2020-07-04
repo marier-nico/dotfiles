@@ -161,7 +161,7 @@ label-connected = %{F#a3be8c}%{F-} %downspeed%
 label-connected-foreground = ${colors.nord4}
 
 format-disconnected = <label-disconnected>
-label-disconnected =  Disconnected
+label-disconnected = 
 label-disconnected-foreground = ${colors.nord3}
 
 [module/wireless-network]
@@ -169,7 +169,7 @@ inherit = module/wired-network
 interface = wlp58s0
 
 label-connected = %{F#a3be8c}%{F-} %downspeed%
-label-disconnected =  Disconnected
+label-disconnected = 
 
 [module/date]
 type = internal/date
