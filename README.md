@@ -18,6 +18,11 @@ will also contain links to most resources used with this config (wallpapers, the
    [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/).
 5. Download a nice gtk theme, mine is [Nordic](https://github.com/EliverLara/Nordic).
 6. Use `lxappearance` to select the right gtk theme.
+7. Update monitor configurations to suit your needs.
+  a. Create `autorandr` profiles.
+    i. Create custom profiles.
+    ii. Symlink `default` to a desired virtual profile.
+  b. Update `bspwmrc` to suit your monitor configuration and use the profiles.
 
 ### Install Script
 
@@ -185,3 +190,31 @@ already exist, follow the instructions [here](https://fishshell.com/docs/current
 
 1. `set -Ux SHELL /usr/bin/fish`
 2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
+
+#### monitors and hot-plugging
+
+This part of the setup warrants some additional details, because it is non-trivial.
+The main thing to keep in mind is that `autorandr` is responsible for responding to
+monitor hot-plug events. It does so by running the `postscript` in its config directory,
+which in turn runs `bspwmrc` with additional env variables. Namely, the env variables
+include the current "profile", so `bspwmrc` can set everything up correctly on all displays
+depending on the configuration.
+
+There are, however, some gotchas with regards to monitor management. Most notably, it doesn't
+seem possible to move desktops from one monitor to another while preserving all the nodes and
+their positioning in bspwm.
+
+Also, there seems to be an issue with polybar if the top of two different monitors aren't
+lined up. Essentially, it will add a large amount of padding at the top of monitors so that
+the top of windows all line up below the bar (regardless of whether or not there is a bar
+on the monitor that has the padding). A work-around for this is to wait for polybar's config
+to be applied before manually removing the padding afterwards in `bspwmrc`.
+
+Another important thing is to remember to set a kernel parameter so Nvidia cards trigger udev
+events on monitor hot-plug events. This is part of [autorandr's](https://github.com/phillipberndt/autorandr#udev-triggers-with-nvidia-cards)
+readme, but it's at the very bottom easy to miss.
+
+Autorandr works with profiles, so to work with these dotfiles, you will need to create your
+own profiles and edit `bspwmrc` to recognize those profiles. Also, it would be wise to symlink
+`default` to a desired virtual `autorandr` profile so that a usable configuration is started
+even when connecting some displays for the first time. For example, `ln -s clone-largest default`.

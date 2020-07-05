@@ -122,7 +122,7 @@ super + {Left,Down,Up,Right}
 
 # change monitor config
 super + u
-	autorandr --change --force
+	autorandr --change --force --default default
 
 # lock the screen
 super + x

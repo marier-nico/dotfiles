@@ -1,4 +1,4 @@
 #!/bin/sh
 
-notify-send "Monitor config updated" "New selected profile is '$AUTORANDR_CURRENT_PROFILE'"
 sh $HOME/.config/bspwm/bspwmrc
+notify-send "Monitor config updated" "New selected profile is '$AUTORANDR_CURRENT_PROFILE'"
