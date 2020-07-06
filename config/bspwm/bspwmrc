@@ -36,7 +36,7 @@ case $AUTORANDR_CURRENT_PROFILE in
     bspc config -m "DP-4" top_padding 0
     ;;
 "clone-largest")
-    bspc monitor "DP-4" -d 1 2 3 4 5 6 7 8 9 10
+    bspc monitor "HDMI-0" -d 1 2 3 4 5 6 7 8 9 10
 
     MAIN_MONITOR="HDMI-0" polybar left &
     MAIN_MONITOR="HDMI-0" polybar middle &

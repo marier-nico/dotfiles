@@ -35,7 +35,7 @@ radius = 6.0
 fixed-center = true
 offset-x = 3
 offset-y = 3
-width = 15%
+width = 290
 height = 27
 
 background = ${colors.nord0transparent}
@@ -58,7 +58,7 @@ cursor-scroll = ns-resize
 
 [bar/middle]
 inherit = bar/left
-width = 33%
+width = 600
 height = 27
 offset-x = 33.5%
 
@@ -68,9 +68,9 @@ modules-right =
 
 [bar/right]
 inherit = bar/left
-width = 24%
+width = 600
 height = 27
-offset-x = 76%:-3
+offset-x = 100%:-603
 tray-position = right
 module-margin = 1
 padding-right = 1
