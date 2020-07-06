@@ -140,6 +140,18 @@ XF86MonBrightness{Up,Down}
 XF86Audio{Raise,Lower}Volume
 	pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo {+,-}10%
 
+# play / pause
+XF86AudioPlay
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
+# change track
+XF86Audio{Prev,Next}
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{Previous,Next}
+
+# toggle mute
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
 # launch ranger
 super + r
     alacritty -e ranger
