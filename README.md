@@ -13,11 +13,16 @@ will also contain links to most resources used with this config (wallpapers, the
 2. Run the install script from this repo, which will just create symlinks from the dotfiles
    in this repo to the correct locations on your system. This is done with
    [dotbot](https://git.io/dotbot).
-3. Download my wallpaper [here](https://www.reddit.com/r/wallpapers/comments/ebvk0q/rocket_launch_1920x1080/).
+3. Download my wallpaper [here](https://www.reddit.com/r/wallpapers/comments/h8ezpz/into_the_woods/).
 4. Download some icons that you like, I use
    [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/).
 5. Download a nice gtk theme, mine is [Nordic](https://github.com/EliverLara/Nordic).
 6. Use `lxappearance` to select the right gtk theme.
+7. Update monitor configurations to suit your needs.
+  a. Create `autorandr` profiles.
+    i. Create custom profiles.
+    ii. Symlink `default` to a desired virtual profile.
+  b. Update `bspwmrc` to suit your monitor configuration and use the profiles.
 
 ### Install Script
 
@@ -27,7 +32,7 @@ shell commands will probably not work on other shells. Before running the instal
 edit the commands for your own shell, or switch to fish!
 
 To install my configurations, you just have to clone this repo and run `./install`. I
-recomment checking the `install.conf.yaml` file before blindly installing because it
+recommend checking the `install.conf.yaml` file before blindly installing because it
 will expect specific directories to exist which you might not have. Also it's good
 practice not to run random commands you find.
 
@@ -41,7 +46,12 @@ practice not to run random commands you find.
 
 **Desktop**
 
-- [xfce4](https://xfce.org/) [ [arch wiki](https://wiki.archlinux.org/index.php/Xfce) ]
+- [autorandr](https://github.com/phillipberndt/autorandr) [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr#Automatically_switch_configurations_with_autorandr) ]
+- [bspwm](https://github.com/baskerville/bspwm) [ [arch wiki](https://wiki.archlinux.org/index.php/Bspwm) ]
+- [sxhkd](https://github.com/baskerville/sxhkd) [ [arch wiki](https://wiki.archlinux.org/index.php/sxhkd) ]
+- [polybar](https://github.com/polybar/polybar) [ [arch wiki](https://wiki.archlinux.org/index.php/polybar) ]
+- [dunst](https://github.com/dunst-project/dunst) [ [arch wiki](https://wiki.archlinux.org/index.php/Dunst) ]
+- [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) [ [aur package](https://aur.archlinux.org/packages/betterlockscreen/) ]
 - [rofi](https://github.com/davatorium/rofi) [ [arch wiki](https://wiki.archlinux.org/index.php/Rofi) ]
 - [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
@@ -50,6 +60,7 @@ practice not to run random commands you find.
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - [ranger](https://ranger.github.io/) [ [arch wiki](https://wiki.archlinux.org/index.php/Ranger) ]
 - **Fonts**
+  - [FontAwesome](https://fontawesome.com) [ [arch package](https://www.archlinux.org/packages/community/any/ttf-font-awesome/) ]
   - [Iosevka](https://typeof.net/Iosevka/)
   - [JoyPixels](https://www.joypixels.com/) (emoji) [ [AUR](https://www.archlinux.org/packages/community/any/ttf-joypixels/) ]
 
@@ -79,6 +90,7 @@ practice not to run random commands you find.
 - [yay](https://github.com/Jguer/yay)
 - [xclip](https://github.com/astrand/xclip) [ [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/) ]
 - xrandr [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr) ]
+- arandr [ [arch package](https://www.archlinux.org/packages/community/any/arandr/) ]
 
 **Plugins**
 
@@ -121,7 +133,7 @@ practice not to run random commands you find.
 
 ### Backlight
 
-By default, only root has access to change the scren brightness. To allow other users to do it without sudo (which will be
+By default, only root has access to change the screen brightness. To allow other users to do it without sudo (which will be
 necessary to use keyboard shortcuts), follow instructions on the [wiki](https://wiki.archlinux.org/index.php/Backlight#ACPI).
 
 ### Fish Functions
@@ -179,15 +191,30 @@ already exist, follow the instructions [here](https://fishshell.com/docs/current
 1. `set -Ux SHELL /usr/bin/fish`
 2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
 
-### Rofi Commands
+#### monitors and hot-plugging
 
-Since I use XFCE, there isn't a general configuration file for keyboard shortcuts that is worth
-putting in here. It's less difficult to simply set app shortcuts manually every time you want
-to create a new setup. Here are the commands to start rofi that I use.
+This part of the setup warrants some additional details, because it is non-trivial.
+The main thing to keep in mind is that `autorandr` is responsible for responding to
+monitor hot-plug events. It does so by running the `postscript` in its config directory,
+which in turn runs `bspwmrc` with additional env variables. Namely, the env variables
+include the current "profile", so `bspwmrc` can set everything up correctly on all displays
+depending on the configuration.
 
-Also, I added the bitwarden menu shortcut even though it is not strictly a rofi command because
-it uses rofi internally to present vault items to the user.
+There are, however, some gotchas with regards to monitor management. Most notably, it doesn't
+seem possible to move desktops from one monitor to another while preserving all the nodes and
+their positioning in bspwm.
 
-- `Mod+p` (app launcher + window switcher): `rofi -combi-modi window,drun -show combi -modi combi`
-- `Mod+s` (ssh launcher): `rofi -show ssh`
-- `Mod+l` (bitwarden launcher): `bwmenu --auto-lock 1800`
+Also, there seems to be an issue with polybar if the top of two different monitors aren't
+lined up. Essentially, it will add a large amount of padding at the top of monitors so that
+the top of windows all line up below the bar (regardless of whether or not there is a bar
+on the monitor that has the padding). A work-around for this is to wait for polybar's config
+to be applied before manually removing the padding afterwards in `bspwmrc`.
+
+Another important thing is to remember to set a kernel parameter so Nvidia cards trigger udev
+events on monitor hot-plug events. This is part of [autorandr's](https://github.com/phillipberndt/autorandr#udev-triggers-with-nvidia-cards)
+readme, but it's at the very bottom easy to miss.
+
+Autorandr works with profiles, so to work with these dotfiles, you will need to create your
+own profiles and edit `bspwmrc` to recognize those profiles. Also, it would be wise to symlink
+`default` to a desired virtual `autorandr` profile so that a usable configuration is started
+even when connecting some displays for the first time. For example, `ln -s clone-largest default`.
