@@ -2,22 +2,18 @@
     link:
       create: true
       relink: true
+      glob: true
 
 - clean: ["~"]
 
 - link:
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
-    ~/.config/autorandr/postswitch: config/autorandr/postswitch
     ~/.config/bspwm/bspwmrc: config/bspwm/bspwmrc
     ~/.config/Code - OSS/User/settings.json: config/code/settings.json
     ~/.config/dunst/dunstrc: config/dunst/dunstrc
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fishfile: config/fish/fishfile
-    ~/.config/fish/functions/clip.fish: config/fish/functions/clip.fish
-    ~/.config/fish/functions/jsink.fish: config/fish/functions/jsink.fish
-    ~/.config/fish/functions/ranger.fish: config/fish/functions/ranger.fish
-    ~/.config/fish/functions/ssh.fish: config/fish/functions/ssh.fish
-    ~/.config/fish/functions/wacom.fish: config/fish/functions/wacom.fish
+    ~/.config/fish/functions/: config/fish/functions/*
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.config/polybar/config: config/polybar/config
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
@@ -26,6 +22,8 @@
     ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
     ~/.config/spicetify/Themes: config/spicetify/Themes
     ~/.config/sxhkd/sxhkdrc: config/sxhkd/sxhkdrc
+    ~/.local/bin/: bin/*
+    ~/.profile: profile
     ~/.tmux.conf: tmux.conf
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage

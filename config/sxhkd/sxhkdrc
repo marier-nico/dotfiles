@@ -122,7 +122,7 @@ super + {Left,Down,Up,Right}
 
 # change monitor config
 super + u
-	autorandr --change --force --default default
+	sh ~/.config/bspwm/bspwmrc
 
 # lock the screen
 super + x
