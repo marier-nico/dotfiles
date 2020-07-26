@@ -22,7 +22,7 @@
     ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
     ~/.config/spicetify/Themes: config/spicetify/Themes
     ~/.config/sxhkd/sxhkdrc: config/sxhkd/sxhkdrc
-    ~/.local/bin/: bin/*
+    ~/.local/bin/autorandr.sh: bin/autorandr/autorandr.sh
     ~/.profile: profile
     ~/.tmux.conf: tmux.conf
     ~/.gitconfig: gitconfig
