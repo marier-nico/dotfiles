@@ -1,3 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "bin/autorandr"]
+	path = bin/autorandr
+	url = git@github.com:marier-nico/autorandr.sh.git

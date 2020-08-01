@@ -21,32 +21,27 @@ bspc config focus_follows_pointer true
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 
-# Set workspaces
-case $AUTORANDR_CURRENT_PROFILE in
-"home1" | "home2")
-    bspc monitor "HDMI-0" -d 1 2 3 4 5
-    bspc monitor "DP-4" -d 6 7 8 9 10
+autorandr.sh --change
+monitor_profile=$(autorandr.sh --detected)
 
-    MAIN_MONITOR="HDMI-0" polybar left &
-    MAIN_MONITOR="HDMI-0" polybar middle &
-    MAIN_MONITOR="HDMI-0" polybar right &
+# Set workspaces
+case $monitor_profile in
+"home1")
+    bspc monitor "DP-2" -d 1 2 3
+    bspc monitor "DP-4" -d 4 5 6 7
+    bspc monitor "HDMI-0" -d 8 9 10
+
+    MAIN_MONITOR="DP-4" polybar left &
+    MAIN_MONITOR="DP-4" polybar middle &
+    MAIN_MONITOR="DP-4" polybar right &
 
     # Polybar resets the padding
     sleep 1
-    bspc config -m "DP-4" top_padding 0
-    ;;
-"clone-largest")
-    bspc monitor "HDMI-0" -d 1 2 3 4 5 6 7 8 9 10
-
-    MAIN_MONITOR="HDMI-0" polybar left &
-    MAIN_MONITOR="HDMI-0" polybar middle &
-    MAIN_MONITOR="HDMI-0" polybar right &
+    bspc config -m "DP-2" top_padding 0
+    bspc config -m "HDMI-0" top_padding 0
     ;;
 *)
-    # This case will only happen when initially logging in,
-    # other executions should always specify an autorandr
-    # profile.
-    autorandr --change --default default
+    notify-send "Monitor config not found" "Could not setup bspwm workspaces for this monitor config"
     ;;
 esac
 

@@ -190,15 +190,27 @@ already exist, follow the instructions [here](https://fishshell.com/docs/current
 
 1. `set -Ux SHELL /usr/bin/fish`
 2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
+3. `set -U fish_user_paths \$HOME/.local/bin $fish_user_paths`
+4. `set -U fish_user_paths \$HOME/.cargo/bin $fish_user_paths` (if using Rust)
+
+Some of these variables will be set in `~/.profile` to make sure they exist when other processes
+get launched from a bash shell, or something which needs `~/.profile`. Note that `~/.cargo/bin`
+is added to the path in `~/.profile`.
 
 #### monitors and hot-plugging
 
 This part of the setup warrants some additional details, because it is non-trivial.
-The main thing to keep in mind is that `autorandr` is responsible for responding to
-monitor hot-plug events. It does so by running the `postscript` in its config directory,
-which in turn runs `bspwmrc` with additional env variables. Namely, the env variables
-include the current "profile", so `bspwmrc` can set everything up correctly on all displays
-depending on the configuration.
+The main thing is the `bin/autorandr.sh` script in this repository, which can do a
+few different things, the main of which being saving display configurations and loading
+the correct configuration (profile) when it's detected.
+
+The script's features were taken from [autorandr](https://github.com/phillipberndt/autorandr),
+but implemented in a simpler and more reliable way. The key difference is that the script does
+not try to parse `xrandr` output for display configuration and save that. Instead, `arandr`
+is used to save a configuration (which works better than `autorandr` for this purpose).
+Fingerprinting the display configuration works in much the same way than `autorandr`, though.
+Another difference is that the script does not respond to hot-plug events. Instead, reloading
+the `bspwm` config calls the script, which then updates the display configuration.
 
 There are, however, some gotchas with regards to monitor management. Most notably, it doesn't
 seem possible to move desktops from one monitor to another while preserving all the nodes and
@@ -210,11 +222,5 @@ the top of windows all line up below the bar (regardless of whether or not there
 on the monitor that has the padding). A work-around for this is to wait for polybar's config
 to be applied before manually removing the padding afterwards in `bspwmrc`.
 
-Another important thing is to remember to set a kernel parameter so Nvidia cards trigger udev
-events on monitor hot-plug events. This is part of [autorandr's](https://github.com/phillipberndt/autorandr#udev-triggers-with-nvidia-cards)
-readme, but it's at the very bottom easy to miss.
-
-Autorandr works with profiles, so to work with these dotfiles, you will need to create your
-own profiles and edit `bspwmrc` to recognize those profiles. Also, it would be wise to symlink
-`default` to a desired virtual `autorandr` profile so that a usable configuration is started
-even when connecting some displays for the first time. For example, `ln -s clone-largest default`.
+The `bin/autorandr.sh` script works with profiles, so to work with these dotfiles, you will
+need to create your own profiles and edit `bspwmrc` to recognize those profiles.
