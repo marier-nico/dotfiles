@@ -26,7 +26,7 @@ monitor_profile=$(autorandr.sh --detected)
 
 # Set workspaces
 case $monitor_profile in
-"home1")
+home1|home2)
     bspc monitor "DP-2" -d 1 2 3
     bspc monitor "DP-4" -d 4 5 6 7
     bspc monitor "HDMI-0" -d 8 9 10
@@ -55,7 +55,7 @@ setxkbmap ca
 xset r rate 150 50
 
 # Other settings
-feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/desktop/into-the-woods-1920×1080.jpg
+feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/desktop/exploring.png
 
 # Bspwm rule examples
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
