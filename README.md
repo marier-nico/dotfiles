@@ -157,30 +157,7 @@ life that much easier.
 
 #### backups
 
-A backup solution is really important these days, so [cron](https://wiki.archlinux.org/index.php/Cron)
-should be used to run daily backups. Those backups can be made using the `backup.sh` script
-in this repo. For this to work, a few things have to be setup.
-
-1. Have the [cronie](https://www.archlinux.org/packages/?name=cronie) package installed.
-2. Have a [borg](https://borgbackup.readthedocs.io/en/stable/index.html) repo located at `~/.backup`.
-3. Have your passphrase for the repo stored in `~/.config/borg/passphrase`.
-4. Edit the line in `backup.sh` where the backup is uploaded to amazon s3 to make sure that :
-   - You are using a bucket that you own.
-   - You are using a profile with write access to that bucket.
-5. Edit `root`'s crontab to run `anacron` every minute, which might look like this :
-   - `* * * * * anacron`
-6. Edit `/etc/anacrontab` to make sure the backup runs at the frequency you want it to.
-   Here is an example :
-   - `@daily 5 backup.daily su -c "/usr/bin/flock -n /tmp/lock.backup /home/{path to script}/backup.sh" -s /bin/sh {your username}`
-   - The `flock` part is important because you don't want to run two backups at the same time.
-     This will also run the backup script as your own user, so you will still own the borg archive.
-   - Also, if you want to receive a notification that the backup completed with logs,
-     you can add `&& {command to send yourself an email}` after the script, or something similar.
-     The other option for emails is to configure a mail server that makes the `sendmail` command
-     available, though this option is a lot more complicated to set-up.
-7. Enable cron with `sudo systemctl enable cronie` and `sudo systemctl start cronie`.
-
-**Why run anacron as root?** : This is usually how it's done, which is written down in the man page.
+I've documented all my approach to backups in a blog post which you can read [here](https://blog.nmarier.com/2020/08/02/my-self-hosted-file-sharing-syncing-backup-solution/)!
 
 #### env variables
 
