@@ -20,3 +20,5 @@
 	st = stash
 [push]
 	default = current
+[pull]
+	rebase = false

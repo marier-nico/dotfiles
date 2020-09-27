@@ -166,9 +166,10 @@ Make sure those variables don't exist before running the command or it won't wor
 already exist, follow the instructions [here](https://fishshell.com/docs/current/faq.html#why-doesn-t-set-ux-exported-universal-variables-seem-to-work).
 
 1. `set -Ux SHELL /usr/bin/fish`
-2. `set -Ux XDG_CONFIG_HOME \$HOME/.config`
-3. `set -U fish_user_paths \$HOME/.local/bin $fish_user_paths`
-4. `set -U fish_user_paths \$HOME/.cargo/bin $fish_user_paths` (if using Rust)
+2. `set -Ux XDG_CONFIG_HOME $HOME/.config`
+3. `set -Ux XDG_DATA_HOME $HOME/.local/share`
+4. `set -U fish_user_paths $HOME/.local/bin $fish_user_paths`
+5. `set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths` (if using Rust)
 
 Some of these variables will be set in `~/.profile` to make sure they exist when other processes
 get launched from a bash shell, or something which needs `~/.profile`. Note that `~/.cargo/bin`

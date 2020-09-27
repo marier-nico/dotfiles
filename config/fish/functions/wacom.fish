@@ -1,5 +1,5 @@
 function wacom --description "Map the tablet to a given monitor"
-    set input_id (xinput list | awk "/Wacom Intuos S 2 Pen stylus/ { print \$9 }" | sed "s/id=//")
+    set input_id (xinput list | grep "Wacom Intuos.*Pen stylus" | sed -rn 's/^.*id=([[:digit:]]+).*$/\1/p')
     set displays (xrandr | awk "\$2 ~ /^connected\$/ { print \$1 }")
 
     for i in (seq (count $displays))

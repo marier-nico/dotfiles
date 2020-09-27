@@ -26,7 +26,21 @@ monitor_profile=$(autorandr.sh --detected)
 
 # Set workspaces
 case $monitor_profile in
-home1|home2)
+home1)
+    bspc monitor "DP-4" -d 1 2 3
+    bspc monitor "DP-2" -d 4 5 6 7
+    bspc monitor "HDMI-0" -d 8 9 10
+
+    MAIN_MONITOR="DP-2" polybar left &
+    MAIN_MONITOR="DP-2" polybar middle &
+    MAIN_MONITOR="DP-2" polybar right &
+
+    # Polybar resets the padding
+    sleep 1
+    bspc config -m "DP-4" top_padding 0
+    bspc config -m "HDMI-0" top_padding 0
+    ;;
+home2)
     bspc monitor "DP-2" -d 1 2 3
     bspc monitor "DP-4" -d 4 5 6 7
     bspc monitor "HDMI-0" -d 8 9 10
