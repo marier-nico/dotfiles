@@ -1,0 +1,20 @@
+#!/bin/bash
+
+input_id=$(xinput list | grep "Wacom Intuos.*Pen stylus" | sed -rn 's/^.*id=([[:digit:]]+).*$/\1/p')
+mapfile -t displays < <( xrandr | awk "\$2 ~ /^connected\$/ { print \$1 }" )
+
+for i in $(seq 0 $(echo "${#displays[@]} - 1" | bc))
+do
+    echo "[$i]" ${displays[$i]}
+done
+
+echo -n "Which display should I map it to: "
+read -n1 selected
+echo ""
+
+if echo $selected | grep -Pqv "^\d+\$" || (( $selected >= ${#displays[@]} )) || (( $selected < 0 )); then
+    echo "Please choose within the list."
+    exit 1
+fi
+
+exit $(xinput map-to-output $input_id ${displays[$selected]})

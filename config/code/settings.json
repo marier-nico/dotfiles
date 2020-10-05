@@ -7,7 +7,7 @@
     "explorer.confirmDragAndDrop": false,
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
-    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "terminal.integrated.shell.linux": "/bin/zsh",
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Nord",
     "python.venvPath": "~/.virtualenvs",

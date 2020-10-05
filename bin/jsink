@@ -1,0 +1,67 @@
+#!/bin/bash
+
+usage() {
+    echo $1
+    echo "Usage: jsink COMMAND [SINK_NAME]"
+    echo "  COMMAND : {mk, rm, ls}"
+    echo "  SINK_NAME : the name of the sink to add or remove"
+    echo "              (not required for ls). For mk or rm, this"
+    echo "              should not include \`Jack sync\` or the parens."
+    echo "              Only the name in parens should be provided."
+}
+
+rmsink() {
+    # We expect the sinks and owning modules to be in the same order,
+    # this means that the pactl command should return sinks in the same
+    # order every time it is run. This seems like a safe assumption to make.
+    mapfile -t sinks < <( pactl list sinks | grep "Description: " | sed "s/\sDescription: //" )
+    mapfile -t owning_modules < <( pactl list sinks | grep "Owner Module: " | sed "s/\sOwner Module: //" )
+
+    # Find the index that corresponds to our sink name and unload
+    # the module at that index (which should be the module for our sink).
+    for i in $(seq 0 $(echo "${#sinks[@]} - 1" | bc))
+    do
+        if echo "${sinks[$i]}" | grep -q "Jack sink ($1)"; then
+            pactl unload-module "${owning_modules[$i]}"
+            return 0
+        fi
+    done
+    return 1
+}
+
+command=$1
+sink_name=$2
+
+if [ -z "$command" ]; then
+    usage "Missing command"
+    exit 1
+fi
+
+case $command in
+    "mk")
+        if [ -z "$sink_name" ]; then
+            usage "Missing sink name"
+            exit 1
+        fi
+        pactl load-module module-jack-sink client_name=$sink_name connect=yes
+        echo "Created sink $sink_name"
+        ;;
+    "rm")
+        if [ -z "$sink_name" ]; then
+            usage "Missing sink name"
+            exit 1
+        fi
+        if rmsink $sink_name; then
+            echo "Removed sink $sink_name"
+        else
+            echo "Could not find sink $sink_name"
+            exit 1
+        fi
+        ;;
+    "ls")
+        pactl list sinks | grep "Description: Jack sink (" | sed "s/\sDescription: //"
+        ;;
+    "*")
+        usage "Unrecognized command"
+        exit 1
+esac
