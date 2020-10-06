@@ -13,6 +13,7 @@
     ~/.config/Code - OSS/User/settings.json: config/code/settings.json
     ~/.config/dunst/dunstrc: config/dunst/dunstrc
     ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
+    ~/.config/kitty/onedark.conf: config/kitty/onedark.conf
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.config/polybar/config: config/polybar/config
     ~/.config/ranger/rc.conf: config/ranger/rc.conf

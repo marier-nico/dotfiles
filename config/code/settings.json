@@ -3,13 +3,12 @@
     "editor.minimap.enabled": false,
     "workbench.tree.indent": 12,
     "explorer.confirmDelete": false,
-    "terminal.integrated.rendererType": "dom",
     "explorer.confirmDragAndDrop": false,
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
     "terminal.integrated.shell.linux": "/bin/zsh",
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Atom One Dark",
     "python.venvPath": "~/.virtualenvs",
     "latex-workshop.view.pdf.viewer": "tab",
     "[javascriptreact]": {
@@ -30,4 +29,5 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "terminal.external.linuxExec": "kitty"
 }

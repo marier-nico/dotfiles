@@ -42,6 +42,7 @@ practice not to run random commands you find.
 - [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
 - gtk [ [arch wiki](https://wiki.archlinux.org/index.php/GTK) ]
+  - [Nordic](https://github.com/EliverLara/Nordic) (theme)
 - lxappearance [ [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/) ]
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - [ranger](https://ranger.github.io/) [ [arch wiki](https://wiki.archlinux.org/index.php/Ranger) ]
@@ -59,7 +60,6 @@ practice not to run random commands you find.
 
 - [git](https://github.com/git/git) [ [arch wiki](https://wiki.archlinux.org/index.php/Git) ]
 - [neovim](https://github.com/neovim/neovim)
-- [vim-plug](https://github.com/junegunn/vim-plug)
 - [vscode](https://github.com/microsoft/vscode) [ [arch wiki](https://wiki.archlinux.org/index.php/Visual_Studio_Code) ]
 
 **Media**
@@ -84,13 +84,16 @@ practice not to run random commands you find.
   - [tpm](https://github.com/tmux-plugins/tpm)
   - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
   - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
-  - [nord-tmux](https://github.com/arcticicestudio/nord-tmux)
-- **vim-plug**
+  - [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme)
+- **neovim**
+  - [vim-plug](https://github.com/junegunn/vim-plug)
   - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
-  - [nord](https://www.nordtheme.com/docs/ports/vim/installation)
-    [ Nord colors have to be installed as the terminal color scheme before using this plugin. ]
+  - [nerdtree](https://github.com/preservim/nerdtree)
+  - [vim-fugitive](https://github.com/tpope/vim-fugitive)
+  - [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+  - [onedark](https://github.com/joshdick/onedark.vim)
 - **vscode**
-  - [Nord](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
+  - [Atom One Dark Theme](https://github.com/akamud/vscode-theme-onedark)
 
 **Shell & Term**
 
@@ -107,7 +110,7 @@ practice not to run random commands you find.
 
 **Themes**
 
-- Firefox [Humble Nord](https://addons.mozilla.org/en-US/firefox/addon/humble-nord/).
+- Firefox [One Dark Theme](https://addons.mozilla.org/en-CA/firefox/addon/one-dark-theme/).
 - Rofi [Slate](https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/slate.rasi) (included in this repo).
 - Slack [Nord](https://www.nordtheme.com/docs/ports/slack/installation).
 - Spotify [Nord](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord).

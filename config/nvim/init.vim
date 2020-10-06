@@ -48,7 +48,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'arcticicestudio/nord-vim'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 " --- -------- --- "
@@ -63,7 +63,16 @@ nmap <F8> :TagbarToggle<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
+" For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+" Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+" < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 " Syntax highlighting
-colorscheme nord
+let g:onedark_hide_endofbuffer=1
+let g:onedark_terminal_italics=1
 syntax on
+colorscheme onedark
 
