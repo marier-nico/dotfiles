@@ -29,9 +29,12 @@
     ~/.gitmessage: gitmessage
     ~/.gnupg/gpg.conf: gpg.conf
     ~/.Xresources: Xresources
-    ~/.zpreztorc: zpreztorc
-    ~/.zprofile: zprofile
-    ~/.zshrc: zshrc
+    ~/.zlogin: prezto/runcoms/zlogin
+    ~/.zlogout: prezto/runcoms/zlogout
+    ~/.zpreztorc: prezto/runcoms/zpreztorc
+    ~/.zprofile: prezto/runcoms/zprofile
+    ~/.zshenv: prezto/runcoms/zshenv
+    ~/.zshrc: prezto/runcoms/zshrc
 
 - shell:
     - ["git submodule update --init --recursive", Installing submodules]
