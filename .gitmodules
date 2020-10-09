@@ -4,3 +4,6 @@
 [submodule "prezto"]
 	path = prezto
 	url = https://github.com/marier-nico/prezto
+[submodule "bin/autorandr.sh"]
+	path = bin/autorandr.sh
+	url = https://github.com/marier-nico/autorandr.sh
