@@ -127,13 +127,16 @@ necessary to use keyboard shortcuts), follow instructions on the [wiki](https://
 
 I've created some scripts to make some operations more convenient for me, which can be found in the `bin/` folder.
 
-- `jsink.sh` [ A script to add/remove/list JACK-enabled PulseAudio sinks. This enables moving audio from
-               specific applications through JACK easily, which allows fine-grained processing. For example,
-               sending audio from a music player through a DAW before combining it with a microphone input
-               for live streaming. ]
-- `wacom.sh` [ A small script to map my Wacom tablet to a given display. If you choose to use this, make
-               sure you edit it so it works with your tablet. It's very simple to do, just edit the first `grep` command.
-               You should change what I put there to match your own stylus. You can find your stylus name with `xinput list`. ]
+- `jsink` [ A script to add/remove/list JACK-enabled PulseAudio sinks. This enables moving audio from
+            specific applications through JACK easily, which allows fine-grained processing. For example,
+            sending audio from a music player through a DAW before combining it with a microphone input
+            for live streaming. ]
+- `wacom` [ A small script to map my Wacom tablet to a given display and map buttons to keyboard shortcuts.
+            If you choose to use this, make sure you edit it so it works with your tablet. As long as you
+            just have one tablet at a time, mapping to a display will always work. However, button IDs are
+            inconsistent between tablets, so you can use `xev -event button` and press buttons to see what
+            the button IDs are for your tablet's physical buttons. Once you know which IDs your button has,
+            you can replace mine in the script. ]
 
 ### Notes
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-input_id=$(xinput list | grep "Wacom Intuos.*Pen stylus" | sed -rn 's/^.*id=([[:digit:]]+).*$/\1/p')
+pen_input_id=$(xsetwacom list devices | grep 'type: STYLUS' | grep -oP 'id: \K\d+')
+pad_input_id=$(xsetwacom list devices | grep 'type: PAD' | grep -oP 'id: \K\d+')
 mapfile -t displays < <( xrandr | awk "\$2 ~ /^connected\$/ { print \$1 }" )
 
 for i in $(seq 0 $(echo "${#displays[@]} - 1" | bc))
@@ -17,4 +18,9 @@ if echo $selected | grep -Pqv "^\d+\$" || (( $selected >= ${#displays[@]} )) || 
     exit 1
 fi
 
-exit $(xinput map-to-output $input_id ${displays[$selected]})
+# You may want to change the buttons to match your own tablet.
+xinput map-to-output $pen_input_id ${displays[$selected]}
+xsetwacom set $pad_input_id Button 1 "key +ctrl z -ctrl"
+xsetwacom set $pad_input_id Button 3 "key +ctrl y -ctrl"
+
+exit 0
