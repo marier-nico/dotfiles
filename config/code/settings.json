@@ -10,7 +10,6 @@
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Atom One Dark",
     "python.venvPath": "~/.virtualenvs",
-    "python.pythonPath": "python3",
     "latex-workshop.view.pdf.viewer": "tab",
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
