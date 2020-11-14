@@ -6,7 +6,6 @@
     "explorer.confirmDragAndDrop": false,
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
-    "terminal.integrated.shell.linux": "/bin/zsh",
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Atom One Dark",
     "python.venvPath": "~/.virtualenvs",
