@@ -20,6 +20,7 @@
     ~/.config/ranger/rifle.conf: config/ranger/rifle.conf
     ~/.config/rofi/config.rasi: config/rofi/config.rasi
     ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
+    ~/.config/starship.toml: config/zsh/starship.toml
     ~/.config/spicetify/Themes: config/spicetify/Themes
     ~/.config/sxhkd/sxhkdrc: config/sxhkd/sxhkdrc
     ~/.local/bin/autorandr: bin/autorandr.sh/autorandr.sh
@@ -31,12 +32,8 @@
     ~/.gitmessage: gitmessage
     ~/.gnupg/gpg.conf: gpg.conf
     ~/.Xresources: Xresources
-    ~/.zlogin: prezto/runcoms/zlogin
-    ~/.zlogout: prezto/runcoms/zlogout
-    ~/.zpreztorc: prezto/runcoms/zpreztorc
-    ~/.zprofile: prezto/runcoms/zprofile
-    ~/.zshenv: prezto/runcoms/zshenv
-    ~/.zshrc: prezto/runcoms/zshrc
+    ~/.zprofile: config/zsh/zprofile
+    ~/.zshrc: config/zsh/zshrc
 
 - shell:
     - ["git submodule update --init --recursive", Installing submodules]

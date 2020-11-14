@@ -1,0 +1,129 @@
+[aws]
+disabled = true
+
+[battery]
+disabled = true
+
+[character]
+success_symbol = "[⤚](bold green)"
+error_symbol = "[⤚](bold red)"
+vicmd_symbol = "[⤙](bold green)"
+
+[cmake]
+disabled = true
+
+[conda]
+disabled = true
+
+[crystal]
+disabled = true
+
+[dart]
+disabled = true
+
+# [directory]
+
+# [docker_context]
+
+[dotnet]
+disabled = true
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[env_var]
+disabled = true
+
+[erland]
+disabled = true
+
+[gcloud]
+disabled = true
+
+# [git_branch]
+
+# [git_commit]
+
+# [git_state]
+
+# [git_status]
+
+[golang]
+disabled = true
+
+# [hostname]
+
+# [java]
+
+# [jobs]
+
+[julia]
+disabled = true
+
+# [kubernetes]
+
+# [line_break]
+
+[lua]
+disabled = true
+
+# [memory_usage]
+
+# [hg_branch]
+
+[nim]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+# [nodejs]
+
+# [package]
+
+[ocaml]
+disabled = true
+
+[openstack]
+disabled = true
+
+[perl]
+disabled = true
+
+[php]
+disabled = true
+
+# [python]
+
+[ruby]
+disabled = true
+
+# [rust]
+
+# [shlvl]
+
+[singularity]
+disabled = true
+
+[swift]
+disabled = true
+
+# [status]
+
+# [terraform]
+
+# [time]
+
+# [username]
+
+[zig]
+disabled = true
+
+[custom]
+disabled = true
+
+[purescript]
+disabled = true

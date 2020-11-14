@@ -1,0 +1,19 @@
+# Source zsh-autosuggestions
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+ZSH_AUTOSUGGEST_USE_ASYNC=yes
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Source zsh-syntax-highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Source aliases
+source ~/.dots/config/zsh/aliases.zsh
+
+# Source ssh-agent
+source ~/.dots/config/zsh/ssh-agent.zsh
+
+# Load virtualenvwrapper
+source ~/.local/bin/virtualenvwrapper.sh
+
+# Load starship (prompt)
+eval "$(starship init zsh)"

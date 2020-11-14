@@ -94,12 +94,17 @@ practice not to run random commands you find.
   - [onedark](https://github.com/joshdick/onedark.vim)
 - **vscode**
   - [Atom One Dark Theme](https://github.com/akamud/vscode-theme-onedark)
+- **zsh**
+  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) [ [arch package](https://www.archlinux.org/packages/zsh-autosuggestions) ]
+  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) [ [arch package](https://www.archlinux.org/packages/?q=zsh-syntax-highlighting) ]
+  - [starship](https://starship.rs/)
+- **python**
+  - [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
 
 **Shell & Term**
 
 - [kitty](https://sw.kovidgoyal.net/kitty/)
 - [zsh](https://wiki.archlinux.org/index.php/zsh)
-- [prezto](https://github.com/sorin-ionescu/prezto)
 - [tmux](https://github.com/tmux/tmux/wiki) [ [arch wiki](https://wiki.archlinux.org/index.php/Tmux) ]
 
 **Social**
