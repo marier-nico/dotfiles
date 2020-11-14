@@ -38,14 +38,14 @@ practice not to run random commands you find.
 
 - [awesomewm](https://awesomewm.org/) [ [arch wiki](https://wiki.archlinux.org/index.php/Awesome) ]
 - [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) [ [aur package](https://aur.archlinux.org/packages/betterlockscreen/) ]
-- [rofi](https://github.com/davatorium/rofi) [ [arch wiki](https://wiki.archlinux.org/index.php/Rofi) ]
-- [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
 - gtk [ [arch wiki](https://wiki.archlinux.org/index.php/GTK) ]
   - [Nordic](https://github.com/EliverLara/Nordic) (theme)
 - lxappearance [ [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/) ]
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
+- [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
 - [ranger](https://ranger.github.io/) [ [arch wiki](https://wiki.archlinux.org/index.php/Ranger) ]
+- [rofi](https://github.com/davatorium/rofi) [ [arch wiki](https://wiki.archlinux.org/index.php/Rofi) ]
 - **Fonts**
   - [FontAwesome](https://fontawesome.com) [ [arch package](https://www.archlinux.org/packages/community/any/ttf-font-awesome/) ]
   - [Iosevka](https://typeof.net/Iosevka/)
@@ -53,8 +53,8 @@ practice not to run random commands you find.
 
 **Documents**
 
-- [xreader](https://github.com/linuxmint/xreader/) [ [arch package](https://www.archlinux.org/packages/community/x86_64/xreader/) ]
 - [xournal++](https://github.com/xournalpp/xournalpp)
+- [xreader](https://github.com/linuxmint/xreader/) [ [arch package](https://www.archlinux.org/packages/community/x86_64/xreader/) ]
 
 **Editor & Code**
 
@@ -64,54 +64,54 @@ practice not to run random commands you find.
 
 **Media**
 
-- [vlc](https://www.videolan.org/vlc/)
 - [spicetify-cli](https://github.com/khanhas/spicetify-cli)
 - spotify [ [aur package](https://aur.archlinux.org/packages/spotify/) ]
+- [vlc](https://www.videolan.org/vlc/)
 
 **Misc**
 
 - [acpilight](https://gitlab.com/wavexx/acpilight) [ [arch package](https://www.archlinux.org/packages/community/any/acpilight/) ]
+- arandr [ [arch package](https://www.archlinux.org/packages/community/any/arandr/) ]
 - [bitwarden-cli](https://help.bitwarden.com/article/cli/) [ [AUR](https://aur.archlinux.org/packages/bitwarden-cli/) ]
 - [bitwarden-rofi](https://github.com/mattydebie/bitwarden-rofi) [ [AUR](https://aur.archlinux.org/packages/bitwarden-rofi) ]
-- [yay](https://github.com/Jguer/yay)
 - [xclip](https://github.com/astrand/xclip) [ [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/) ]
 - xrandr [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr) ]
-- arandr [ [arch package](https://www.archlinux.org/packages/community/any/arandr/) ]
+- [yay](https://github.com/Jguer/yay)
 
 **Plugins**
 
-- **tmux**
-  - [tpm](https://github.com/tmux-plugins/tpm)
-  - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
-  - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
-  - [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme)
 - **neovim**
+  - [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+  - [nerdtree](https://github.com/preservim/nerdtree)
+  - [onedark](https://github.com/joshdick/onedark.vim)
+  - [vim-fugitive](https://github.com/tpope/vim-fugitive)
   - [vim-plug](https://github.com/junegunn/vim-plug)
   - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
-  - [nerdtree](https://github.com/preservim/nerdtree)
-  - [vim-fugitive](https://github.com/tpope/vim-fugitive)
-  - [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
-  - [onedark](https://github.com/joshdick/onedark.vim)
+- **python**
+  - [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
+- **tmux**
+  - [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme)
+  - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+  - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
+  - [tpm](https://github.com/tmux-plugins/tpm)
 - **vscode**
   - [Atom One Dark Theme](https://github.com/akamud/vscode-theme-onedark)
 - **zsh**
+  - [starship](https://starship.rs/)
   - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) [ [arch package](https://www.archlinux.org/packages/zsh-autosuggestions) ]
   - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) [ [arch package](https://www.archlinux.org/packages/?q=zsh-syntax-highlighting) ]
-  - [starship](https://starship.rs/)
-- **python**
-  - [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
 
 **Shell & Term**
 
 - [kitty](https://sw.kovidgoyal.net/kitty/)
-- [zsh](https://wiki.archlinux.org/index.php/zsh)
 - [tmux](https://github.com/tmux/tmux/wiki) [ [arch wiki](https://wiki.archlinux.org/index.php/Tmux) ]
+- [zsh](https://wiki.archlinux.org/index.php/zsh)
 
 **Social**
 
 - [Discord](https://discord.com/)
-- [telegram](https://telegram.org/)
 - [slack](https://slack.com/)
+- [telegram](https://telegram.org/)
 
 **Themes**
 
