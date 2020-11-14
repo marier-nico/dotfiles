@@ -1,9 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "prezto"]
-	path = prezto
-	url = https://github.com/marier-nico/prezto
 [submodule "bin/autorandr.sh"]
 	path = bin/autorandr.sh
 	url = https://github.com/marier-nico/autorandr.sh
