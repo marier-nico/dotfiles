@@ -1,6 +1,18 @@
 #!/bin/bash
 
 case "$1" in
+""|"-h"|"--help"|"help")
+    echo "Usage: $0 SUBCOMMAND"
+    echo "Manage GPG keys through a friendly and efficient interface!"
+    echo ""
+    echo "Available subcommands:"
+    echo "  - ls: Show GPG keys in the keychain."
+    echo "  - renew: Update the expiration of a GPG key and optionally its subkeys."
+    echo "  - import: Import a GPG key or multiple keys."
+    echo "  - export: Export a GPG key and optionally its subkeys."
+    echo ""
+    echo '  Try `$0 SUBCOMMAND -h` to see the help for that subcommand.'
+    ;;
 "ls")
     case "$2" in
     "-s"|"--secret"|"--priv")
