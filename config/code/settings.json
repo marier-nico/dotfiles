@@ -23,5 +23,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "terminal.external.linuxExec": "kitty",
-    "editor.rulers": [ 99 ]
+    "editor.rulers": [
+        99
+    ],
+    "latex-workshop.message.update.show": false
 }

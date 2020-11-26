@@ -136,6 +136,8 @@ I've created some scripts to make some operations more convenient for me, which 
             specific applications through JACK easily, which allows fine-grained processing. For example,
             sending audio from a music player through a DAW before combining it with a microphone input
             for live streaming. ]
+- `pg`    [ A script to manage GPG keys, which is friendlier, more efficient, and overall more convenient
+            to use than the standard GPG CLI interface. ]
 - `wacom` [ A small script to map my Wacom tablet to a given display and map buttons to keyboard shortcuts.
             If you choose to use this, make sure you edit it so it works with your tablet. As long as you
             just have one tablet at a time, mapping to a display will always work. However, button IDs are
