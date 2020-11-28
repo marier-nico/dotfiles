@@ -41,6 +41,7 @@ practice not to run random commands you find.
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
 - gtk [ [arch wiki](https://wiki.archlinux.org/index.php/GTK) ]
   - [Nordic](https://github.com/EliverLara/Nordic) (theme)
+- [babita cursor](https://github.com/ful1e5/Bibata_Cursor)
 - lxappearance [ [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/) ]
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
