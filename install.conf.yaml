@@ -32,6 +32,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage
     ~/.gnupg/gpg.conf: gpg.conf
+    ~/.ideavimrc: config/intellij-idea/ideavimrc
     ~/.Xresources: Xresources
     ~/.zprofile: config/zsh/zprofile
     ~/.zshrc: config/zsh/zshrc
