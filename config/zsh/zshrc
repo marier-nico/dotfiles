@@ -12,8 +12,10 @@ source ~/.dots/config/zsh/aliases.zsh
 # Source ssh-agent
 source ~/.dots/config/zsh/ssh-agent.zsh
 
-# Load virtualenvwrapper
-source ~/.local/bin/virtualenvwrapper.sh
+# Load pyenv
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # Load starship (prompt)
 eval "$(starship init zsh)"
