@@ -89,7 +89,8 @@ practice not to run random commands you find.
   - [vim-plug](https://github.com/junegunn/vim-plug)
   - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - **python**
-  - [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
+  - [pyenv](https://github.com/pyenv/pyenv)
+  - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 - **tmux**
   - [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme)
   - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
