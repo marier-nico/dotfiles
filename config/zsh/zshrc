@@ -13,6 +13,7 @@ source ~/.dots/config/zsh/aliases.zsh
 source ~/.dots/config/zsh/ssh-agent.zsh
 
 # Load pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
