@@ -33,8 +33,10 @@
     ~/.gitmessage: gitmessage
     ~/.gnupg/gpg.conf: gpg.conf
     ~/.ideavimrc: config/intellij-idea/ideavimrc
+    ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
     ~/.zprofile: config/zsh/zprofile
+    ~/.zshenv: config/zsh/zshenv
     ~/.zshrc: config/zsh/zshrc
 
 - shell:

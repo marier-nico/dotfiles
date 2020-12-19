@@ -1,16 +1,16 @@
 #!/bin/sh
 
-# Source xresources
-xrdb ~/.Xresources
+# Set path to dotfiles
+dots="$HOME/.dots"
 
 # Kill running programs
-killall polybar
 killall sxhkd
+killall dunst
 
 # Bspwm config
 bspc config border_width 2
-bspc config normal_border_color "#3b4252"
-bspc config focused_border_color "#5e81ac"
+bspc config normal_border_color "#282c34"
+bspc config focused_border_color "#d19a66"
 bspc config window_gap 4
 
 bspc config split_ratio 0.52
@@ -21,47 +21,30 @@ bspc config focus_follows_pointer true
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 
-autorandr.sh --change
-monitor_profile=$(autorandr.sh --detected)
+$dots/bin/autorandr.sh/autorandr.sh --change
+monitor_profile=$($dots/bin/autorandr.sh/autorandr.sh --detected)
 
 # Set workspaces
 case $monitor_profile in
 home1)
-    bspc monitor "DP-4" -d 1 2 3
-    bspc monitor "DP-2" -d 4 5 6 7
+    bspc monitor "DP-4" -d 1 2 3 4
+    bspc monitor "DP-2" -d 5 6 7
     bspc monitor "HDMI-0" -d 8 9 10
-
-    MAIN_MONITOR="DP-2" polybar left &
-    MAIN_MONITOR="DP-2" polybar middle &
-    MAIN_MONITOR="DP-2" polybar right &
-
-    # Polybar resets the padding
-    sleep 1
-    bspc config -m "DP-4" top_padding 0
-    bspc config -m "HDMI-0" top_padding 0
     ;;
 home2)
-    bspc monitor "DP-2" -d 1 2 3
-    bspc monitor "DP-4" -d 4 5 6 7
+    bspc monitor "DP-2" -d 1 2 3 4
+    bspc monitor "DP-4" -d 5 6 7
     bspc monitor "HDMI-0" -d 8 9 10
-
-    MAIN_MONITOR="DP-4" polybar left &
-    MAIN_MONITOR="DP-4" polybar middle &
-    MAIN_MONITOR="DP-4" polybar right &
-
-    # Polybar resets the padding
-    sleep 1
-    bspc config -m "DP-2" top_padding 0
-    bspc config -m "HDMI-0" top_padding 0
     ;;
 *)
     notify-send "Monitor config not found" "Could not setup bspwm workspaces for this monitor config"
+    bspc monitor -d 1 2 3 4 5 6 7 8 9 10
     ;;
 esac
 
 # Autostart programs
+$dots/config/polybar/launch.sh
 SXHKD_SHELL='/usr/bin/sh' sxhkd &
-dunst &
 picom &
 
 # Keyboard settings
@@ -70,6 +53,8 @@ xset r rate 150 50
 
 # Other settings
 feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/desktop/exploring.png
+xrdb ~/.Xresources
+
 
 # Bspwm rule examples
 #bspc rule -a Gimp desktop='^8' state=floating follow=on

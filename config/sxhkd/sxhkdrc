@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # program launcher
 super + @space
@@ -19,7 +19,7 @@ super + Escape
 #
 
 # quit bspwm normally
-super + alt + Escape
+super + ctrl + q
 	bspc quit
 
 # close and kill
@@ -125,7 +125,7 @@ super + u
 	sh ~/.config/bspwm/bspwmrc
 
 # lock the screen
-super + x
+super + q
 	betterlockscreen --lock blur
 
 # use bitwarden rofi

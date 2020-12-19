@@ -7,48 +7,91 @@
 ;
 ;=====================================================
 
+; ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+; ┃                C O L O R S                ┃
+; ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
 [colors]
-nord0 = #2e3440
-nord1 = #3b4252
-nord2 = #434c5e
-nord3 = #4c566a
-nord4 = #d8dee9
-nord5 = #e5e9f0
-nord6 = #eceff4
-nord7 = #8fbcbb
-nord8 = #88c0d0
-nord9 = #81a1c1
-nord10 = #5e81ac
-nord11 = #bf616a
-nord12 = #d08770
-nord13 = #ebcb8b
-nord14 = #a3be8c
-nord15 = #b48ead
+foreground = #abb2bf
+background = #282c34
+transparent-bg = #cb282c34
 
-nord0transparent = #d02e3440
-nord1transparent = #d03b4252
-nord11transparent = #d0bf616a
+; black
+color0 = #424957
+color8 = #586174
+; red
+color1 = #e06c75
+color9 = #be5046
+; green
+color2 = #98c379
+color10 = #98c379
+; yellow
+color3 = #d19a66
+color11 = #e5c07b
+; blue
+color4 = #61afef
+color12 = #2b87d3
+; magenta
+color5 = #c678dd
+color13 = #c678dd
+; cyan
+color6 = #56b6c2
+color14 = #56b6c2
+; white
+color7 = #828997
+color15 = #5c6370
 
-[bar/left]
-monitor = ${env:MAIN_MONITOR:HDMI-0}
-radius = 6.0
-fixed-center = true
-offset-x = 3
-offset-y = 3
-width = 290
-height = 27
+; ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+; ┃                G L O B A L                ┃
+; ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-background = ${colors.nord0transparent}
-text = ${colors.nord4}
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[bar/main]
+background = ${colors.transparent-bg}
+text = ${colors.foreground}
+
+height = 22
+offset-y = 5px
 
 font-0 = Iosevka:style=Mesium:pixelsize=11
-font-1 = Font Awesome 5 Free Regular:style=Regular:pixelsize=12
-font-2 = Font Awesome 5 Free Solid:style=Solid:pixelsize=12
-font-3 = Font Awesome 5 Brands Regular:style=Regular:pixelsize=12
+font-1 = Iosevka:style=Bold:pixelsize=12
+font-2 = Font Awesome 5 Free Regular:style=Regular:pixelsize=12
+font-3 = Font Awesome 5 Free Solid:style=Solid:pixelsize=12
+font-4 = Font Awesome 5 Brands Regular:style=Regular:pixelsize=12
 
-modules-left = bspwm
-modules-center = 
-modules-right =
+; ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+; ┃            W O R K S P A C E S            ┃
+; ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+[bar/workspaces]
+inherit = bar/main
+monitor = ${env:MONITOR:}
+
+modules-center = bspwm
+
+width = 100
+background = ${colors.transparent-bg}
+text = ${colors.foreground}
+offset-x = 100%:-370
+radius = 6
+
+; ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+; ┃                S T A T U S                ┃
+; ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+[bar/system]
+inherit = bar/main
+monitor = ${env:MONITOR:}
+offset-x = 100%:-265
+
+modules-center = pulseaudio wireless-network wired-network battery sep date
+
+width = 260
+radius = 6
+
 
 ; Cover the bar when in full screen
 wm-restack = bspwm
@@ -56,164 +99,100 @@ wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[bar/middle]
-inherit = bar/left
-width = 600
-height = 27
-offset-x = 33.5%
-
-modules-left =
-modules-center = title
-modules-right =
-
-[bar/right]
-inherit = bar/left
-width = 600
-height = 27
-offset-x = 100%:-603
-tray-position = right
-module-margin = 1
-padding-right = 1
-
-modules-left =
-modules-center =
-modules-right = pulseaudio wireless-network wired-network memory cpu date battery
+; ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+; ┃               M O D U L E S               ┃
+; ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 [module/title]
 type = internal/xwindow
 label = %title%
 label-maxlen = 30
-label-empty = 
-label-empty-foreground = ${colors.nord11}
+
+; ═════════════════════════════════════════════
 
 [module/bspwm]
 type = internal/bspwm
-pin-workspaces = false
+pin-workspaces = true
+format-font = 2
 
-label-focused = 
-label-focused-foreground = ${colors.nord7}
-label-focused-background = ${colors.nord1transparent}
+label-focused = %name%
+label-focused-foreground = ${colors.color2}
+label-focused-background = ${colors.color0}
 label-focused-padding = 1
 
-label-occupied = 
-label-occupied-foreground = ${colors.nord9}
+label-occupied = %name%
+label-occupied-foreground = ${colors.color3}
 label-occupied-padding = 1
 
-label-urgent = 
-label-urgent-background = ${colors.nord11}
+label-urgent = %name%!
+label-urgent-foreground = ${colors.background}
+label-urgent-background = ${colors.color1}
 label-urgent-padding = 1
 
-label-empty = 
-label-empty-foreground = ${colors.nord10}
+label-empty = %name%
+label-empty-foreground = ${colors.color1}
 label-empty-padding = 1
 
-[module/mpd]
-type = internal/mpd
-format-online = <icon-prev> <label-song> <toggle> <icon-next>
-
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
-
-label-song-maxlen = 25
-label-song-ellipsis = true
-
-[module/backlight]
-type = internal/xbacklight
-
-format = <label> <bar>
-label = BL
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = ${colors.nord4}
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = ${colors.nord13}
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.nord3}
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.nord15}
-label = %percentage%%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.nord7}
-label = %percentage_used%%
+; ═════════════════════════════════════════════
 
 [module/wired-network]
 type = internal/network
-interface = enp31s0
+interface = enp36s0f3u3u4u2
 interval = 3.0
 
-format-connected = <label-connected>
-label-connected = %{F#a3be8c}%{F-} %downspeed%
-label-connected-foreground = ${colors.nord4}
+label-connected =  %downspeed%
+label-connected-padding = 1
+label-connected-foreground = ${colors.color2}
 
-format-disconnected = <label-disconnected>
 label-disconnected = 
-label-disconnected-foreground = ${colors.nord3}
+label-disconnected-padding = 1
+label-disconnected-foreground = ${colors.color2}
+
+; ═════════════════════════════════════════════
 
 [module/wireless-network]
 inherit = module/wired-network
 interface = wlp58s0
 
-label-connected = %{F#a3be8c}%{F-} %downspeed%
+label-connected =  %downspeed%
+label-connected-padding = 1
+label-connected-foreground = ${colors.color2}
+
 label-disconnected = 
+label-disconnected-padding = 1
+label-disconnected-foreground = ${colors.color2}
+
+; ═════════════════════════════════════════════
 
 [module/date]
 type = internal/date
 interval = 5
+label = %date% - %time%
 
-date = " %Y-%m-%d"
-date-alt = " %Y-%m-%d"
-
+date = "%b %e"
 time = %H:%M
-time-alt = %H:%M:%S
 
-format-prefix = 
-format-prefix-foreground = ${colors.nord10}
+format-foreground = ${colors.color4}
+format-padding = 1
 
-label = %date% %time%
+; ═════════════════════════════════════════════
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
-label-volume = " "
-label-volume-foreground = ${colors.nord13}
+use-ui-max = false
+
+format-volume = <label-volume>
+format-volume-padding = 1
+label-volume = " %percentage%%"
+label-volume-foreground = ${colors.color3}
 
 format-muted-prefix = " "
-format-muted-foreground = ${colors.nord13}
+format-muted-foreground = ${colors.color3}
+format-muted-padding = 1
 label-muted = muted
 
-# backup character (unifont?) ━
-bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.nord14}
-bar-volume-foreground-1 = ${colors.nord14}
-bar-volume-foreground-2 = ${colors.nord14}
-bar-volume-foreground-3 = ${colors.nord13}
-bar-volume-foreground-4 = ${colors.nord13}
-bar-volume-foreground-5 = ${colors.nord12}
-bar-volume-foreground-6 = ${colors.nord11}
-bar-volume-gradient = false
-bar-volume-indicator = -
-bar-volume-indicator-font = 1
-bar-volume-fill = -
-bar-volume-fill-font = 1
-bar-volume-empty = -
-bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${colors.nord3}
+; ═════════════════════════════════════════════
 
 [module/battery]
 type = internal/battery
@@ -222,51 +201,31 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
+format-charging-padding = 1
 
 format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-padding = 1
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.nord14}
+format-full-prefix-foreground = ${colors.color12}
+format-full-padding = 1
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.nord13}
+ramp-capacity-foreground = ${colors.color3}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${colors.nord14}
+animation-charging-foreground = ${colors.color3}
 animation-charging-framerate = 750
 
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
+; ═════════════════════════════════════════════
 
-format = <ramp> <label>
-format-warn = <ramp> <label-warn>
+[module/sep]
+type = custom/text
+content = "|"
 
-label = %temperature%
-label-warn = %temperature%
-label-warn-foreground = ${colors.nord12}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-ramp-foreground = ${colors.nord13}
-
-[settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-
-[global/wm]
-margin-top = 5
-margin-bottom = 5
-
-; vim:ft=dosini
+content-foreground = ${colors.foreground}
+content-padding = 0
