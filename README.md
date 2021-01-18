@@ -74,6 +74,9 @@ practice not to run random commands you find.
 - arandr [ [arch package](https://www.archlinux.org/packages/community/any/arandr/) ]
 - [bitwarden-cli](https://help.bitwarden.com/article/cli/) [ [AUR](https://aur.archlinux.org/packages/bitwarden-cli/) ]
 - [bitwarden-rofi](https://github.com/mattydebie/bitwarden-rofi) [ [AUR](https://aur.archlinux.org/packages/bitwarden-rofi) ]
+- [seahorse](https://wiki.gnome.org/Apps/Seahorse) [ [arch package](https://archlinux.org/packages/extra/x86_64/seahorse/) ]
+  - [libgnome-keyring](https://gitlab.gnome.org/GNOME/libgnome-keyring) [ [arch package](https://archlinux.org/packages/extra/x86_64/libgnome-keyring/) ]
+  - [dconf-editor](https://wiki.gnome.org/Apps/DconfEditor) [ [arch package](https://archlinux.org/packages/extra/x86_64/dconf-editor/) ]
 - [xclip](https://github.com/astrand/xclip) [ [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/) ]
 - xrandr [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr) ]
 - [paru](https://github.com/morganamilo/paru)

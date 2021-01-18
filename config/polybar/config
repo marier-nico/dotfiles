@@ -75,7 +75,7 @@ modules-center = bspwm
 width = 100
 background = ${colors.transparent-bg}
 text = ${colors.foreground}
-offset-x = 100%:-370
+offset-x = 100%:-390
 radius = 6
 
 ; ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -85,11 +85,11 @@ radius = 6
 [bar/system]
 inherit = bar/main
 monitor = ${env:MONITOR:}
-offset-x = 100%:-265
+offset-x = 100%:-285
 
 modules-center = pulseaudio wireless-network wired-network battery sep date
 
-width = 260
+width = 280
 radius = 6
 
 
@@ -137,7 +137,7 @@ label-empty-padding = 1
 
 [module/wired-network]
 type = internal/network
-interface = enp36s0f3u3u4u2
+interface = ${env:WIRED_INTERFACE:none}
 interval = 3.0
 
 label-connected =  %downspeed%
@@ -152,7 +152,7 @@ label-disconnected-foreground = ${colors.color2}
 
 [module/wireless-network]
 inherit = module/wired-network
-interface = wlp58s0
+interface = ${env:WIRELESS_INTERFACE:none}
 
 label-connected =  %downspeed%
 label-connected-padding = 1

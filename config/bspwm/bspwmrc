@@ -6,6 +6,7 @@ dots="$HOME/.dots"
 # Kill running programs
 killall sxhkd
 killall dunst
+killall polybar
 
 # Bspwm config
 bspc config border_width 2

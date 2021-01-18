@@ -28,6 +28,7 @@
     ~/.local/bin/pg: bin/pg
     ~/.local/bin/wacom: bin/wacom
     ~/.profile: profile
+    ~/.terraformrc: terraformrc
     ~/.tmux.conf: tmux.conf
     ~/.gitconfig: gitconfig
     ~/.gitmessage: gitmessage

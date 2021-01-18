@@ -12,6 +12,9 @@ source ~/.dots/config/zsh/aliases.zsh
 # Source ssh-agent
 source ~/.dots/config/zsh/ssh-agent.zsh
 
+# Load venv-wrapper
+eval "$(venv-wrapper init)"
+
 # Load pyenv
 eval "$(pyenv init -)"
 
