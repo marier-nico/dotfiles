@@ -151,6 +151,12 @@ I've created some scripts to make some operations more convenient for me, which 
 
 ### Notes
 
+#### Adding non-ldap keyservers in Seahorse
+
+This is a bit counter-intuitive, but the settings need to manually be edited from the command-line.
+Use `dconf-editor /desktop/gnome/crypto/pgp/keyservers` and manually add your keyserver to the
+custom value.
+
 #### backups
 
 I've documented all my approach to backups in a blog post which you can read [here](https://blog.nmarier.com/2020/08/02/my-self-hosted-file-sharing-syncing-backup-solution/)!
