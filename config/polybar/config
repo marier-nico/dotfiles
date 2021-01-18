@@ -201,13 +201,16 @@ full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-charging-padding = 1
+label-charging-foreground = ${colors.color4}
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-padding = 1
+label-discharging-foreground = ${colors.color4}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.color12}
+format-full-prefix-foreground = ${colors.color2}
 format-full-padding = 1
+label-full-foreground = ${colors.color2}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -217,14 +220,8 @@ ramp-capacity-foreground = ${colors.color3}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${colors.color3}
 animation-charging-framerate = 750
-animation-charging-foreground = ${colors.color2}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.color2}
+animation-charging-foreground = ${colors.color3}
 
 ; ═════════════════════════════════════════════
 
