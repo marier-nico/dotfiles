@@ -41,10 +41,40 @@ height = 27
 background = ${colors.nord0transparent}
 text = ${colors.nord4}
 
-font-0 = Iosevka:style=Mesium:pixelsize=11
-font-1 = Font Awesome 5 Free Regular:style=Regular:pixelsize=12
-font-2 = Font Awesome 5 Free Solid:style=Solid:pixelsize=12
-font-3 = Font Awesome 5 Brands Regular:style=Regular:pixelsize=12
+font-0 = Iosevka:style=Medium:pixelsize=11
+font-1 = Iosevka:style=Bold:pixelsize=12
+font-2 = FontAwesome:style=Regular:pixelsize=12
+font-3 = FontAwesome:style=Solid:pixelsize=12
+
+; ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+; ┃            W O R K S P A C E S            ┃
+; ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+[bar/workspaces]
+inherit = bar/main
+monitor = ${env:MONITOR:}
+
+modules-center = bspwm
+
+width = 100
+background = ${colors.transparent-bg}
+text = ${colors.foreground}
+offset-x = 100%:-370
+radius = 6
+
+; ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+; ┃                S T A T U S                ┃
+; ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+[bar/system]
+inherit = bar/main
+monitor = ${env:MONITOR:}
+offset-x = 100%:-265
+
+modules-center = pulseaudio wireless-network wired-network battery sep date
+
+width = 260
+radius = 6
 
 modules-left = bspwm
 modules-center = 
@@ -222,22 +252,28 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
+format-charging-padding = 1
+label-charging-foreground = ${colors.color2}
 
 format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-padding = 1
+label-discharging-foreground = ${colors.color2}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.nord14}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.nord13}
+format-full-prefix-foreground = ${colors.color2}
+label-full-foreground = ${colors.color2}
+format-full-padding = 1
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${colors.nord14}
 animation-charging-framerate = 750
+animation-charging-foreground = ${colors.color2}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.color2}
 
 [module/temperature]
 type = internal/temperature

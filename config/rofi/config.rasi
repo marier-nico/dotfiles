@@ -1,10 +1,8 @@
 /** Configured For Applets **/
 
 configuration {
-  show-icons: true;
-  icon-theme: "Papirus";
   location: 5;
-  terminal: "alacritty";
+  terminal: "kitty";
   yoffset: -50;
   xoffset: -20;
 }

@@ -4,8 +4,9 @@
 xrdb ~/.Xresources
 
 # Kill running programs
-killall polybar
 killall sxhkd
+killall dunst
+killall polybar
 
 # Bspwm config
 bspc config border_width 2
@@ -27,32 +28,14 @@ monitor_profile=$(autorandr.sh --detected)
 # Set workspaces
 case $monitor_profile in
 home1)
-    bspc monitor "DP-4" -d 1 2 3
-    bspc monitor "DP-2" -d 4 5 6 7
-    bspc monitor "HDMI-0" -d 8 9 10
-
-    MAIN_MONITOR="DP-2" polybar left &
-    MAIN_MONITOR="DP-2" polybar middle &
-    MAIN_MONITOR="DP-2" polybar right &
-
-    # Polybar resets the padding
-    sleep 1
-    bspc config -m "DP-4" top_padding 0
-    bspc config -m "HDMI-0" top_padding 0
+    bspc monitor "DP-1-2" -d 1 2 3 4
+    bspc monitor "DP-1-1" -d 5 6 7
+    bspc monitor "DP-1-3" -d 8 9 10
     ;;
 home2)
-    bspc monitor "DP-2" -d 1 2 3
-    bspc monitor "DP-4" -d 4 5 6 7
-    bspc monitor "HDMI-0" -d 8 9 10
-
-    MAIN_MONITOR="DP-4" polybar left &
-    MAIN_MONITOR="DP-4" polybar middle &
-    MAIN_MONITOR="DP-4" polybar right &
-
-    # Polybar resets the padding
-    sleep 1
-    bspc config -m "DP-2" top_padding 0
-    bspc config -m "HDMI-0" top_padding 0
+    bspc monitor "DP-1-3" -d 1 2 3 4
+    bspc monitor "DP-1-1" -d 5 6 7
+    bspc monitor "DP-1-2" -d 8 9 10
     ;;
 *)
     notify-send "Monitor config not found" "Could not setup bspwm workspaces for this monitor config"
@@ -60,9 +43,10 @@ home2)
 esac
 
 # Autostart programs
+$dots/config/polybar/launch.sh
 SXHKD_SHELL='/usr/bin/sh' sxhkd &
+compton &
 dunst &
-picom &
 
 # Keyboard settings
 setxkbmap ca
