@@ -12,9 +12,11 @@ source ~/.dots/config/zsh/aliases.zsh
 # Source ssh-agent
 source ~/.dots/config/zsh/ssh-agent.zsh
 
-# Load python stuff
+# Load venv-wrapper
 eval "$(venv-wrapper init)"
-source $HOME/.poetry/env
+
+# Load pyenv
+eval "$(pyenv init -)"
 
 # Load starship (prompt)
 eval "$(starship init zsh)"

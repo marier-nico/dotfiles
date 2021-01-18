@@ -1,6 +1,31 @@
 [colors]
-    background = "#2e3440"
-    foreground = "#d8dee9"
+    foreground = "#ffffff"
+    background = "#282c34"
+
+    # black
+    color0 = "#424957"
+    color8 = "#586174"
+    # red
+    color1 = "#e06c75"
+    color9 = "#be5046"
+    # green
+    color2 = "#98c379"
+    color10 = "#98c379"
+    # yellow
+    color3 = "#d19a66"
+    color11 = "#e5c07b"
+    # blue
+    color4 = "#61afef"
+    color12 = "#2b87d3"
+    # magenta
+    color5 = "#c678dd"
+    color13 = "#c678dd"
+    # cyan
+    color6 = "#56b6c2"
+    color14 = "#56b6c2"
+    # white
+    color7 = "#828997"
+    color15 = "#5c6370"
 
 [global]
     ### Display ###
@@ -8,18 +33,19 @@
     monitor = 0
     follow = mouse
 
-    geometry = "540x5-10+32"
+    geometry = "540x5-4+34"
     indicate_hidden = yes
     shrink = yes
-    transparency = 0
+    transparency = 10
     notification_height = 0
-    separator_height = 3
+    separator_height = 2
     padding = 12
-    horizontal_padding = 12
+    horizontal_padding = 10
     frame_width = 2
+    corner_radius = 4
 
-    frame_color = "#5e81ac"
-    separator_color = auto
+    frame_color = "#c678dd"
+    separator_color = "#d19a66"
     sort = yes
     idle_threshold = 120
 
@@ -85,5 +111,5 @@
 [urgency_critical]
     background = colors.background
     foreground = colors.foreground
-    frame_color = "#bf616a"
+    frame_color = "#e06c75"
     timeout = 0

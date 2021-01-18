@@ -36,11 +36,10 @@ practice not to run random commands you find.
 
 **Desktop**
 
-- [awesomewm](https://awesomewm.org/) [ [arch wiki](https://wiki.archlinux.org/index.php/Awesome) ]
+- [bspwm](https://github.com/baskerville/bspwm) [ [arch wiki](https://wiki.archlinux.org/index.php/Bspwm) ]
 - [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) [ [aur package](https://aur.archlinux.org/packages/betterlockscreen/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
 - gtk [ [arch wiki](https://wiki.archlinux.org/index.php/GTK) ]
-  - [Nordic](https://github.com/EliverLara/Nordic) (theme)
 - [babita cursor](https://github.com/ful1e5/Bibata_Cursor)
 - lxappearance [ [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/) ]
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
@@ -75,9 +74,12 @@ practice not to run random commands you find.
 - arandr [ [arch package](https://www.archlinux.org/packages/community/any/arandr/) ]
 - [bitwarden-cli](https://help.bitwarden.com/article/cli/) [ [AUR](https://aur.archlinux.org/packages/bitwarden-cli/) ]
 - [bitwarden-rofi](https://github.com/mattydebie/bitwarden-rofi) [ [AUR](https://aur.archlinux.org/packages/bitwarden-rofi) ]
+- [seahorse](https://wiki.gnome.org/Apps/Seahorse) [ [arch package](https://archlinux.org/packages/extra/x86_64/seahorse/) ]
+  - [libgnome-keyring](https://gitlab.gnome.org/GNOME/libgnome-keyring) [ [arch package](https://archlinux.org/packages/extra/x86_64/libgnome-keyring/) ]
+  - [dconf-editor](https://wiki.gnome.org/Apps/DconfEditor) [ [arch package](https://archlinux.org/packages/extra/x86_64/dconf-editor/) ]
 - [xclip](https://github.com/astrand/xclip) [ [arch package](https://www.archlinux.org/packages/extra/x86_64/xclip/) ]
 - xrandr [ [arch wiki](https://wiki.archlinux.org/index.php/Xrandr) ]
-- [yay](https://github.com/Jguer/yay)
+- [paru](https://github.com/morganamilo/paru)
 
 **Plugins**
 
@@ -90,7 +92,6 @@ practice not to run random commands you find.
   - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - **python**
   - [pyenv](https://github.com/pyenv/pyenv)
-  - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 - **tmux**
   - [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme)
   - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
@@ -112,12 +113,13 @@ practice not to run random commands you find.
 **Social**
 
 - [Discord](https://discord.com/)
-- [slack](https://slack.com/)
-- [telegram](https://telegram.org/)
+- [Slack](https://slack.com/)
+- [Telegram](https://telegram.org/)
 
 **Themes**
 
-- Firefox [One Dark Theme](https://addons.mozilla.org/en-CA/firefox/addon/one-dark-theme/).
+- Firefox [Simplerent Fox](https://github.com/MiguelRAvila/SimplerentFox).
+- GTK [Nordic](https://github.com/EliverLara/Nordic).
 - Rofi [Slate](https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/slate.rasi) (included in this repo).
 - Slack [Nord](https://www.nordtheme.com/docs/ports/slack/installation).
 - Spotify [Nord](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord).
@@ -148,6 +150,12 @@ I've created some scripts to make some operations more convenient for me, which 
             you can replace mine in the script. ]
 
 ### Notes
+
+#### Adding non-ldap keyservers in Seahorse
+
+This is a bit counter-intuitive, but the settings need to manually be edited from the command-line.
+Use `dconf-editor /desktop/gnome/crypto/pgp/keyservers` and manually add your keyserver to the
+custom value.
 
 #### backups
 

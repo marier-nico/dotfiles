@@ -9,22 +9,10 @@
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Atom One Dark",
     "python.venvPath": "~/.virtualenvs",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "terminal.external.linuxExec": "kitty",
+    "terminal.external.linuxExec": "alacritty",
     "editor.rulers": [
-        99
+        100
     ],
-    "latex-workshop.message.update.show": false
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "rust-analyzer.checkOnSave.command": "clippy"
 }

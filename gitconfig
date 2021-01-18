@@ -18,9 +18,7 @@
 	rb = rebase -i
 	s  = status
 	st = stash
-[push]
-	default = current
 [pull]
 	rebase = false
 [credential]
-	helper = /usr/lib/git-core/git-credential-libsecret
+	helper = gnome-keyring
