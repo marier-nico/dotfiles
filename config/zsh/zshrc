@@ -15,9 +15,6 @@ source ~/.dots/config/zsh/ssh-agent.zsh
 # Load venv-wrapper
 eval "$(venv-wrapper init)"
 
-# Load pyenv
-eval "$(pyenv init -)"
-
 # Load starship (prompt)
 eval "$(starship init zsh)"
 
