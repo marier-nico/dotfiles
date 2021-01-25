@@ -27,12 +27,7 @@ monitor_profile=$($dots/bin/autorandr.sh/autorandr.sh --detected)
 
 # Set workspaces
 case $monitor_profile in
-home1)
-    bspc monitor "DP-4" -d 1 2 3 4
-    bspc monitor "DP-2" -d 5 6 7
-    bspc monitor "HDMI-0" -d 8 9 10
-    ;;
-home2)
+home1 | home2)
     bspc monitor "DP-2" -d 1 2 3 4
     bspc monitor "DP-4" -d 5 6 7
     bspc monitor "HDMI-0" -d 8 9 10

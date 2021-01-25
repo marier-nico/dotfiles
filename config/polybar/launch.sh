@@ -1,7 +1,7 @@
 #!/bin/sh
 
-interfaces=$(ip addr | grep -i 'inet ' | grep -v 'lo$' | awk '{print $NF}' | sort -u)
-eth=$(echo $interfaces | grep 'enp\|eth' | head -n 1)
+interfaces=$(ip addr | grep -i 'inet ' | awk '{print $NF}' | sort -u)
+eth=$(echo $interfaces | grep 'enp\|enx\|eth' | head -n 1)
 wlp=$(echo $interfaces | grep 'wlp' | head -n 1)
 
 for m in $(polybar --list-monitors | cut -d":" -f1); do

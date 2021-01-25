@@ -12,6 +12,9 @@ source ~/.dots/config/zsh/aliases.zsh
 # Source ssh-agent
 source ~/.dots/config/zsh/ssh-agent.zsh
 
+# Load opam env
+eval $(opam env)
+
 # Load venv-wrapper
 eval "$(venv-wrapper init)"
 
@@ -19,4 +22,4 @@ eval "$(venv-wrapper init)"
 eval "$(pyenv init -)"
 
 # Load starship (prompt)
-eval "$(starship init zsh)"
+eval "$(LC_ALL="fr_CA.UTF-8" starship init zsh)"

@@ -118,7 +118,6 @@ practice not to run random commands you find.
 
 **Themes**
 
-- Firefox [Simplerent Fox](https://github.com/MiguelRAvila/SimplerentFox).
 - GTK [Nordic](https://github.com/EliverLara/Nordic).
 - Rofi [Slate](https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/slate.rasi) (included in this repo).
 - Slack [Nord](https://www.nordtheme.com/docs/ports/slack/installation).
