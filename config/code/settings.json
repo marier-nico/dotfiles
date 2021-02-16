@@ -14,5 +14,8 @@
         100
     ],
     "terminal.integrated.rendererType": "experimentalWebgl",
-    "rust-analyzer.checkOnSave.command": "clippy"
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "window.zoomLevel": 0
 }
