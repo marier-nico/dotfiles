@@ -7,6 +7,7 @@ dots="$HOME/.dots"
 killall sxhkd
 killall dunst
 killall polybar
+killall birdtray
 
 # Bspwm config
 bspc config border_width 2
@@ -42,6 +43,7 @@ esac
 $dots/config/polybar/launch.sh
 SXHKD_SHELL='/usr/bin/sh' sxhkd &
 picom &
+birdtray &
 
 # Keyboard settings
 setxkbmap ca

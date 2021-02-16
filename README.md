@@ -36,6 +36,7 @@ practice not to run random commands you find.
 
 **Desktop**
 
+- [birdtray](https://github.com/gyunaev/birdtray) [ [AUR](https://aur.archlinux.org/packages/birdtray) ]
 - [bspwm](https://github.com/baskerville/bspwm) [ [arch wiki](https://wiki.archlinux.org/index.php/Bspwm) ]
 - [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) [ [aur package](https://aur.archlinux.org/packages/betterlockscreen/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
@@ -106,8 +107,17 @@ practice not to run random commands you find.
 
 **Shell & Term**
 
-- [kitty](https://sw.kovidgoyal.net/kitty/)
+- [alacritty](https://github.com/alacritty/alacritty)
+- [bat](https://github.com/sharkdp/bat)
+- [bottom](https://github.com/ClementTsang/bottom)
+- [exa](https://github.com/ogham/exa)
+- [fd](https://github.com/sharkdp/fd)
+- [hyperfine](https://github.com/sharkdp/hyperfine)
+- [procs](https://github.com/dalance/procs)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [tealdeer](https://github.com/dbrgn/tealdeer)
 - [tmux](https://github.com/tmux/tmux/wiki) [ [arch wiki](https://wiki.archlinux.org/index.php/Tmux) ]
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [zsh](https://wiki.archlinux.org/index.php/zsh)
 
 **Social**
