@@ -1,6 +1,6 @@
 #!/bin/sh
 
-interfaces=$(ip addr | grep -i 'inet ' | awk '{print $NF}' | sort -u)
+interfaces=$(ip addr | grep -i 'inet ' | awk '{print $NF}' | sort -u | grep -iv 'lo')
 eth=$(echo $interfaces | grep 'enp\|enx\|eth' | head -n 1)
 wlp=$(echo $interfaces | grep 'wlp' | head -n 1)
 
