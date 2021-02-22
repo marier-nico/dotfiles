@@ -28,12 +28,6 @@ practice not to run random commands you find.
 
 ## Install List
 
-**Backup & Sync**
-
-- [awscli](https://github.com/aws/aws-cli)
-- [borg](https://github.com/borgbackup/borg)
-- [syncthing](https://github.com/syncthing/syncthing) [ [arch package](https://www.archlinux.org/packages/community/x86_64/syncthing/) ]
-
 **Desktop**
 
 - [birdtray](https://github.com/gyunaev/birdtray) [ [AUR](https://aur.archlinux.org/packages/birdtray) ]
