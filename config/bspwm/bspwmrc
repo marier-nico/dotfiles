@@ -7,6 +7,7 @@ dots="$HOME/.dots"
 killall sxhkd
 killall dunst
 killall polybar
+killall birdtray
 
 # Bspwm config
 bspc config border_width 2
@@ -27,6 +28,7 @@ monitor_profile=$($dots/bin/autorandr.sh/autorandr.sh --detected)
 
 # Set workspaces
 case $monitor_profile in
+<<<<<<< HEAD
 home1)
     bspc monitor "DP-1-2" -d 1 2 3 4
     bspc monitor "DP-1-1" -d 5 6 7

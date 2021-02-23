@@ -28,14 +28,9 @@ practice not to run random commands you find.
 
 ## Install List
 
-**Backup & Sync**
-
-- [awscli](https://github.com/aws/aws-cli)
-- [borg](https://github.com/borgbackup/borg)
-- [syncthing](https://github.com/syncthing/syncthing) [ [arch package](https://www.archlinux.org/packages/community/x86_64/syncthing/) ]
-
 **Desktop**
 
+- [birdtray](https://github.com/gyunaev/birdtray) [ [AUR](https://aur.archlinux.org/packages/birdtray) ]
 - [bspwm](https://github.com/baskerville/bspwm) [ [arch wiki](https://wiki.archlinux.org/index.php/Bspwm) ]
 - [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) [ [aur package](https://aur.archlinux.org/packages/betterlockscreen/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
@@ -106,8 +101,17 @@ practice not to run random commands you find.
 
 **Shell & Term**
 
-- [kitty](https://sw.kovidgoyal.net/kitty/)
+- [alacritty](https://github.com/alacritty/alacritty)
+- [bat](https://github.com/sharkdp/bat)
+- [bottom](https://github.com/ClementTsang/bottom)
+- [exa](https://github.com/ogham/exa)
+- [fd](https://github.com/sharkdp/fd)
+- [hyperfine](https://github.com/sharkdp/hyperfine)
+- [procs](https://github.com/dalance/procs)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [tealdeer](https://github.com/dbrgn/tealdeer)
 - [tmux](https://github.com/tmux/tmux/wiki) [ [arch wiki](https://wiki.archlinux.org/index.php/Tmux) ]
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [zsh](https://wiki.archlinux.org/index.php/zsh)
 
 **Social**
@@ -118,7 +122,6 @@ practice not to run random commands you find.
 
 **Themes**
 
-- Firefox [Simplerent Fox](https://github.com/MiguelRAvila/SimplerentFox).
 - GTK [Nordic](https://github.com/EliverLara/Nordic).
 - Rofi [Slate](https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/slate.rasi) (included in this repo).
 - Slack [Nord](https://www.nordtheme.com/docs/ports/slack/installation).
