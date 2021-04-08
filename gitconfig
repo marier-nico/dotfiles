@@ -10,16 +10,19 @@
 [alias]
     b  = branch
     c  = checkout
-	co = commit -S --verbose
-	d  = diff
-	l  = log
-	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    co = commit -S --verbose
+    d  = diff
+    l  = log
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     m  = merge
-	po = push -u origin HEAD
-	rb = rebase -i
-	s  = status
-	st = stash
+    po = push -u origin HEAD
+    rb = rebase -i
+    s  = status
+    st = stash
+	dc = !/home/nmarier/.local/bin/git-deep-clean.sh
 [pull]
 	rebase = false
 [credential]
 	helper = gnome-keyring
+[init]
+	defaultBranch = main

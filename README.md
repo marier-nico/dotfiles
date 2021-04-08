@@ -59,6 +59,8 @@ practice not to run random commands you find.
 
 **Media**
 
+- PipeWire [ [arch wiki](https://wiki.archlinux.org/index.php/PipeWire) ]
+- [PulseEffects](https://github.com/wwmm/pulseeffects) [ [arch package](https://archlinux.org/packages/community/x86_64/pulseeffects/) ]
 - [spicetify-cli](https://github.com/khanhas/spicetify-cli)
 - spotify [ [aur package](https://aur.archlinux.org/packages/spotify/) ]
 - [vlc](https://www.videolan.org/vlc/)
@@ -139,12 +141,6 @@ necessary to use keyboard shortcuts), follow instructions on the [wiki](https://
 
 I've created some scripts to make some operations more convenient for me, which can be found in the `bin/` folder.
 
-- `jsink` [ A script to add/remove/list JACK-enabled PulseAudio sinks. This enables moving audio from
-            specific applications through JACK easily, which allows fine-grained processing. For example,
-            sending audio from a music player through a DAW before combining it with a microphone input
-            for live streaming. ]
-- `pg`    [ A script to manage GPG keys, which is friendlier, more efficient, and overall more convenient
-            to use than the standard GPG CLI interface. ]
 - `wacom` [ A small script to map my Wacom tablet to a given display and map buttons to keyboard shortcuts.
             If you choose to use this, make sure you edit it so it works with your tablet. As long as you
             just have one tablet at a time, mapping to a display will always work. However, button IDs are

@@ -10,3 +10,4 @@ alias top="btm"
 alias ll="ls -l"
 alias la="ls -la"
 alias ssh='TERM=xterm-256color \ssh'
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=$(cat $HOME/.rangerdir); cd "$LASTDIR"'

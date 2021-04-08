@@ -1,4 +1,4 @@
-path+=("$HOME/.local/bin")
+path+=("$HOME/.local/bin" "$HOME/.amplify/bin")
 source "$HOME/.cargo/env"
 export PATH
 
