@@ -37,6 +37,7 @@ practice not to run random commands you find.
 - gtk [ [arch wiki](https://wiki.archlinux.org/index.php/GTK) ]
 - [babita cursor](https://github.com/ful1e5/Bibata_Cursor)
 - lxappearance [ [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/) ]
+- [nitrogen](https://github.com/l3ib/nitrogen/) [ [arch wiki](https://wiki.archlinux.org/index.php/Nitrogen) ]
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
 - [ranger](https://ranger.github.io/) [ [arch wiki](https://wiki.archlinux.org/index.php/Ranger) ]

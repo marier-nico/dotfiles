@@ -9,6 +9,7 @@
 	template = ~/.gitmessage
 [alias]
     b  = branch
+    mb = !git for-each-ref --format='%(refname:short) %(authoremail)' --no-merged="$([ git rev-parse --verify 'main' >> /dev/null 2>&1 ] && echo 'main' || echo 'master' )" | grep 'software@nmarier.com' | cut -d' ' -f 1
     c  = checkout
     co = commit -S --verbose
     d  = diff

@@ -25,6 +25,7 @@ bspc config remove_unplugged_monitors true
 
 $dots/bin/autorandr.sh/autorandr.sh --change
 monitor_profile=$($dots/bin/autorandr.sh/autorandr.sh --detected)
+wallpaper_path="$HOME/Pictures/wallpapers/desktop"
 
 # Set workspaces
 case $monitor_profile in
@@ -32,10 +33,14 @@ home1 | home2)
     bspc monitor "DP-2" -d 1 2 3 4
     bspc monitor "DP-4" -d 5 6 7
     bspc monitor "HDMI-0" -d 8 9 10
+    nitrogen --set-auto --head=1  "$wallpaper_path/good-shot-vertical.png"
+    nitrogen --set-auto --head=0  "$wallpaper_path/good-shot.png"
+    nitrogen --set-zoom-fill --head=2  "$wallpaper_path/good-shot.png"
     ;;
 *)
     notify-send "Monitor config not found" "Could not setup bspwm workspaces for this monitor config"
     bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+    nitrogen --set-auto "$wallpaper_path/good-shot.png"
     ;;
 esac
 
@@ -50,7 +55,6 @@ setxkbmap ca
 xset r rate 150 50
 
 # Other settings
-feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/desktop/exploring.png
 xrdb ~/.Xresources
 
 

@@ -12,9 +12,6 @@ source ~/.dots/config/zsh/aliases.zsh
 # Source ssh-agent
 source ~/.dots/config/zsh/ssh-agent.zsh
 
-# Load opam env
-eval $(opam env)
-
 # Load venv-wrapper
 eval "$(venv-wrapper init)"
 
