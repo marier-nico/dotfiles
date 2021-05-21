@@ -2,7 +2,6 @@
 alias cat="bat"
 alias ls="exa"
 alias find="fd"
-alias ps="procs"
 alias grep="rg"
 alias top="btm"
 
