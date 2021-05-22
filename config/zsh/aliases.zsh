@@ -3,7 +3,6 @@ alias cat="bat"
 alias ls="exa"
 alias find="fd"
 alias grep="rg"
-alias top="btm"
 
 # Convenience Aliases
 alias ll="ls -l"

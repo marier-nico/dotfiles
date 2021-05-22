@@ -18,8 +18,5 @@ eval "$(venv-wrapper init)"
 # Load pyenv
 eval "$(pyenv init -)"
 
-# Load zoxide
-eval "$(zoxide init zsh)"
-
 # Load starship (prompt)
 eval "$(LC_ALL="fr_CA.UTF-8" starship init zsh)"

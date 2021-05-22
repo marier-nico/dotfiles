@@ -97,25 +97,20 @@ practice not to run random commands you find.
   - [tpm](https://github.com/tmux-plugins/tpm)
 - **vscode**
   - [Atom One Dark Theme](https://github.com/akamud/vscode-theme-onedark)
-- **zsh**
-  - [starship](https://starship.rs/)
-  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) [ [arch package](https://www.archlinux.org/packages/zsh-autosuggestions) ]
-  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) [ [arch package](https://www.archlinux.org/packages/?q=zsh-syntax-highlighting) ]
 
 **Shell & Term**
 
 - [alacritty](https://github.com/alacritty/alacritty)
+- [autojump-rs](https://github.com/xen0n/autojump-rs)
 - [bat](https://github.com/sharkdp/bat)
-- [bottom](https://github.com/ClementTsang/bottom)
 - [exa](https://github.com/ogham/exa)
 - [fd](https://github.com/sharkdp/fd)
+- [fish](https://fishshell.com/)
 - [hyperfine](https://github.com/sharkdp/hyperfine)
-- [procs](https://github.com/dalance/procs)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [tealdeer](https://github.com/dbrgn/tealdeer)
+- [thefuck](https://github.com/nvbn/thefuck)
 - [tmux](https://github.com/tmux/tmux/wiki) [ [arch wiki](https://wiki.archlinux.org/index.php/Tmux) ]
-- [zoxide](https://github.com/ajeetdsouza/zoxide)
-- [zsh](https://wiki.archlinux.org/index.php/zsh)
 
 **Social**
 

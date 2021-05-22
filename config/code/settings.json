@@ -17,5 +17,5 @@
     "rust-analyzer.checkOnSave.command": "clippy",
     "latex-workshop.message.update.show": false,
     "latex-workshop.view.pdf.viewer": "tab",
-    "window.zoomLevel": 0
+    "editor.mouseWheelZoom": true
 }

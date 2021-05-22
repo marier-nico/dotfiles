@@ -46,7 +46,7 @@ esac
 
 # Autostart programs
 $dots/config/polybar/launch.sh
-SXHKD_SHELL='/usr/bin/sh' sxhkd &
+SXHKD_SHELL='/bin/bash' sxhkd &
 picom &
 birdtray &
 
