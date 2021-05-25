@@ -16,6 +16,8 @@ alias grep="rg"
 
 alias ranger='ranger --choosedir=$HOME/.rangerdir; cd (cat $HOME/.rangerdir)'
 
+alias ssh='TERM=xterm-256color command ssh'
+
 # Source scripts
 set -gx PYENV_ROOT $HOME/.pyenv
 set PATH $PYENV_ROOT/bin $PATH
