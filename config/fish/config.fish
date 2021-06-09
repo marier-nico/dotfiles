@@ -19,9 +19,8 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; cd (cat $HOME/.rangerdir)'
 alias ssh='TERM=xterm-256color command ssh'
 
 # Source scripts
-set -gx PYENV_ROOT $HOME/.pyenv
-set PATH $PYENV_ROOT/bin $PATH
 status is-login; and pyenv init --path | source
+pyenv init - | source
 
 thefuck --alias | source
 
