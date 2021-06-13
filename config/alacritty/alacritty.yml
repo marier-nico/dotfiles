@@ -104,21 +104,21 @@
 # Font configuration
 font:
   normal:
-    family: Iosevka
+    family: monospace
     style: Regular
 
   bold:
-    family: Iosevka
+    family: monospace
     style: Bold
 
   # Italic font face
   italic:
-    family: Iosevka
+    family: monospace
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Iosevka
+    family: monospace
     style: Bold Italic
 
   # Point size
