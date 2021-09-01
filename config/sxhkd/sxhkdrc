@@ -126,7 +126,7 @@ super + u
 
 # lock the screen
 super + q
-	betterlockscreen --lock blur
+	i3lock -efc 000000
 
 # use bitwarden rofi
 super + p

@@ -8,4 +8,5 @@ configuration {
   yoffset: -50;
   xoffset: -20;
 }
-@import "~/.config/rofi/themes/slate.rasi"
+
+@theme "~/.config/rofi/themes/slate.rasi"

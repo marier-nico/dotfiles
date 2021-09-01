@@ -10,7 +10,8 @@
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
     ~/.config/awesome/rc.lua: config/awesome/rc.lua
     ~/.config/bspwm/bspwmrc: config/bspwm/bspwmrc
-    ~/.config/Code - OSS/User/settings.json: config/code/settings.json
+    ~/.config/Code/User/settings.json: config/code/settings.json
+    ~/.config/Code/User/snippets: config/code/snippets/
     ~/.config/dunst/dunstrc: config/dunst/dunstrc
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fontconfig/fonts.conf: config/fontconfig/fonts.conf
@@ -23,7 +24,6 @@
     ~/.config/ranger/rifle.conf: config/ranger/rifle.conf
     ~/.config/rofi/config.rasi: config/rofi/config.rasi
     ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
-    ~/.config/starship.toml: config/zsh/starship.toml
     ~/.config/spicetify/Themes: config/spicetify/Themes
     ~/.config/starship.toml: config/starship.toml
     ~/.config/sxhkd/sxhkdrc: config/sxhkd/sxhkdrc

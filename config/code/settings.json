@@ -7,7 +7,6 @@
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Atom One Dark",
     "python.venvPath": "~/.virtualenvs",
     "terminal.external.linuxExec": "alacritty",
     "editor.rulers": [
@@ -17,5 +16,39 @@
     "rust-analyzer.checkOnSave.command": "clippy",
     "latex-workshop.message.update.show": false,
     "latex-workshop.view.pdf.viewer": "tab",
-    "editor.mouseWheelZoom": true
+    "editor.mouseWheelZoom": true,
+    "redhat.telemetry.enabled": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.enableExperiments": false,
+    "python.experiments.enabled": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Atom One Dark",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.statusBar.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "johnsoncodehk.volar"
+    },
 }

@@ -2,7 +2,8 @@
 set fish_greeting
 
 # Set env
-set PATH $HOME/.local/bin $HOME/.cargo/bin $HOME/.amplify/bin $PATH
+set PATH $HOME/.local/bin $HOME/.cargo/bin $HOME/.amplify/bin /home/linuxbrew/.linuxbrew/bin $PATH
+set -gx EDITOR nvim
 
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_DATA_HOME $HOME/.local/share
@@ -25,3 +26,6 @@ pyenv init - | source
 thefuck --alias | source
 
 source /usr/share/fish/vendor_conf.d/autojump.fish
+
+venv-wrapper init fish | source
+venv completions

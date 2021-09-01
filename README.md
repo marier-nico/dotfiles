@@ -32,10 +32,10 @@ practice not to run random commands you find.
 
 - [birdtray](https://github.com/gyunaev/birdtray) [ [AUR](https://aur.archlinux.org/packages/birdtray) ]
 - [bspwm](https://github.com/baskerville/bspwm) [ [arch wiki](https://wiki.archlinux.org/index.php/Bspwm) ]
-- [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) [ [aur package](https://aur.archlinux.org/packages/betterlockscreen/) ]
 - firefox [ [arch wiki](https://wiki.archlinux.org/index.php/Firefox) ]
 - gtk [ [arch wiki](https://wiki.archlinux.org/index.php/GTK) ]
 - [babita cursor](https://github.com/ful1e5/Bibata_Cursor)
+- [i3lock](https://github.com/i3/i3lock) [ [arch package](https://archlinux.org/packages/community/x86_64/i3lock/) ]
 - lxappearance [ [arch package](https://www.archlinux.org/packages/community/x86_64/lxappearance/) ]
 - [nitrogen](https://github.com/l3ib/nitrogen/) [ [arch wiki](https://wiki.archlinux.org/index.php/Nitrogen) ]
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
@@ -89,6 +89,9 @@ practice not to run random commands you find.
   - [vim-plug](https://github.com/junegunn/vim-plug)
   - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - **python**
+  - [commitizen](https://github.com/commitizen-tools/commitizen)
+  - [pipx](https://github.com/pypa/pipx)
+  - [pre-commit](https://pre-commit.com/)
   - [pyenv](https://github.com/pyenv/pyenv)
 - **tmux**
   - [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme)
