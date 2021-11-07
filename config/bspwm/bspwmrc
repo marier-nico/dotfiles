@@ -61,11 +61,9 @@ xrdb ~/.Xresources
 bspc rule -a "Alacritty" desktop='^1'
 bspc rule -a "TelegramDesktop" desktop='^2'
 bspc rule -a "discord" desktop='^3'
-bspc rule -a "Microsoft Teams - Preview" desktop='^4'
 bspc rule -a "firefoxdeveloperedition" desktop='^8'
 
 discord &
-teams &
 
 xwininfo -root -children | grep -q TelegramDesktop
 if [ "$?" -ne "0" ]; then
@@ -87,7 +85,6 @@ sleep 10
 bspc rule -r "Alacritty"
 bspc rule -r "TelegramDesktop"
 bspc rule -r "discord"
-bspc rule -r "Microsoft Teams - Preview"
 bspc rule -r "firefoxdeveloperedition"
 
 # Bspwm rule examples

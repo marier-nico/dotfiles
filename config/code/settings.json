@@ -7,13 +7,17 @@
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
     "window.menuBarVisibility": "toggle",
-    "python.venvPath": "~/.virtualenvs",
+    "python.venvPath": "/home/nmarier/.virtualenvs",
     "terminal.external.linuxExec": "alacritty",
     "editor.rulers": [
         100
     ],
     "terminal.integrated.rendererType": "experimentalWebgl",
     "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.cargo.allFeatures": true,
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.updates.channel": "nightly",
+    "rust-analyzer.cargo.loadOutDirsFromCheck": true,
     "latex-workshop.message.update.show": false,
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.mouseWheelZoom": true,
@@ -24,7 +28,6 @@
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "workbench.enableExperiments": false,
-    "python.experiments.enabled": false,
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -47,8 +50,5 @@
     },
     "[jsonc]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[vue]": {
-      "editor.defaultFormatter": "johnsoncodehk.volar"
     },
 }

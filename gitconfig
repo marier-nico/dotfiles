@@ -1,7 +1,7 @@
 [user]
 	email = software@nmarier.com
 	name = Nicolas Marier
-	signingkey = 0xE4C943461F441017
+  signingkey = 0xE4C943461F441017
 [core]
 	editor = nvim
 	autocrlf = input
