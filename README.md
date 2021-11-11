@@ -41,6 +41,7 @@ practice not to run random commands you find.
 - [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - [picom](https://github.com/yshui/picom) [ [arch package](https://www.archlinux.org/packages/community/x86_64/picom/) ]
 - [ranger](https://ranger.github.io/) [ [arch wiki](https://wiki.archlinux.org/index.php/Ranger) ]
+- [nemo](https://github.com/linuxmint/nemo) [ [arch wiki](https://wiki.archlinux.org/title/Nemo) ]
 - [rofi](https://github.com/davatorium/rofi) [ [arch wiki](https://wiki.archlinux.org/index.php/Rofi) ]
 - **Fonts**
   - [FontAwesome](https://fontawesome.com) [ [arch package](https://www.archlinux.org/packages/community/any/ttf-font-awesome/) ]
