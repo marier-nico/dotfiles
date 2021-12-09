@@ -7,40 +7,14 @@
 - clean: ["~"]
 
 - link:
-    ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
-    ~/.config/awesome/rc.lua: config/awesome/rc.lua
-    ~/.config/bspwm/bspwmrc: config/bspwm/bspwmrc
-    ~/.config/Code/User/settings.json: config/code/settings.json
-    ~/.config/dunst/dunstrc: config/dunst/dunstrc
+    "~/Library/Application Support/Code/User/settings.json": config/code/settings.json
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/conf.d: config/fish/conf.d/*
-    ~/.config/fontconfig/fonts.conf: config/fontconfig/fonts.conf
-    ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
-    ~/.config/kitty/onedark.conf: config/kitty/onedark.conf
     ~/.config/nvim/init.vim: config/nvim/init.vim
-    ~/.config/picom/picom.conf: config/picom/picom.conf
-    ~/.config/polybar/config: config/polybar/config
-    ~/.config/ranger/rc.conf: config/ranger/rc.conf
-    ~/.config/ranger/rifle.conf: config/ranger/rifle.conf
-    ~/.config/rofi/config.rasi: config/rofi/config.rasi
-    ~/.config/rofi/themes/slate.rasi: config/rofi/themes/slate.rasi
-    ~/.config/spicetify/Themes: config/spicetify/Themes
-    ~/.config/starship.toml: config/starship.toml
-    ~/.config/sxhkd/sxhkdrc: config/sxhkd/sxhkdrc
-    ~/.local/bin/autorandr: bin/autorandr.sh/autorandr.sh
-    ~/.local/bin/wacom: bin/wacom
-    ~/.profile: profile
-    ~/.terraformrc: terraformrc
-    ~/.tmux.conf: tmux.conf
-    ~/.gitconfig: gitconfig
-    ~/.gitmessage: gitmessage
-    ~/.gnupg/gpg.conf: gpg.conf
+    ~/.terraformrc: config/terraform/terraformrc
+    ~/.gitconfig: config/git/gitconfig
+    ~/.config/git/gitmessage: config/git/gitmessage
     ~/.ideavimrc: config/intellij-idea/ideavimrc
-    ~/.xinitrc: xinitrc
-    ~/.Xresources: Xresources
-    ~/.zprofile: config/zsh/zprofile
-    ~/.zshrc: config/zsh/zshrc
 
 - shell:
     - ["git submodule update --init --recursive", Installing submodules]
-    - ["xrdb ~/.Xresources", Reloading Xresources]

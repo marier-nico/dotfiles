@@ -6,10 +6,9 @@
 	editor = nvim
 	autocrlf = input
 [commit]
-	template = ~/.gitmessage
+	template = ~/.config/git/gitmessage
 [alias]
     b   = branch
-    mb  = !git for-each-ref --format='%(refname:short) %(authoremail)' --no-merged="$([ git rev-parse --verify 'main' >> /dev/null 2>&1 ] && echo 'main' || echo 'master' )" | grep 'software@nmarier.com' | cut -d' ' -f 1
     c   = checkout
     co  = commit -S --verbose
     coa = !git add . && git co
@@ -21,10 +20,7 @@
     rb  = rebase -i
     s   = status
     st  = stash
-    dc  = !/home/nmarier/.local/bin/git-deep-clean.sh
 [pull]
 	rebase = false
-[credential]
-	helper = gnome-keyring
 [init]
 	defaultBranch = main
