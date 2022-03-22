@@ -11,8 +11,13 @@ alias gd="g diff"
 alias gl="g log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches"
 alias gm="g merge"
 alias gpo="g push -u origin HEAD"
+alias gpu="g pull origin HEAD"
 alias grb="g rebase -i"
 alias gr="cd (g rev-parse --show-toplevel)"
+
+# Go aliases
+
+alias go16="/opt/homebrew/Cellar/go@1.16/1.16.11/libexec/bin/go"
  
 # Other aliases
  
