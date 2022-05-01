@@ -10,6 +10,7 @@
     "~/Library/Application Support/Code/User/settings.json": config/code/settings.json
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/conf.d: config/fish/conf.d/*
+    ~/.config/fish/functions: config/fish/functions/*
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.terraformrc: config/terraform/terraformrc
     ~/.gitconfig: config/git/gitconfig
