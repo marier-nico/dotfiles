@@ -44,13 +44,11 @@ endif
 " --- Vim Plug --- "
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'morhetz/gruvbox'
-Plug 'shaunsingh/solarized.nvim'
-Plug 'cormacrelf/dark-notify'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 " --- -------- --- "
@@ -72,17 +70,7 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-" Color schemes
-:lua <<EOF
-local dn = require('dark_notify')
-dn.run({
-  schemes = {
-    dark  = "gruvbox",
-    light = "solarized",
-  }
-})
-EOF
-
 " Syntax highlighting
+colorscheme onedark
 syntax on
 

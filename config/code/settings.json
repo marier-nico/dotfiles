@@ -1,29 +1,32 @@
 {
-    "workbench.colorTheme": "Gruvbox Dark Medium",
-    "workbench.startupEditor": "none",
-    "editor.mouseWheelZoom": true,
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/Users/nmarier/.local/bin/black",
-    "files.autoSave": "onFocusChange",
-    "editor.fontSize": 13,
-    "editor.formatOnSave": true,
-    "explorer.confirmDelete": false,
-    "editor.lineNumbers": "relative",
-    "rust-analyzer.checkOnSave.command": "clippy",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.smoothScrolling": true,
-    "editor.cursorBlinking": "phase",
-    "workbench.list.smoothScrolling": true,
-    "workbench.preferredDarkColorTheme": "Gruvbox Dark Medium",
-    "workbench.preferredLightColorTheme": "Solarized Light",
-    "window.autoDetectColorScheme": true,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.accessibilitySupport": "off",
-    "editor.tabSize": 2
+  "workbench.startupEditor": "none",
+  "editor.mouseWheelZoom": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.local/bin/black",
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 13,
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "editor.lineNumbers": "relative",
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "phase",
+  "workbench.list.smoothScrolling": true,
+  "window.autoDetectColorScheme": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.tabSize": 2,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "dotfiles.repository": "marier-nico/dotfiles",
+  "dotfiles.installCommand": "~/dotfiles/install",
+  "workbench.colorTheme": "One Dark Pro"
 }
