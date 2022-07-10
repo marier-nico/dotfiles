@@ -24,7 +24,7 @@
   "editor.accessibilitySupport": "off",
   "editor.tabSize": 2,
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "dotfiles.repository": "marier-nico/dotfiles",
   "dotfiles.installCommand": "~/dotfiles/install",
