@@ -4,7 +4,7 @@
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.local/bin/black",
   "files.autoSave": "onFocusChange",
-  "editor.fontSize": 13,
+  "editor.fontSize": 15,
   "editor.formatOnSave": true,
   "explorer.confirmDelete": false,
   "editor.lineNumbers": "relative",
@@ -15,11 +15,11 @@
   "workbench.list.smoothScrolling": true,
   "window.autoDetectColorScheme": true,
   "[typescriptreact]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.accessibilitySupport": "off",
   "editor.tabSize": 2,
@@ -28,5 +28,12 @@
   },
   "dotfiles.repository": "marier-nico/dotfiles",
   "dotfiles.installCommand": "~/dotfiles/install",
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.colorTheme": "One Dark Pro",
+  "remote.SSH.useLocalServer": false,
+  "go.toolsManagement.autoUpdate": true,
+  "editor.stickyScroll.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontSize": 15
 }

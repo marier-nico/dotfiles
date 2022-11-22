@@ -1,6 +1,7 @@
 # Git aliases
 
 alias g="git"
+alias ga="git add"
 alias gs="g status"
 alias gst="g stash"
 alias gbr="g branch"
