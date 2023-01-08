@@ -1,3 +1,17 @@
+# Directory aliases
+
+set -q CODE_DIR; or set CODE_DIR $HOME/Code
+function gc
+    if set -q argv[1]
+        cd $CODE_DIR/$argv[1]
+    else
+        cd $CODE_DIR
+    end
+end
+complete -e gc
+complete -c gc -f
+complete -c gc --arguments '(ls -1 -d -- $CODE_DIR/* | sed -e "s=$CODE_DIR/==g" | xargs -n 1 -I{} printf "%s\tProject\n" {})'
+
 # Git aliases
 
 alias g="git"

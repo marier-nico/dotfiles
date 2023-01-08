@@ -10,7 +10,9 @@
     "~/Library/Application Support/Code/User/settings.json": config/code/settings.json
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/conf.d/aliases.fish: config/fish/conf.d/aliases.fish
+    ~/.config/fish/functions/nvm.fish: config/fish/functions/nvm.fish
     ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.config/starship.toml: config/starship.toml
     ~/.terraformrc: config/terraform/terraformrc
     ~/.gitconfig: config/git/gitconfig
     ~/.config/git/gitmessage: config/git/gitmessage

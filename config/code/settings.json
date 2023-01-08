@@ -28,12 +28,13 @@
   },
   "dotfiles.repository": "marier-nico/dotfiles",
   "dotfiles.installCommand": "~/dotfiles/install",
-  "workbench.colorTheme": "One Dark Pro",
   "remote.SSH.useLocalServer": false,
   "go.toolsManagement.autoUpdate": true,
   "editor.stickyScroll.enabled": true,
   "explorer.confirmDragAndDrop": false,
-  "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
+  "editor.fontFamily": "'FiraCode Nerd Font', 'Fira Code', 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "terminal.integrated.fontSize": 15
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "workbench.colorTheme": "Atom One Dark"
 }
