@@ -1,6 +1,10 @@
 if status is-interactive
     /opt/homebrew/bin/brew shellenv | source
 
+    if test -e "/opt/homebrew/opt/nvm/nvm.sh"
+        bass source /opt/homebrew/opt/nvm/nvm.sh
+    end
+
     if type -q "pyenv"
         pyenv init --path | source
     end

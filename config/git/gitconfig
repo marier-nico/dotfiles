@@ -7,18 +7,5 @@
 	autocrlf = input
 [commit]
 	template = ~/.config/git/gitmessage
-[alias]
-    b   = branch
-    c   = checkout
-    co  = commit -S --verbose
-    coa = !git add . && git co
-    d   = diff
-    l   = log
-    lg  = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-    m   = merge
-    po  = push -u origin HEAD
-    rb  = rebase -i
-    s   = status
-    st  = stash
 [init]
 	defaultBranch = main
