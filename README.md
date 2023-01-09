@@ -43,26 +43,28 @@ practice not to run random scripts you find.
 
 **Plugins**
 
-| Software | Plugin                                                                                         | Install                                                 |
-| -------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| neovim   | [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)                                                 | `:PlugInstall`                                          |
-|          | [nerdtree](https://github.com/preservim/nerdtree)                                              | `:PlugInstall`                                          |
-|          | [onedark](https://github.com/joshdick/onedark.vim)                                             | `:PlugInstall`                                          |
-|          | [vim-fugitive](https://github.com/tpope/vim-fugitive)                                          | `:PlugInstall`                                          |
-|          | [vim-plug](https://github.com/junegunn/vim-plug)                                               | `:PlugInstall`                                          |
-|          | [vim-polyglot](https://github.com/sheerun/vim-polyglot)                                        | `:PlugInstall`                                          |
-| python   | [pipx](https://github.com/pypa/pipx)                                                           | `brew install pipx`                                     |
-|          | [pre-commit](https://pre-commit.com/)                                                          | `pipx install pre-commit`                               |
-|          | [pyenv](https://github.com/pyenv/pyenv)                                                        | `brew install pyenv`                                    |
-|          | [poetry](https://python-poetry.org/)                                                           | `pipx install poetry`                                   |
-| js       | [nvm](https://github.com/nvm-sh/nvm)                                                           | `brew install nvm`                                      |
-| vscode   | [Atom One Dark Theme](https://github.com/akamud/vscode-theme-onedark)                          | `code --install-extension akamud.vscode-theme-onedark`  |
-|          | [Vim](https://github.com/VSCodeVim/Vim)                                                        | `code --install-extension vscodevim.vim`                |
-|          | [Markdown All in One](https://github.com/yzhang-gh/vscode-markdown)                            | `code --install-extension yzhang.markdown-all-in-one`   |
-| iTerm2   | Atom One Dark Theme (based on [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)) | [OneDark.itermcolors](config/iterm/OneDark.itermcolors) |
-| fish     | [fisher](https://github.com/jorgebucaran/fisher)                                               | `brew install fisher`                                   |
-|          | [starship](https://starship.rs)                                                                | `brew install starsip`                                  |
-|          | [bass](https://github.com/edc/bass)                                                            | `fisher install edc/bass`                               |
+| Software  | Plugin                                                                                         | Install                                                 |
+| --------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| neovim    | [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)                                                 | `:PlugInstall`                                          |
+|           | [nerdtree](https://github.com/preservim/nerdtree)                                              | `:PlugInstall`                                          |
+|           | [onedark](https://github.com/joshdick/onedark.vim)                                             | `:PlugInstall`                                          |
+|           | [vim-fugitive](https://github.com/tpope/vim-fugitive)                                          | `:PlugInstall`                                          |
+|           | [vim-plug](https://github.com/junegunn/vim-plug)                                               | `:PlugInstall`                                          |
+|           | [vim-polyglot](https://github.com/sheerun/vim-polyglot)                                        | `:PlugInstall`                                          |
+| python    | [pipx](https://github.com/pypa/pipx)                                                           | `brew install pipx`                                     |
+|           | [pre-commit](https://pre-commit.com/)                                                          | `pipx install pre-commit`                               |
+|           | [pyenv](https://github.com/pyenv/pyenv)                                                        | `brew install pyenv`                                    |
+|           | [poetry](https://python-poetry.org/)                                                           | `pipx install poetry`                                   |
+| js        | [nvm](https://github.com/nvm-sh/nvm)                                                           | `brew install nvm`                                      |
+| vscode    | [Atom One Dark Theme](https://github.com/akamud/vscode-theme-onedark)                          | `code --install-extension akamud.vscode-theme-onedark`  |
+|           | [Vim](https://github.com/VSCodeVim/Vim)                                                        | `code --install-extension vscodevim.vim`                |
+|           | [Markdown All in One](https://github.com/yzhang-gh/vscode-markdown)                            | `code --install-extension yzhang.markdown-all-in-one`   |
+| JetBrains | [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)                                    |                                                         |
+|           | [One Dark theme](https://plugins.jetbrains.com/plugin/11938-one-dark-theme)                    |                                                         |
+| iTerm2    | Atom One Dark Theme (based on [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)) | [OneDark.itermcolors](config/iterm/OneDark.itermcolors) |
+| fish      | [fisher](https://github.com/jorgebucaran/fisher)                                               | `brew install fisher`                                   |
+|           | [starship](https://starship.rs)                                                                | `brew install starsip`                                  |
+|           | [bass](https://github.com/edc/bass)                                                            | `fisher install edc/bass`                               |
 
 **Shell & Term**
 
