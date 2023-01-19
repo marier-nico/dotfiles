@@ -9,3 +9,5 @@
 	template = ~/.config/git/gitmessage
 [init]
 	defaultBranch = main
+[pull]
+	rebase = true
