@@ -63,6 +63,7 @@ practice not to run random scripts you find.
 |           | [One Dark theme](https://plugins.jetbrains.com/plugin/11938-one-dark-theme)                    |                                                         |
 | iTerm2    | Atom One Dark Theme (based on [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)) | [OneDark.itermcolors](config/iterm/OneDark.itermcolors) |
 | fish      | [starship](https://starship.rs)                                                                | `brew install starship`                                 |
+|           | [direnv](https://direnv.net/)                                                                  | `brew install direnv`                                   |
 
 **Shell & Term**
 
