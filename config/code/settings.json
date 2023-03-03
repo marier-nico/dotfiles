@@ -9,7 +9,7 @@
   "explorer.confirmDelete": false,
   "editor.lineNumbers": "relative",
   "rust-analyzer.checkOnSave.command": "clippy",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.cursorBlinking": "phase",
   "workbench.list.smoothScrolling": true,
