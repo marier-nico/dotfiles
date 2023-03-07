@@ -9,6 +9,7 @@ local ensure_packer = function()
   return false
 end
 
+
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
@@ -33,6 +34,8 @@ return require('packer').startup(function(use)
         ts_update()
     end,
   }
+  use('mbbill/undotree')
+  use('tpope/vim-fugitive')
 
   if packer_bootstrap then
     require('packer').sync()
