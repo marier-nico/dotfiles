@@ -8,6 +8,10 @@ require('mason-lspconfig').setup({
 })
 
 -- TODO: Avoid showing snippets by default? Maybe disable buffer autocomplete? Both are pretty noisy
+-- todo: No highlighting from the git commit view (for the diff)
+-- todo: goto tests / jest snippets / run tests
+-- todo: alacritty
+-- todo: eslint_d, prettierd (with mason, but can'd use in ensure_installed?)
 local cmp = require('cmp');
 cmp.setup({
   snippet = {
@@ -16,10 +20,10 @@ cmp.setup({
     end,
   },
   sources = {
-    { name = 'buffer' },
     { name = 'nvim_lsp' },
-    { name = 'path' },
-    { name = 'conventionalcommits' }
+    { name = 'path', max_item_count = 5 },
+    { name = 'conventionalcommits', max_item_count = 5 },
+    { name = 'buffer', max_item_count = 5 },
   },
   preselect = cmp.PreselectMode.Item,
   completion = {
@@ -36,33 +40,13 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
     ['<C-p>'] = cmp.mapping.select_prev_item(select_opts),
     ['<C-n>'] = cmp.mapping.select_next_item(select_opts),
-
-    -- when menu is visible, navigate to next item
-    -- when line is empty, insert a tab character
-    -- else, activate completion
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item(select_opts)
-      elseif s.check_back_space() then
-        fallback()
-      else
-        cmp.complete()
-      end
-    end, {'i', 's'}),
   },
   formatting = {
-    fields = {'abbr', 'menu', 'kind'},
-    format = function(entry, item)
-      local short_name = {
-        nvim_lsp = 'LSP',
-        nvim_lua = 'nvim'
-      }
-
-      local menu_name = short_name[entry.source.name] or entry.source.name
-
-      item.menu = string.format('[%s]', menu_name)
-      return item
-    end,
+    format = require('lspkind').cmp_format({
+      mode = 'symbol_text',
+      maxwidth = 50,
+      ellipsis_char = '...',
+    })
   }
 })
 

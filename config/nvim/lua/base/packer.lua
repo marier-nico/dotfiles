@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
   }
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use('lewis6991/impatient.nvim')
 
   -- LSP Stuff
   use('williamboman/mason.nvim')
@@ -46,6 +47,7 @@ return require('packer').startup(function(use)
   use('hrsh7th/cmp-nvim-lsp')
   use('hrsh7th/cmp-path')
   use('davidsierradz/cmp-conventionalcommits')
+  use('onsails/lspkind.nvim')
   use('L3MON4D3/LuaSnip')
 
   if packer_bootstrap then
