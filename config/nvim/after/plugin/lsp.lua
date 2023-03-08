@@ -12,6 +12,8 @@ require('mason-lspconfig').setup({
 -- todo: goto tests / jest snippets / run tests
 -- todo: alacritty
 -- todo: eslint_d, prettierd (with mason, but can'd use in ensure_installed?)
+-- todo: add vimwiki and create bindings to open a 'tasks' and 'today' pages, maybe with a function to create today with the date if it doesn't exist,
+--       and add a keybind to go to the last day's entry (like doing it on Monday would take you to Friday, to easily see what happened on the last work day)
 local cmp = require('cmp');
 cmp.setup({
   snippet = {
