@@ -58,6 +58,7 @@ return require('packer').startup(function(use)
   -- LSP Stuff
   use('williamboman/mason.nvim')
   use('williamboman/mason-lspconfig.nvim')
+  use('jay-babu/mason-null-ls.nvim')
   use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('hrsh7th/nvim-cmp')
