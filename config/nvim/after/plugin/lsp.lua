@@ -2,6 +2,8 @@ require('mason').setup()
 
 require('mason-lspconfig').setup({
   ensure_installed = {
+    'eslint',
+    'pylsp',
     'rust_analyzer',
     'tsserver',
   }
@@ -23,6 +25,7 @@ cmp.setup({
   },
   sources = {
     { name = 'nvim_lsp' },
+    { name = 'null_ls' },
     { name = 'path', max_item_count = 5 },
     { name = 'conventionalcommits', max_item_count = 5 },
     { name = 'buffer', max_item_count = 5 },
@@ -56,8 +59,29 @@ local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lsp_attach = function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
 
+  vim.api.nvim_create_autocmd("CursorHold", {
+    buffer = bufnr,
+    callback = function()
+      local opts = {
+        focusable = false,
+        close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+        border = 'rounded',
+        source = 'always',
+        prefix = ' ',
+        scope = 'cursor',
+      }
+      vim.diagnostic.open_float(nil, opts)
+    end
+  })
+
   vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
   vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
+  vim.keymap.set('n', '^d', function() vim.diagnostic.goto_next() end, opts)
+  vim.keymap.set('n', '¸d', function() vim.diagnostic.goto_prev() end, opts)
+  vim.keymap.set('n', '<leader>vca', function() vim.lsp.buf.code_action() end, opts)
+  vim.keymap.set('n', '<leader>vrr', function() vim.lsp.buf.references() end, opts)
+  vim.keymap.set('n', '<leader>vrn', function() vim.lsp.buf.rename() end, opts)
+  vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format() end, opts)
   vim.keymap.set('i', '<C-h>', function() vim.lsp.buf.signature_help() end, opts)
 end
 
@@ -69,4 +93,17 @@ require('mason-lspconfig').setup_handlers({
       capabilities = lsp_capabilities,
     })
   end,
+})
+
+local null_ls = require("null-ls")
+null_ls.setup({
+  sources = {
+    null_ls.builtins.code_actions.eslint_d,
+
+    null_ls.builtins.diagnostics.eslint,
+
+    null_ls.builtins.formatting.stylua,
+    null_ls.builtins.formatting.prettierd,
+  },
+  on_attach = lsp_attach
 })

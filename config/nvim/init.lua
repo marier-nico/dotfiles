@@ -1,4 +1,5 @@
 require("base.packer")
+require("impatient")
 require("base.remap")
-
-require('impatient')
+require("base.set")
+require("base.autocmd")

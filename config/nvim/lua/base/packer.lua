@@ -34,14 +34,32 @@ return require('packer').startup(function(use)
         ts_update()
     end,
   }
+  use('nvim-treesitter/nvim-treesitter-context')
+  use('cohama/lexima.vim')
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end
+  }
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('lewis6991/impatient.nvim')
+  use('ThePrimeagen/harpoon')
+
+  use {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+  }
 
   -- LSP Stuff
   use('williamboman/mason.nvim')
   use('williamboman/mason-lspconfig.nvim')
   use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
   use('hrsh7th/nvim-cmp')
   use('hrsh7th/cmp-buffer')
   use('hrsh7th/cmp-nvim-lsp')

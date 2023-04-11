@@ -4,3 +4,4 @@ vim.keymap.set('n', '<leader>pg', builtin.live_grep, {})
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 
 require('telescope').load_extension('fzf')
+require("telescope").load_extension('harpoon')
