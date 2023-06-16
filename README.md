@@ -66,6 +66,7 @@ practice not to run random scripts you find.
 
 - [fish](https://fishshell.com/)
 - [iTerm2](https://iterm2.com/)
+- [dark-notify](https://github.com/cormacrelf/dark-notify) (nvim & alacritty)
 
 **Social**
 
