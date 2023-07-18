@@ -6,10 +6,11 @@ lvim.plugins = {
   { "catppuccin/nvim",       name = "catppuccin", priority = 1000 },
   { "cormacrelf/dark-notify" }
 }
+lvim.colorscheme =  "catppuccin-macchiato"
 
 require("dark_notify").run({
   schemes = {
     dark = "catppuccin-macchiato",
     light = "catppuccin-latte"
-  }
+  },
 })
