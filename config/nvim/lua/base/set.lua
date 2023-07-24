@@ -30,6 +30,6 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
--- For nvim-tree
+-- Disable default file browser
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

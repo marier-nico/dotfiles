@@ -1,19 +1,17 @@
 require("lazy").setup({
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-	"cohama/lexima.vim",
-	"cormacrelf/dark-notify", -- TODO: configure
-	{ "folke/trouble.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
-	"nvim-lua/plenary.nvim",
-	"nvim-telescope/telescope.nvim",
-	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, -- TODO: use telescope with goto def & references
-	{ "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } }, -- TODO: keybind to open to the location of the current open buffer
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-	"nvim-treesitter/nvim-treesitter-context",
-	"nvim-treesitter/playground",
-	"ThePrimeagen/harpoon",
-	"tpope/vim-fugitive", -- TODO: pop out git status in pane & view diff
+	{"cohama/lexima.vim", version = '2.1.0'},
+	{"cormacrelf/dark-notify", version = '0.1.2'},
+	{ "folke/trouble.nvim", version = '2.6.0', dependencies = { "nvim-tree/nvim-web-devicons" } },
+	{"nvim-lua/plenary.nvim"},
+	{"nvim-telescope/telescope.nvim", version = '0.1.2'},
+	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+	{ "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
+	{ "nvim-treesitter/nvim-treesitter", version = '0.9.0', build = ":TSUpdate" },
+	{"ThePrimeagen/harpoon"},
+	{"tpope/vim-fugitive", version = 'v3.7'}, -- TODO: pop out git status in pane & view diff
+	{'akinsho/bufferline.nvim', version='v4.3.0', dependencies = 'nvim-tree/nvim-web-devicons'}, -- TODO: config (?)
 
-	-- TODO: tabline just as a ref for what's open
 	-- TODO: whichkey for cheat sheet
 	-- TODO: keybind to close other panes
 	-- TODO: yanky
