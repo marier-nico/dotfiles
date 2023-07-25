@@ -13,21 +13,25 @@ require("lazy").setup({
 	{ "akinsho/bufferline.nvim", version = "v4.3.0", dependencies = "nvim-tree/nvim-web-devicons" }, -- TODO: config (?)
 	{ "folke/which-key.nvim" },
 	{ "akinsho/toggleterm.nvim", version = "2.7.1", config = true },
+	{ "lewis6991/gitsigns.nvim", version = "v0.6" },
+	{ "glepnir/dashboard-nvim", event = "VimEnter", dependencies = "nvim-tree/nvim-web-devicons" },
+	{ "nvim-lualine/lualine.nvim", dependencies = "nvim-tree/nvim-web-devicons" },
+	{ "rcarriga/nvim-notify", version = "v3.12.0" },
+	{
+		"pwntester/octo.nvim", -- TODO: config / learn
+		dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim", "nvim-tree/nvim-web-devicons" },
+	},
+	{ "windwp/nvim-ts-autotag" },
 
 	-- TODO: yanky
 	-- TODO: vim-tmux-navigator (tmux for projects)
-	-- TODO: toggleterm
-	-- TODO: ts-autotag
 	-- TODO: nvim-autopairs
 	-- TODO: nvim-surround
 	-- TODO: nvim-neoclip (?)
-	-- TODO: lualine
 	-- TODO: indent-blankline
-	-- TODO: gitsigns
 	-- TODO: flash.nvim
 	-- TODO: fidget
 	-- TODO: comment
-	-- TODO: https://github.com/pwntester/octo.nvim#-pr-reviews (?)
 
 	-- LSP Stuff
 	-- TODO: typescript specific keybinds for rename, imports, etc.
