@@ -11,6 +11,7 @@ require("lazy").setup({
 	{"ThePrimeagen/harpoon"},
 	{"tpope/vim-fugitive", version = 'v3.7'}, -- TODO: pop out git status in pane & view diff
 	{'akinsho/bufferline.nvim', version='v4.3.0', dependencies = 'nvim-tree/nvim-web-devicons'}, -- TODO: config (?)
+	{'folke/which-key.nvim'},
 
 	-- TODO: whichkey for cheat sheet
 	-- TODO: keybind to close other panes

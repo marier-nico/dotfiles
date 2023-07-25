@@ -33,3 +33,7 @@ vim.g.mapleader = " "
 -- Disable default file browser
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+-- Whichkey
+vim.opt.timeout = true
+vim.opt.timeoutlen = 300

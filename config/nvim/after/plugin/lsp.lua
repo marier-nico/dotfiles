@@ -31,9 +31,9 @@ cmp.setup({
 		["<C-f>"] = cmp.mapping.scroll_docs(5),
 		["<C-u>"] = cmp.mapping.scroll_docs(-5),
 
-		["<CR>"] = cmp.mapping.confirm({ select = true }),
-		["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
-		["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
+		["<Tab>"] = cmp.mapping.confirm({ select = true }),
+		["<Up>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
+		["<Down>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
 	},
 	formatting = {
 		format = require("lspkind").cmp_format({
@@ -64,25 +64,25 @@ local lsp_attach = function(_client, bufnr)
 	local opts = { buffer = bufnr, remap = false }
 	vim.keymap.set("n", "K", function()
 		vim.lsp.buf.hover()
-	end, opts)
-	vim.keymap.set("n", "^d", function()
+	end, opts, {desc="Show hover info"})
+	vim.keymap.set("n", "]d", function()
 		vim.diagnostic.goto_next()
-	end, opts)
-	vim.keymap.set("n", "¸d", function()
+	end, opts, {desc="Next diagnostic"})
+	vim.keymap.set("n", "[d", function()
 		vim.diagnostic.goto_prev()
-	end, opts)
+	end, opts, {desc="Previous diagnostic"})
 	vim.keymap.set("n", "<leader>vca", function()
 		vim.lsp.buf.code_action()
-	end, opts)
+	end, opts, {desc="LSP code action"})
 	vim.keymap.set("n", "<leader>vrr", function()
 		vim.lsp.buf.references()
-	end, opts)
+	end, opts, {desc="LSP references"})
 	vim.keymap.set("n", "<leader>vrn", function()
 		vim.lsp.buf.rename()
-	end, opts)
+	end, opts, {desc="LSP rename"})
 	vim.keymap.set("n", "<leader>f", function()
 		vim.lsp.buf.format()
-	end, opts)
+	end, opts, {desc="LSP format"})
 	vim.keymap.set("i", "<C-h>", function()
 		vim.lsp.buf.signature_help()
 	end, opts)

@@ -22,7 +22,7 @@ autocmd("BufWinEnter", {
 
         local bufnr = vim.api.nvim_get_current_buf()
         local opts = {buffer = bufnr, remap = false}
-        vim.keymap.set("n", "<leader>psh", ":Git push -u origin HEAD", opts)
-        vim.keymap.set("n", "<leader>pll", ":Git pull origin", opts)
+        vim.keymap.set("n", "<leader>psh", ":Git push -u origin HEAD", opts, {desc = "push -u origin HEAD"})
+        vim.keymap.set("n", "<leader>pll", ":Git pull origin", opts, {desc = "pull origin"})
     end,
 })
