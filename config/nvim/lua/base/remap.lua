@@ -18,6 +18,9 @@ vim.keymap.set("n", "<C-j>", "<C-W><C-J>", { desc = "Navigate to split below" })
 vim.keymap.set("n", "<C-k>", "<C-W><C-K>", { desc = "Navigate to split above" })
 vim.keymap.set("n", "<C-l>", "<C-W><C-L>", { desc = "Navigate to right split" })
 
+vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Next buffer" })
+vim.keymap.set("n", "<leader>bp", ":bprevious<CR>", { desc = "Previous buffer" })
+
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set(
 	"n",

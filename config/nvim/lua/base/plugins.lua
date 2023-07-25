@@ -12,6 +12,7 @@ require("lazy").setup({
 	{ "tpope/vim-fugitive", version = "v3.7" }, -- TODO: pop out git status in pane & view diff
 	{ "akinsho/bufferline.nvim", version = "v4.3.0", dependencies = "nvim-tree/nvim-web-devicons" }, -- TODO: config (?)
 	{ "folke/which-key.nvim" },
+	{ "akinsho/toggleterm.nvim", version = "2.7.1", config = true },
 
 	-- TODO: Resize with ctrl-arrow
 	-- TODO: Add mappings to actually split windows
