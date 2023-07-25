@@ -13,9 +13,6 @@ vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank line to system" })
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete to void" })
 
--- TODO: Resize with ctrl-arrow
--- TODO: Add mappings to actually split windows
--- TODO: Closing buffers (with and without save)
 vim.keymap.set("n", "<C-h>", "<C-W><C-H>", { desc = "Navigate to left split" })
 vim.keymap.set("n", "<C-j>", "<C-W><C-J>", { desc = "Navigate to split below" })
 vim.keymap.set("n", "<C-k>", "<C-W><C-K>", { desc = "Navigate to split above" })

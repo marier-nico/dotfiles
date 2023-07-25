@@ -13,7 +13,10 @@ require("lazy").setup({
 	{ "akinsho/bufferline.nvim", version = "v4.3.0", dependencies = "nvim-tree/nvim-web-devicons" }, -- TODO: config (?)
 	{ "folke/which-key.nvim" },
 
-	-- TODO: whichkey for cheat sheet
+	-- TODO: Resize with ctrl-arrow
+	-- TODO: Add mappings to actually split windows
+	-- TODO: Closing buffers (with and without save)
+	-- TODO: floating window for fugitive?
 	-- TODO: keybind to close other panes
 	-- TODO: yanky
 	-- TODO: vim-tmux-navigator (tmux for projects)
