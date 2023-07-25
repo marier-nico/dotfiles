@@ -9,16 +9,11 @@ require("lazy").setup({
 	{ "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "nvim-treesitter/nvim-treesitter", version = "0.9.0", build = ":TSUpdate" },
 	{ "ThePrimeagen/harpoon" },
-	{ "tpope/vim-fugitive", version = "v3.7" }, -- TODO: pop out git status in pane & view diff
+	{ "tpope/vim-fugitive", version = "v3.7" },
 	{ "akinsho/bufferline.nvim", version = "v4.3.0", dependencies = "nvim-tree/nvim-web-devicons" }, -- TODO: config (?)
 	{ "folke/which-key.nvim" },
 	{ "akinsho/toggleterm.nvim", version = "2.7.1", config = true },
 
-	-- TODO: Resize with ctrl-arrow
-	-- TODO: Add mappings to actually split windows
-	-- TODO: Closing buffers (with and without save)
-	-- TODO: floating window for fugitive?
-	-- TODO: keybind to close other panes
 	-- TODO: yanky
 	-- TODO: vim-tmux-navigator (tmux for projects)
 	-- TODO: toggleterm
