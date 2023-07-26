@@ -33,6 +33,7 @@ require("lazy").setup({
 
 	-- TODO: vim-tmux-navigator (tmux for projects)
 	-- TODO: flash.nvim (& catppuccin colors)
+	-- TODO: nvim-dap & nvim-dap-ui (?)
 
 	-- LSP Stuff
 	-- TODO: typescript specific keybinds for rename, imports, etc.
