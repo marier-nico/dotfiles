@@ -28,10 +28,10 @@ cmp.setup({
 		["<C-e>"] = cmp.mapping.abort(),
 
 		-- scroll up and down in the completion documentation
-		["<C-f>"] = cmp.mapping.scroll_docs(5),
+		["<C-d>"] = cmp.mapping.scroll_docs(5),
 		["<C-u>"] = cmp.mapping.scroll_docs(-5),
 
-		["<Tab>"] = cmp.mapping.confirm({ select = true }),
+		["<CR>"] = cmp.mapping.confirm({ select = true }),
 		["<Up>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
 		["<Down>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
 	},
@@ -85,6 +85,7 @@ local lsp_attach = function(_client, bufnr)
 			filter = function(client)
 				return client.name ~= "tsserver"
 			end,
+			timeout_ms = 10000,
 		})
 	end, opts, { desc = "LSP format" })
 	vim.keymap.set("i", "<C-h>", function()
