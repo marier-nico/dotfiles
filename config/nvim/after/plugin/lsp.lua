@@ -81,7 +81,11 @@ local lsp_attach = function(_client, bufnr)
 		vim.lsp.buf.rename()
 	end, opts, { desc = "LSP rename" })
 	vim.keymap.set("n", "<leader>f", function()
-		vim.lsp.buf.format()
+		vim.lsp.buf.format({
+			filter = function(client)
+				return client.name ~= "tsserver"
+			end,
+		})
 	end, opts, { desc = "LSP format" })
 	vim.keymap.set("i", "<C-h>", function()
 		vim.lsp.buf.signature_help()
@@ -116,6 +120,17 @@ require("mason-lspconfig").setup_handlers({
 		require("lspconfig")[server_name].setup({
 			on_attach = lsp_attach,
 			capabilities = lsp_capabilities,
+		})
+	end,
+})
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+	callback = function()
+		vim.lsp.buf.format({
+			async = false,
+			filter = function(client)
+				return client.name ~= "tsserver"
+			end,
 		})
 	end,
 })
