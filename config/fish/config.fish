@@ -9,6 +9,9 @@ if status is-interactive
         source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
     end
 
+    set -gx VOLTA_HOME "$HOME/.volta"
+    set -gx PATH "$VOLTA_HOME/bin" $PATH
+
     set -g direnv_fish_mode disable_arrow
     direnv hook fish | source
 

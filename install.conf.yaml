@@ -7,10 +7,16 @@
 - clean: ["~"]
 
 - link:
+    ~/Library/LaunchAgents/dark-notify.plist: launch-agents/dark-notify.plist
     "~/Library/Application Support/Code/User/settings.json": config/code/settings.json
+    ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
+    ~/.config/alacritty/theme.yml: config/alacritty/theme.yml
+    ~/.config/alacritty/catpuccin: config/alacritty/catpuccin
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/conf.d/aliases.fish: config/fish/conf.d/aliases.fish
-    ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.config/fish/functions/alacritty-theme.fish: config/fish/functions/alacritty-theme.fish
+    ~/.config/fish/functions/system-theme.fish: config/fish/functions/system-theme.fish
+    ~/.config/nvim: config/nvim
     ~/.config/starship.toml: config/starship.toml
     ~/.gitconfig: config/git/gitconfig
     ~/.config/git/gitmessage: config/git/gitmessage

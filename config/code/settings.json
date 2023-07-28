@@ -36,7 +36,6 @@
   "editor.fontLigatures": true,
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.defaultProfile.osx": "fish",
-  "workbench.colorTheme": "Atom One Dark",
   "rust-analyzer.check.command": "clippy",
   "editor.minimap.enabled": false
 }

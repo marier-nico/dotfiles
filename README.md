@@ -28,7 +28,7 @@ practice not to run random scripts you find.
 - **Fonts**
   - [Fira Code Nerd Font](https://www.nerdfonts.com/)
     - `brew tap homebrew/cask-fonts`
-    - `brew install --cask font-fira-code-nerd-font`  
+    - `brew install --cask font-fira-code-nerd-font`
 
 **Editor & Code**
 
@@ -43,32 +43,29 @@ practice not to run random scripts you find.
 
 **Plugins**
 
-| Software  | Plugin                                                                                         | Install                                                 |
-| --------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| neovim    | [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)                                                 | `:PlugInstall`                                          |
-|           | [nerdtree](https://github.com/preservim/nerdtree)                                              | `:PlugInstall`                                          |
-|           | [onedark](https://github.com/joshdick/onedark.vim)                                             | `:PlugInstall`                                          |
-|           | [vim-fugitive](https://github.com/tpope/vim-fugitive)                                          | `:PlugInstall`                                          |
-|           | [vim-plug](https://github.com/junegunn/vim-plug)                                               | `:PlugInstall`                                          |
-|           | [vim-polyglot](https://github.com/sheerun/vim-polyglot)                                        | `:PlugInstall`                                          |
-| python    | [pipx](https://github.com/pypa/pipx)                                                           | `brew install pipx`                                     |
-|           | [pre-commit](https://pre-commit.com/)                                                          | `pipx install pre-commit`                               |
-|           | [pyenv](https://github.com/pyenv/pyenv)                                                        | `brew install pyenv`                                    |
-|           | [poetry](https://python-poetry.org/)                                                           | `pipx install poetry`                                   |
-| js        | [volta](https://volta.sh/)                                                                     | `brew install volta`                                    |
-| vscode    | [Atom One Dark Theme](https://github.com/akamud/vscode-theme-onedark)                          | `code --install-extension akamud.vscode-theme-onedark`  |
-|           | [Vim](https://github.com/VSCodeVim/Vim)                                                        | `code --install-extension vscodevim.vim`                |
-|           | [Markdown All in One](https://github.com/yzhang-gh/vscode-markdown)                            | `code --install-extension yzhang.markdown-all-in-one`   |
-| JetBrains | [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)                                    |                                                         |
-|           | [One Dark theme](https://plugins.jetbrains.com/plugin/11938-one-dark-theme)                    |                                                         |
-| iTerm2    | Atom One Dark Theme (based on [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)) | [OneDark.itermcolors](config/iterm/OneDark.itermcolors) |
-| fish      | [starship](https://starship.rs)                                                                | `brew install starship`                                 |
-|           | [direnv](https://direnv.net/)                                                                  | `brew install direnv`                                   |
+| Software  | Plugin                                                                      | Install                                                |
+| --------- | --------------------------------------------------------------------------- | ------------------------------------------------------ |
+| neovim    | Find all the plugins in `config/nvim/lua/base/plugins.lua`                  |
+| python    | [pipx](https://github.com/pypa/pipx)                                        | `brew install pipx`                                    |
+|           | [pre-commit](https://pre-commit.com/)                                       | `pipx install pre-commit`                              |
+|           | [pyenv](https://github.com/pyenv/pyenv)                                     | `brew install pyenv`                                   |
+|           | [poetry](https://python-poetry.org/)                                        | `pipx install poetry`                                  |
+| js        | [volta](https://volta.sh/)                                                  | `brew install volta`                                   |
+| vscode    | [Atom One Dark Theme](https://github.com/akamud/vscode-theme-onedark)       | `code --install-extension akamud.vscode-theme-onedark` |
+|           | [Vim](https://github.com/VSCodeVim/Vim)                                     | `code --install-extension vscodevim.vim`               |
+|           | [Markdown All in One](https://github.com/yzhang-gh/vscode-markdown)         | `code --install-extension yzhang.markdown-all-in-one`  |
+| JetBrains | [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)                 |                                                        |
+|           | [One Dark theme](https://plugins.jetbrains.com/plugin/11938-one-dark-theme) |                                                        |
+| Alacritty | [Alacritty](https://alacritty.org/)                                         | `brew install --cask alacritty`                        |
+|           | [Catpuccin](https://github.com/catppuccin/alacritty)                        |                                                        |
+| fish      | [starship](https://starship.rs)                                             | `brew install starship`                                |
+|           | [direnv](https://direnv.net/)                                               | `brew install direnv`                                  |
 
 **Shell & Term**
 
 - [fish](https://fishshell.com/)
-- [iTerm2](https://iterm2.com/)
+- [Alacritty](https://alacritty.org/)
+- [dark-notify](https://github.com/cormacrelf/dark-notify) (nvim & alacritty)
 
 **Social**
 
