@@ -28,7 +28,7 @@ practice not to run random scripts you find.
 - **Fonts**
   - [Fira Code Nerd Font](https://www.nerdfonts.com/)
     - `brew tap homebrew/cask-fonts`
-    - `brew install --cask font-fira-code-nerd-font`  
+    - `brew install --cask font-fira-code-nerd-font`
 
 **Editor & Code**
 
@@ -45,7 +45,7 @@ practice not to run random scripts you find.
 
 | Software  | Plugin                                                                      | Install                                                |
 | --------- | --------------------------------------------------------------------------- | ------------------------------------------------------ |
-| neovim    | [Lunar Vim](https://www.lunarvim.org/)                                      |
+| neovim    | Find all the plugins in `config/nvim/lua/base/plugins.lua`                  |
 | python    | [pipx](https://github.com/pypa/pipx)                                        | `brew install pipx`                                    |
 |           | [pre-commit](https://pre-commit.com/)                                       | `pipx install pre-commit`                              |
 |           | [pyenv](https://github.com/pyenv/pyenv)                                     | `brew install pyenv`                                   |

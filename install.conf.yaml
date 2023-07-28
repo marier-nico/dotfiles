@@ -17,7 +17,6 @@
     ~/.config/fish/functions/alacritty-theme.fish: config/fish/functions/alacritty-theme.fish
     ~/.config/fish/functions/system-theme.fish: config/fish/functions/system-theme.fish
     ~/.config/nvim: config/nvim
-    ~/.config/lvim: config/lvim
     ~/.config/starship.toml: config/starship.toml
     ~/.gitconfig: config/git/gitconfig
     ~/.config/git/gitmessage: config/git/gitmessage
