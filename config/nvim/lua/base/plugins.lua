@@ -31,10 +31,11 @@ require("lazy").setup({
 	{ "gbprod/yanky.nvim", version = "1.0.0" },
 	{ "pmizio/typescript-tools.nvim" },
 	{ "NeogitOrg/neogit" },
+	{ "mfussenegger/nvim-dap", version = "0.9.*" },
+	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap" } },
 
 	-- TODO: vim-tmux-navigator (tmux for projects)
 	-- TODO: flash.nvim (& catppuccin colors)
-	-- TODO: nvim-dap & nvim-dap-ui (?)
 
 	-- LSP Stuff
 	-- TODO: keybind to goto (gt) / create test (ct)
