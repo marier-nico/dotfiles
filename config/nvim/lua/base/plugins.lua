@@ -13,7 +13,6 @@ require("lazy").setup({
 	{ "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "nvim-treesitter/nvim-treesitter", version = "0.9.0", build = ":TSUpdate" },
 	{ "ThePrimeagen/harpoon" },
-	{ "tpope/vim-fugitive", version = "v3.7" },
 	{ "akinsho/bufferline.nvim", version = "v4.3.0", dependencies = "nvim-tree/nvim-web-devicons" },
 	{ "folke/which-key.nvim", version = "v1.5.1" },
 	{ "akinsho/toggleterm.nvim", version = "2.7.1", config = true },
@@ -30,13 +29,14 @@ require("lazy").setup({
 	{ "lukas-reineke/indent-blankline.nvim", version = "2.20.7" },
 	{ "numToStr/Comment.nvim", version = "0.8.0" },
 	{ "gbprod/yanky.nvim", version = "1.0.0" },
+	{ "pmizio/typescript-tools.nvim" },
+	{ "NeogitOrg/neogit" },
 
 	-- TODO: vim-tmux-navigator (tmux for projects)
 	-- TODO: flash.nvim (& catppuccin colors)
 	-- TODO: nvim-dap & nvim-dap-ui (?)
 
 	-- LSP Stuff
-	-- TODO: typescript specific keybinds for rename, imports, etc.
 	-- TODO: keybind to goto (gt) / create test (ct)
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",

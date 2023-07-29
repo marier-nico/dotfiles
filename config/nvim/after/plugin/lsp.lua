@@ -5,6 +5,8 @@
 -- todo: eslint_d, prettierd (with mason, but can'd use in ensure_installed?)
 -- todo: add vimwiki and create bindings to open a 'tasks' and 'today' pages, maybe with a function to create today with the date if it doesn't exist,
 --       and add a keybind to go to the last day's entry (like doing it on Monday would take you to Friday, to easily see what happened on the last work day)
+
+require("typescript-tools").setup({})
 local cmp = require("cmp")
 cmp.setup({
 	snippet = {
@@ -45,7 +47,7 @@ cmp.setup({
 })
 
 local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
-local lsp_attach = function(_client, bufnr)
+local lsp_attach = function(client, bufnr)
 	vim.api.nvim_create_autocmd("CursorHold", {
 		buffer = bufnr,
 		callback = function()
@@ -91,6 +93,23 @@ local lsp_attach = function(_client, bufnr)
 	vim.keymap.set("i", "<C-h>", function()
 		vim.lsp.buf.signature_help()
 	end, opts)
+
+	if client.name == "typescript-tools" then
+		vim.keymap.set(
+			"n",
+			"<leader>lo",
+			"<cmd>TSToolsOrganizeImports<cr>",
+			{ buffer = bufnr, desc = "Organize Imports" }
+		)
+		vim.keymap.set("n", "<leader>lu", "<cmd>TSToolsRemoveUnused<cr>", { buffer = bufnr, desc = "Removed Unused" })
+		vim.keymap.set("n", "<leader>lF", "<cmd>TSToolsFixAll<cr>", { buffer = bufnr, desc = "Fix All" })
+		vim.keymap.set(
+			"n",
+			"<leader>lA",
+			"<cmd>TSToolsAddMissingImports<cr>",
+			{ buffer = bufnr, desc = "Add Missing Imports" }
+		)
+	end
 end
 
 require("mason").setup()
@@ -113,7 +132,6 @@ require("mason-lspconfig").setup({
 		"eslint",
 		"pylsp",
 		"rust_analyzer",
-		"tsserver",
 	},
 })
 require("mason-lspconfig").setup_handlers({
@@ -133,5 +151,12 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 				return client.name ~= "tsserver"
 			end,
 		})
+	end,
+})
+
+vim.api.nvim_create_autocmd("LspAttach", {
+	callback = function(args)
+		local client = vim.lsp.get_client_by_id(args.data.client_id)
+		lsp_attach(client, args.buf)
 	end,
 })
