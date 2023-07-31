@@ -39,6 +39,9 @@ require("lazy").setup({
 
 	-- LSP Stuff
 	-- TODO: keybind to goto (gt) / create test (ct)
+	-- https://github.com/tpope/vim-projectionist
+	-- https://www.dev-log.me/Jump_between_test_files_and_implementation_in_Vim/
+	-- https://github.com/vim-test/vim-test
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"jay-babu/mason-null-ls.nvim",
