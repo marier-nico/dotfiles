@@ -39,6 +39,6 @@
   "toggleterm.nvim": { "branch": "main", "commit": "b90a1381e9b5b8596f49070ee86c71db267ac868" },
   "trouble.nvim": { "branch": "main", "commit": "d572f59aaf7eef670d6ddc331032a7d5e59d634e" },
   "typescript-tools.nvim": { "branch": "master", "commit": "319a4362cf5c2d6df17cd6675781fbc79162a211" },
-  "which-key.nvim": { "branch": "main", "commit": "bf09a25bdc9a83bcc69d2cf078e680368676513b" },
+  "which-key.nvim": { "branch": "main", "commit": "38b990f6eabf62014018b4aae70a97d7a6c2eb88" },
   "yanky.nvim": { "branch": "main", "commit": "9fb1c211775b5a6c83b9fe806cfd99f68c65f8a0" }
 }
