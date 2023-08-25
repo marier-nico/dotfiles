@@ -42,6 +42,7 @@ require("lazy").setup({
 	-- https://github.com/tpope/vim-projectionist
 	-- https://www.dev-log.me/Jump_between_test_files_and_implementation_in_Vim/
 	-- https://github.com/vim-test/vim-test
+	-- https://github.com/nvim-neotest/neotest
 	-- snippet for unit test
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
