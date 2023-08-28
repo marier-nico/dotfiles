@@ -32,7 +32,10 @@ require("lazy").setup({
 	{ "pmizio/typescript-tools.nvim" },
 	{ "NeogitOrg/neogit" },
 	{ "mfussenegger/nvim-dap" },
-	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap" } },
+	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-lua/plenary.nvim" } },
+
+	{ "tpope/vim-projectionist" },
+	{ "nvim-neotest/neotest", dependencies = "haydenmeade/neotest-jest" },
 
 	-- TODO: vim-tmux-navigator (tmux for projects)
 	-- TODO: flash.nvim (& catppuccin colors)
