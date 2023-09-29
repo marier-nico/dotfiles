@@ -68,19 +68,11 @@ local lsp_attach = function(client, bufnr)
 	vim.keymap.set("n", "<leader>vca", function()
 		vim.lsp.buf.code_action()
 	end, opts, { desc = "LSP code action" })
-	vim.keymap.set("n", "<leader>vrr", function()
-		vim.lsp.buf.references()
-	end, opts, { desc = "LSP references" })
 	vim.keymap.set("n", "<leader>vrn", function()
 		vim.lsp.buf.rename()
 	end, opts, { desc = "LSP rename" })
 	vim.keymap.set("n", "<leader>f", function()
-		vim.lsp.buf.format({
-			filter = function(client)
-				return client.name ~= "tsserver"
-			end,
-			timeout_ms = 10000,
-		})
+		vim.lsp.buf.format()
 	end, opts, { desc = "LSP format" })
 	vim.keymap.set("i", "<C-h>", function()
 		vim.lsp.buf.signature_help()

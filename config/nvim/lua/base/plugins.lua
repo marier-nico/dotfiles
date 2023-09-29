@@ -26,7 +26,7 @@ require("lazy").setup({
 	},
 	{ "windwp/nvim-ts-autotag" },
 	{ "kylechui/nvim-surround", event = "VeryLazy" },
-	{ "lukas-reineke/indent-blankline.nvim" },
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
 	{ "numToStr/Comment.nvim" },
 	{ "gbprod/yanky.nvim" },
 	{ "pmizio/typescript-tools.nvim" },
