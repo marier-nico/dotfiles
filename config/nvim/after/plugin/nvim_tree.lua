@@ -1,17 +1,10 @@
 local api = require("nvim-tree.api")
 
 require("nvim-tree").setup({
+	view = { adaptive_size = true },
 	on_attach = function(bufnr)
-		local function opts(desc)
-			return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
-		end
-
 		-- default mappings
 		api.config.mappings.default_on_attach(bufnr)
-
-		-- custom mappings
-		vim.keymap.set("n", "L", ":NvimTreeResize +20<CR>", opts("Resize window (+20)"))
-		vim.keymap.set("n", "H", ":NvimTreeResize -20<CR>", opts("Resize window (-20)"))
 	end,
 })
 
