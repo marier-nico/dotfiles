@@ -10,3 +10,4 @@ vim.keymap.set("n", "<leader>bc]", ":BufferLineCloseRight<CR>", { desc = "Close 
 vim.keymap.set("n", "<leader>bc[", ":BufferLineCloseLeft<CR>", { desc = "Close buffers left" })
 vim.keymap.set("n", "<leader>bco", ":BufferLineCloseOthers<CR>", { desc = "Close other buffers" })
 vim.keymap.set("n", "<leader>bw", ":w<CR>:bdelete<CR>", { desc = "Save and close current buffer" })
+vim.keymap.set("n", "<leader>bq", ":bdelete<CR>", { desc = "Close current buffer" })
