@@ -25,15 +25,25 @@ vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end, { desc = "Source file" })
 
--- highlight word under cursor
-vim.keymap.set("n", "<F8>", ":let @/='\\<<C-R>=expand(\"<cword>\")<CR>\\>'<CR>:set hls<CR>")
-
 -- manage search highlight
+local manual_override = false
+
+vim.keymap.set("n", "<leader>fw", function()
+	if manual_override then
+		vim.opt.hlsearch = false
+	else
+		vim.api.nvim_input("/" .. vim.fn.expand("<cword>") .. "<CR>")
+		vim.opt.hlsearch = true
+	end
+
+	manual_override = not manual_override
+end, { desc = "Highlight occurrences of word" })
+
 -- https://www.reddit.com/r/neovim/comments/zc720y/comment/iyvcdf0/?utm_source=share&utm_medium=web2x&context=3
 vim.on_key(function(char)
 	if vim.fn.mode() == "n" then
 		local new_hlsearch = vim.tbl_contains({ "<CR>", "n", "N", "*", "#", "?", "/" }, vim.fn.keytrans(char))
-		if vim.opt.hlsearch:get() ~= new_hlsearch then
+		if vim.opt.hlsearch:get() ~= new_hlsearch and not manual_override then
 			vim.opt.hlsearch = new_hlsearch
 		end
 	end
