@@ -32,7 +32,7 @@ vim.keymap.set("n", "<leader>fw", function()
 	if manual_override then
 		vim.opt.hlsearch = false
 	else
-		vim.api.nvim_input("/" .. vim.fn.expand("<cword>") .. "<CR>")
+		vim.api.nvim_input("/" .. vim.fn.expand("<cword>") .. "<CR>N")
 		vim.opt.hlsearch = true
 	end
 
