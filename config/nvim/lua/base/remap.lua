@@ -25,19 +25,22 @@ vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end, { desc = "Source file" })
 
+-- start search at current occurrence
+vim.keymap.set("n", "*", "*N", { desc = "Search word under cursor" })
+
 -- manage search highlight
 local manual_override = false
 
-vim.keymap.set("n", "<leader>fw", function()
+vim.keymap.set("n", "<leader>*", function()
 	if manual_override then
 		vim.opt.hlsearch = false
 	else
-		vim.api.nvim_input("/" .. vim.fn.expand("<cword>") .. "<CR>N")
+		vim.api.nvim_input("*")
 		vim.opt.hlsearch = true
 	end
 
 	manual_override = not manual_override
-end, { desc = "Highlight occurrences of word" })
+end, { desc = "Search word & highlight" })
 
 -- https://www.reddit.com/r/neovim/comments/zc720y/comment/iyvcdf0/?utm_source=share&utm_medium=web2x&context=3
 vim.on_key(function(char)
