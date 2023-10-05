@@ -4,8 +4,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move highlighted down" })
 vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half page up" })
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half page down" })
-vim.keymap.set("n", "n", "nzzzv", { desc = "Next search term" })
-vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search term" })
 
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to system" })
@@ -26,3 +24,17 @@ vim.keymap.set(
 vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end, { desc = "Source file" })
+
+-- highlight word under cursor
+vim.keymap.set("n", "<F8>", ":let @/='\\<<C-R>=expand(\"<cword>\")<CR>\\>'<CR>:set hls<CR>")
+
+-- manage search highlight
+-- https://www.reddit.com/r/neovim/comments/zc720y/comment/iyvcdf0/?utm_source=share&utm_medium=web2x&context=3
+vim.on_key(function(char)
+	if vim.fn.mode() == "n" then
+		local new_hlsearch = vim.tbl_contains({ "<CR>", "n", "N", "*", "#", "?", "/" }, vim.fn.keytrans(char))
+		if vim.opt.hlsearch:get() ~= new_hlsearch then
+			vim.opt.hlsearch = new_hlsearch
+		end
+	end
+end, vim.api.nvim_create_namespace("auto_hlsearch"))
