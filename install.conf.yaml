@@ -27,3 +27,11 @@
 
 - shell:
     - ["git submodule update --init --recursive", Installing submodules]
+    - [
+        "git update-index --assume-unchanged config/tmux/theme.conf",
+        "Ignoring tmux theme updates",
+      ]
+    - [
+        "git update-index --assume-unchanged config/alacritty/theme.yml",
+        "Ignoring alacritty theme updates",
+      ]
