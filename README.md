@@ -45,7 +45,8 @@ practice not to run random scripts you find.
 
 | Software  | Plugin                                                                      | Install                                                |
 | --------- | --------------------------------------------------------------------------- | ------------------------------------------------------ |
-| neovim    | Find all the plugins in `config/nvim/lua/base/plugins.lua`                  |
+| neovim    | Find all the plugins in `config/nvim/lua/base/plugins.lua`                  | `brew install neovim`                                  |
+| tmux      | Don't forget to install [tpm](https://github.com/tmux-plugins/tpm)          | `brew install tmux`                                    |
 | python    | [pipx](https://github.com/pypa/pipx)                                        | `brew install pipx`                                    |
 |           | [pre-commit](https://pre-commit.com/)                                       | `pipx install pre-commit`                              |
 |           | [pyenv](https://github.com/pyenv/pyenv)                                     | `brew install pyenv`                                   |

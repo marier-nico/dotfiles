@@ -19,7 +19,9 @@ function system-theme --argument mode_setting
   switch $mode
     case dark
       alacritty-theme "~/.config/alacritty/catpuccin/catppuccin-macchiato.yml"
+      tmux-theme "macchiato"
     case light
       alacritty-theme "~/.config/alacritty/catpuccin/catppuccin-latte.yml"
+      tmux-theme "latte"
   end
 end

@@ -15,9 +15,12 @@
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/conf.d/aliases.fish: config/fish/conf.d/aliases.fish
     ~/.config/fish/functions/alacritty-theme.fish: config/fish/functions/alacritty-theme.fish
+    ~/.config/fish/functions/tmux-theme.fish: config/fish/functions/tmux-theme.fish
     ~/.config/fish/functions/system-theme.fish: config/fish/functions/system-theme.fish
     ~/.config/nvim: config/nvim
     ~/.config/starship.toml: config/starship.toml
+    ~/.config/tmux/tmux.conf: config/tmux/tmux.conf
+    ~/.config/tmux/theme.conf: config/tmux/theme.conf
     ~/.gitconfig: config/git/gitconfig
     ~/.config/git/gitmessage: config/git/gitmessage
     ~/.ideavimrc: config/intellij-idea/ideavimrc
