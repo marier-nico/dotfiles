@@ -9,11 +9,6 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half page down" })
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to system" })
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank line to system" })
 
-vim.keymap.set("n", "<C-h>", "<C-W><C-H>", { desc = "Navigate to left split" })
-vim.keymap.set("n", "<C-j>", "<C-W><C-J>", { desc = "Navigate to split below" })
-vim.keymap.set("n", "<C-k>", "<C-W><C-K>", { desc = "Navigate to split above" })
-vim.keymap.set("n", "<C-l>", "<C-W><C-L>", { desc = "Navigate to right split" })
-
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set(
 	"n",

@@ -37,6 +37,8 @@ require("lazy").setup({
 	{ "tpope/vim-projectionist" },
 	{ "nvim-neotest/neotest", dependencies = "haydenmeade/neotest-jest" },
 
+	{ "christoomey/vim-tmux-navigator" },
+	{ "tpope/vim-obsession" },
 	-- TODO: vim-tmux-navigator (tmux for projects)
 	-- TODO: flash.nvim (& catppuccin colors)
 
