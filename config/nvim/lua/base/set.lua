@@ -27,6 +27,7 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
+vim.opt.clipboard:append({ "unnamedplus" }) -- copy to system clipboard
 
 -- Disable default file browser
 vim.g.loaded_netrw = 1

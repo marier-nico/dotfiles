@@ -27,4 +27,45 @@ require("nvim-treesitter.configs").setup({
 	autotag = {
 		enable = true,
 	},
+	textobjects = {
+		select = {
+			enable = true,
+			lookahead = true,
+
+			keymaps = {
+				-- You can use the capture groups defined in textobjects.scm
+				["af"] = { query = "@function.outer", desc = "Select around function" },
+				["if"] = { query = "@function.inner", desc = "Select inside function" },
+				["ac"] = { query = "@class.outer", desc = "Select around class" },
+				["ic"] = { query = "@class.inner", desc = "Select inside class" },
+			},
+		},
+		move = {
+			enable = true,
+			set_jumps = true, -- whether to set jumps in the jumplist
+			goto_next_start = {
+				["]f"] = { query = "@function.outer", desc = "Move to next function" },
+				["]c"] = { query = "@class.outer", desc = "Move to next class" },
+
+				-- You can pass a query group to use query from `queries/<lang>/<query_group>.scm file in your runtime path.
+				-- Below example nvim-treesitter's `locals.scm` and `folds.scm`. They also provide highlights.scm and indent.scm.
+				["]s"] = { query = "@scope", query_group = "locals", desc = "Next scope" },
+				["]z"] = { query = "@fold", query_group = "folds", desc = "Next fold" },
+			},
+			goto_next_end = {},
+			goto_previous_start = {
+				["[f"] = { query = "@function.outer", desc = "Move to previous function" },
+				["[c"] = { query = "@class.outer", desc = "Move to previous class" },
+
+				-- You can pass a query group to use query from `queries/<lang>/<query_group>.scm file in your runtime path.
+				-- Below example nvim-treesitter's `locals.scm` and `folds.scm`. They also provide highlights.scm and indent.scm.
+				["[s"] = { query = "@scope", query_group = "locals", desc = "Move to previous scope" },
+				["[z"] = { query = "@fold", query_group = "folds", desc = "Move to previous fold" },
+			},
+			goto_previous_end = {},
+			-- Below will go to either the start or the end, whichever is closer.
+			goto_next = {},
+			goto_previous = {},
+		},
+	},
 })

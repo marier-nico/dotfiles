@@ -6,12 +6,12 @@ require("lazy").setup({
 		opts = {},
 	},
 	{ "cormacrelf/dark-notify" },
-	{ "folke/trouble.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "nvim-lua/plenary.nvim" },
 	{ "nvim-telescope/telescope.nvim" },
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{ "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+	{ "nvim-treesitter/nvim-treesitter-textobjects" },
 	{ "ThePrimeagen/harpoon" },
 	{ "akinsho/bufferline.nvim", dependencies = "nvim-tree/nvim-web-devicons" },
 	{ "folke/which-key.nvim" },
@@ -29,7 +29,6 @@ require("lazy").setup({
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
 	{ "numToStr/Comment.nvim" },
 	{ "gbprod/yanky.nvim" },
-	{ "pmizio/typescript-tools.nvim" },
 	{ "NeogitOrg/neogit" },
 	{ "mfussenegger/nvim-dap" },
 	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-lua/plenary.nvim" } },
@@ -49,6 +48,7 @@ require("lazy").setup({
 	-- https://github.com/vim-test/vim-test
 	-- https://github.com/nvim-neotest/neotest
 	-- snippet for unit test
+	{ "pmizio/typescript-tools.nvim" },
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"jay-babu/mason-null-ls.nvim",

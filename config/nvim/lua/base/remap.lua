@@ -5,9 +5,9 @@ vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half page up" })
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half page down" })
 
--- next greatest remap ever : asbjornHaland
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to system" })
-vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank line to system" })
+vim.keymap.set({ "n", "v" }, "<leader>y", [["wy]], { desc = "Yank to w register" })
+vim.keymap.set("n", "<leader>Y", [["wY]], { desc = "Yank line to w register" })
+vim.keymap.set("n", "<leader>p", [["wp]], { desc = "Paste line from w register" })
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set(
