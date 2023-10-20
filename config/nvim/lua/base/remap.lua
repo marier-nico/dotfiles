@@ -46,3 +46,26 @@ vim.on_key(function(char)
 		end
 	end
 end, vim.api.nvim_create_namespace("auto_hlsearch"))
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "typescript,typescriptreact",
+	command = "compiler typescript",
+})
+vim.cmd("autocmd QuickFixCmdPost [^l]* nested cwindow")
+vim.cmd("autocmd QuickFixCmdPost    l* nested lwindow")
+
+-- toggle quickfix window
+vim.keymap.set("n", "<leader>qt", function()
+	local quickfix_windows = {}
+	for k, v in pairs(vim.fn.getwininfo()) do
+		if v["quickfix"] == 1 then
+			quickfix_windows[k] = v
+		end
+	end
+
+	if next(quickfix_windows) == nil then
+		vim.cmd("copen")
+	else
+		vim.cmd("cclose")
+	end
+end, { desc = "Toggle quickfix window" })

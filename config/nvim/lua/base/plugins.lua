@@ -34,6 +34,7 @@ require("lazy").setup({
 	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-lua/plenary.nvim" } },
 
 	{ "tpope/vim-projectionist" },
+	{ "tpope/vim-unimpaired" },
 	{ "nvim-neotest/neotest", dependencies = "haydenmeade/neotest-jest" },
 
 	{ "christoomey/vim-tmux-navigator" },
