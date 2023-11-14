@@ -113,7 +113,6 @@ require("mason-null-ls").setup({
 })
 require("mason-lspconfig").setup({
 	ensure_installed = {
-		"eslint",
 		"pylsp",
 		"rust_analyzer",
 	},

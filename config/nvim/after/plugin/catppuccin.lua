@@ -11,6 +11,8 @@ require("catppuccin").setup({
 		},
 		lsp_trouble = true,
 		mason = true,
+		neogit = true,
+		neotest = true,
 		notify = true,
 		nvimtree = true,
 		octo = true,

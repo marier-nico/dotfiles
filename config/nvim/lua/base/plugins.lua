@@ -30,25 +30,19 @@ require("lazy").setup({
 	{ "numToStr/Comment.nvim" },
 	{ "gbprod/yanky.nvim" },
 	{ "NeogitOrg/neogit" },
+	{ "akinsho/git-conflict.nvim", version = "*", config = true },
 	{ "mfussenegger/nvim-dap" },
 	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-lua/plenary.nvim" } },
 
 	{ "tpope/vim-projectionist" },
 	{ "tpope/vim-unimpaired" },
-	{ "nvim-neotest/neotest", dependencies = "haydenmeade/neotest-jest" },
+	{ "nvim-neotest/neotest", dependencies = "nvim-neotest/neotest-jest" },
 
 	{ "christoomey/vim-tmux-navigator" },
 	{ "tpope/vim-obsession" },
-	-- TODO: vim-tmux-navigator (tmux for projects)
 	-- TODO: flash.nvim (& catppuccin colors)
 
 	-- LSP Stuff
-	-- TODO: keybind to goto (gt) / create test (ct)
-	-- https://github.com/tpope/vim-projectionist
-	-- https://www.dev-log.me/Jump_between_test_files_and_implementation_in_Vim/
-	-- https://github.com/vim-test/vim-test
-	-- https://github.com/nvim-neotest/neotest
-	-- snippet for unit test
 	{ "pmizio/typescript-tools.nvim" },
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
@@ -66,5 +60,15 @@ require("lazy").setup({
 		"j-hui/fidget.nvim",
 		tag = "legacy",
 		event = "LspAttach",
+	},
+	{ "github/copilot.vim" },
+	{
+		"jackMort/ChatGPT.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"nvim-lua/plenary.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
 	},
 })

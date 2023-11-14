@@ -1,7 +1,10 @@
 local neotest = require("neotest")
 neotest.setup({
+	discovery = {
+		enable = false,
+	},
 	adapters = {
-		require("neotest-jest")({ jestCommand = "yarn jest" }),
+		require("neotest-jest")({ jestCommand = "yarn jest", jest_test_discovery = true }),
 	},
 })
 
