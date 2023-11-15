@@ -2,7 +2,7 @@ require("chatgpt").setup({
 	openai_params = {
 		model = "gpt-4-1106-preview",
 	},
-	api_key_cmd = "security find-generic-password -w -a nmarier -s openai_api_key",
+	api_key_cmd = "security find-generic-password -w -a " .. vim.env.LOGNAME .. " -s openai_api_key",
 })
 
 vim.keymap.set("n", "<leader>cc", function()
