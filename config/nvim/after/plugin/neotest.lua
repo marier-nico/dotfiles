@@ -26,5 +26,5 @@ vim.keymap.set("n", "<leader>ts", function()
 end, { desc = "Toggle test summary" })
 
 vim.keymap.set("n", "<leader>to", function()
-	neotest.output.open({ auto_close = true })
+	neotest.output.open({ enter = true, auto_close = true })
 end, { desc = "Open test output" })
