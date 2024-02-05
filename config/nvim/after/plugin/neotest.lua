@@ -1,10 +1,27 @@
 local neotest = require("neotest")
+local jest_util = require("neotest-jest.jest-util")
+local util = require("neotest-jest.util")
+
 neotest.setup({
 	discovery = {
 		enable = false,
 	},
 	adapters = {
-		require("neotest-jest")({ jestCommand = "yarn jest", jest_test_discovery = true }),
+		require("neotest-jest")({
+			jestCommand = "yarn jest",
+			-- jestConfigFile = function()
+			-- 	local dot_git_path = vim.fn.finddir(".git", ".;")
+			-- 	local full_git_path = vim.fn.fnamemodify(dot_git_path, ":h")
+			-- 	local default_config = jest_util.getJestConfig(full_git_path)
+			--
+			-- 	if default_config then
+			-- 		return default_config
+			-- 	end
+			--
+			-- 	return util.path.join(full_git_path, "jest.integration.config.cjs")
+			-- end,
+			jest_test_discovery = true,
+		}),
 	},
 })
 
