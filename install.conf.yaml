@@ -9,8 +9,8 @@
 - link:
     ~/Library/LaunchAgents/dark-notify.plist: launch-agents/dark-notify.plist
     "~/Library/Application Support/Code/User/settings.json": config/code/settings.json
-    ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
-    ~/.config/alacritty/theme.yml: config/alacritty/theme.yml
+    ~/.config/alacritty/alacritty.toml: config/alacritty/alacritty.toml
+    ~/.config/alacritty/theme.toml: config/alacritty/theme.toml
     ~/.config/alacritty/catpuccin: config/alacritty/catpuccin
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/conf.d/aliases.fish: config/fish/conf.d/aliases.fish
