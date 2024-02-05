@@ -20,10 +20,6 @@ require("lazy").setup({
 	{ "glepnir/dashboard-nvim", event = "VimEnter", dependencies = "nvim-tree/nvim-web-devicons" },
 	{ "nvim-lualine/lualine.nvim", dependencies = "nvim-tree/nvim-web-devicons" },
 	{ "rcarriga/nvim-notify" },
-	{
-		"pwntester/octo.nvim", -- TODO: config / learn
-		dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim", "nvim-tree/nvim-web-devicons" },
-	},
 	{ "windwp/nvim-ts-autotag" },
 	{ "kylechui/nvim-surround", event = "VeryLazy" },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
