@@ -144,3 +144,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		lsp_attach(client, args.buf)
 	end,
 })
+
+vim.keymap.set("n", "<leader>R", "<cmd>LspRestart<cr>", { buffer = 0, silent = true, desc = "LSP restart" })
