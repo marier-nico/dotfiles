@@ -7,6 +7,7 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
+vim.opt.smartcase = true
 
 vim.opt.wrap = false
 
@@ -25,6 +26,14 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
+
+-- Speed up scrolling
+vim.opt.ttyfast = true
+vim.g.ttyscroll = 3
+vim.opt.lazyredraw = true
+
+-- Disable syntax for very long lines
+vim.opt.synmaxcol = 2048
 
 vim.g.mapleader = " "
 vim.opt.clipboard:append({ "unnamedplus" }) -- copy to system clipboard
