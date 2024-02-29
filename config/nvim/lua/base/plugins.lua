@@ -1,5 +1,9 @@
 require("lazy").setup({
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+	},
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
@@ -15,9 +19,21 @@ require("lazy").setup({
 	{ "ThePrimeagen/harpoon" },
 	{ "akinsho/bufferline.nvim", dependencies = "nvim-tree/nvim-web-devicons" },
 	{ "folke/which-key.nvim" },
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		},
+	},
 	{ "akinsho/toggleterm.nvim", config = true },
 	{ "lewis6991/gitsigns.nvim" },
-	{ "glepnir/dashboard-nvim", event = "VimEnter", dependencies = "nvim-tree/nvim-web-devicons" },
+	{
+		"glepnir/dashboard-nvim",
+		event = "VimEnter",
+		dependencies = "nvim-tree/nvim-web-devicons",
+	},
 	{ "nvim-lualine/lualine.nvim", dependencies = "nvim-tree/nvim-web-devicons" },
 	{ "rcarriga/nvim-notify" },
 	{ "windwp/nvim-ts-autotag" },
@@ -26,9 +42,15 @@ require("lazy").setup({
 	{ "numToStr/Comment.nvim" },
 	{ "gbprod/yanky.nvim" },
 	{ "NeogitOrg/neogit" },
-	{ "akinsho/git-conflict.nvim", version = "*", config = true },
-	{ "mfussenegger/nvim-dap" },
-	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-lua/plenary.nvim" } },
+	{ "pwntester/octo.nvim", dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-telescope/telescope.nvim",
+	} },
+	{
+		"akinsho/git-conflict.nvim",
+		version = "*",
+		config = true,
+	},
 
 	{ "tpope/vim-projectionist" },
 	{ "tpope/vim-unimpaired" },
@@ -52,11 +74,6 @@ require("lazy").setup({
 	"davidsierradz/cmp-conventionalcommits",
 	"onsails/lspkind.nvim",
 	"L3MON4D3/LuaSnip",
-	{
-		"j-hui/fidget.nvim",
-		tag = "legacy",
-		event = "LspAttach",
-	},
 	{ "github/copilot.vim" },
 	{
 		"jackMort/ChatGPT.nvim",

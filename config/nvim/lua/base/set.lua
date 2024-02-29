@@ -30,7 +30,6 @@ vim.opt.updatetime = 50
 -- Speed up scrolling
 vim.opt.ttyfast = true
 vim.g.ttyscroll = 3
-vim.opt.lazyredraw = true
 
 -- Disable syntax for very long lines
 vim.opt.synmaxcol = 2048
