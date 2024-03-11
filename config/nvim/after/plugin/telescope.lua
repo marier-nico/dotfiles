@@ -11,3 +11,4 @@ vim.keymap.set("n", "<leader>ld", builtin.diagnostics, { desc = "LSP diagnostics
 
 require("telescope").load_extension("fzf")
 require("telescope").load_extension("harpoon")
+require("telescope").load_extension("session-lens")

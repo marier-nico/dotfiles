@@ -29,11 +29,6 @@ require("lazy").setup({
 	},
 	{ "akinsho/toggleterm.nvim", config = true },
 	{ "lewis6991/gitsigns.nvim" },
-	{
-		"glepnir/dashboard-nvim",
-		event = "VimEnter",
-		dependencies = "nvim-tree/nvim-web-devicons",
-	},
 	{ "nvim-lualine/lualine.nvim", dependencies = "nvim-tree/nvim-web-devicons" },
 	{ "rcarriga/nvim-notify" },
 	{ "windwp/nvim-ts-autotag" },
@@ -57,7 +52,8 @@ require("lazy").setup({
 	{ "nvim-neotest/neotest", dependencies = "nvim-neotest/neotest-jest" },
 
 	{ "christoomey/vim-tmux-navigator" },
-	{ "tpope/vim-obsession" },
+	{ "rmagatti/auto-session" },
+	{ "nvimdev/dashboard-nvim", event = "VimEnter", dependencies = { { "nvim-tree/nvim-web-devicons" } } },
 	-- TODO: flash.nvim (& catppuccin colors)
 
 	-- LSP Stuff

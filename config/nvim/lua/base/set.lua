@@ -44,3 +44,6 @@ vim.g.loaded_netrwPlugin = 1
 -- Whichkey
 vim.opt.timeout = true
 vim.opt.timeoutlen = 300
+
+-- Session management
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
