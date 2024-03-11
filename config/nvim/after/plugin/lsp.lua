@@ -36,6 +36,10 @@ cmp.setup({
 			ellipsis_char = "...",
 		}),
 	},
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
+	},
 })
 
 local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
