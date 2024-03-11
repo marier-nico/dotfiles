@@ -5,7 +5,7 @@ end
 
 require("auto-session").setup({
 	log_level = "error",
-	auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+	auto_session_suppress_dirs = { "~/", "~/Projects", "~/GitHub", "~/Downloads", "/" },
 	bypass_session_save_file_types = {
 		"NvimTree",
 		"dashboard",
@@ -20,6 +20,7 @@ require("auto-session").setup({
 		"gitmerge",
 		"gitmessenger",
 		"gitstatus",
+		"NeogitStatus",
 		"gitblame",
 		"packer",
 		"neogit",
