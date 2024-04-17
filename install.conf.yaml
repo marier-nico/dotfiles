@@ -22,6 +22,7 @@
     ~/.config/starship.toml: config/starship.toml
     ~/.config/tmux/tmux.conf: config/tmux/tmux.conf
     ~/.config/tmux/theme.conf: config/tmux/theme.conf
+    ~/.config/zed/settings.json: config/zed/settings.json
     ~/.gitconfig: config/git/gitconfig
     ~/.config/git/gitmessage: config/git/gitmessage
     ~/.ideavimrc: config/intellij-idea/ideavimrc
