@@ -37,5 +37,6 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.defaultProfile.osx": "fish",
   "rust-analyzer.check.command": "clippy",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Default Light Modern"
 }

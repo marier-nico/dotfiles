@@ -71,7 +71,6 @@ require("lazy").setup({
 	"davidsierradz/cmp-conventionalcommits",
 	"onsails/lspkind.nvim",
 	"L3MON4D3/LuaSnip",
-	{ "github/copilot.vim" },
 	{
 		"jackMort/ChatGPT.nvim",
 		event = "VeryLazy",
