@@ -57,6 +57,7 @@ history = 100000
 [window]
 decorations = "full"
 opacity = 1
+dynamic_title = false
 
 [window.padding]
 x = 5
