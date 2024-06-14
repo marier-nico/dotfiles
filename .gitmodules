@@ -4,3 +4,6 @@
 [submodule "config/alacritty/catpuccin"]
 	path = config/alacritty/catpuccin
 	url = https://github.com/catppuccin/alacritty.git
+[submodule "config/nvim"]
+	path = config/nvim
+	url = https://github.com/marier-nico/kickstart.nvim
