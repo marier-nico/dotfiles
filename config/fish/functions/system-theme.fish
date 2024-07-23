@@ -19,11 +19,11 @@ function system-theme --argument mode_setting
   switch $mode
     case dark
       alacritty-theme "~/.config/alacritty/catpuccin/catppuccin-macchiato.toml" > /dev/null
-    #tmux-theme "macchiato" > /dev/null
+      tmux-theme "macchiato" > /dev/null
       echo -n "dark"
     case light
       alacritty-theme "~/.config/alacritty/catpuccin/catppuccin-latte.toml" > /dev/null
-    #tmux-theme "latte" > /dev/null
+      tmux-theme "latte" > /dev/null
       echo -n "light"
   end
 end
