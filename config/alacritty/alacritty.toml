@@ -1,3 +1,4 @@
+[general]
 import = ["/Users/nmarier/.config/alacritty/theme.toml"]
 
 [env]
