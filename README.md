@@ -37,16 +37,13 @@ practice not to run random scripts you find.
 - [vscode](https://github.com/microsoft/vscode)
 - JetBrains IDEs (Pycharm, Goland, Webstorm)
 
-**Media**
-
-- [Spotify](https://www.spotify.com/us/download)
-
 **Plugins**
 
 | Software  | Plugin                                                                      | Install                                                |
 | --------- | --------------------------------------------------------------------------- | ------------------------------------------------------ |
-| neovim    | Find all the plugins in `config/nvim/lua/base/plugins.lua`                  | `brew install neovim`                                  |
+| neovim    | Find all the plugins in `config/nvim/`                                      | `brew install neovim`                                  |
 | tmux      | Don't forget to install [tpm](https://github.com/tmux-plugins/tpm)          | `brew install tmux`                                    |
+| tms       | [tms](https://github.com/jrmoulton/tmux-sessionizer)                        | `brew install tmux-sessionizer`                        |
 | python    | [pipx](https://github.com/pypa/pipx)                                        | `brew install pipx`                                    |
 |           | [pre-commit](https://pre-commit.com/)                                       | `pipx install pre-commit`                              |
 |           | [pyenv](https://github.com/pyenv/pyenv)                                     | `brew install pyenv`                                   |
@@ -68,8 +65,3 @@ practice not to run random scripts you find.
 - [Alacritty](https://alacritty.org/)
 - [dark-notify](https://github.com/cormacrelf/dark-notify) (nvim & alacritty)
 
-**Social**
-
-- [Discord](https://discord.com/)
-- [Slack](https://slack.com/)
-- [Telegram](https://telegram.org/)
