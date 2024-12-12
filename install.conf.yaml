@@ -19,6 +19,7 @@
     ~/.config/fish/functions/system-theme.fish: config/fish/functions/system-theme.fish
     ~/.config/fish/functions/exif-creator.fish: config/fish/functions/exif-creator.fish
     ~/.config/fish/functions/lucid-prompt.fish: config/fish/functions/lucid-prompt.fish
+    ~/.config/ghostty/config: config/ghostty/config
     ~/.config/nvim: config/nvim
     ~/.config/starship.toml: config/starship.toml
     ~/.config/tmux/tmux.conf: config/tmux/tmux.conf
