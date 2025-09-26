@@ -3,5 +3,5 @@ font-family-bold = "FiraCode Nerd Font SemBd"
 adjust-cell-width = -10%
 font-size = 14
 
-theme = "light:catppuccin-latte,dark:catppuccin-macchiato"
+theme = "light:Catppuccin Latte,dark:Catppuccin Macchiato"
 

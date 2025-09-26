@@ -32,10 +32,6 @@ alias gpll="g pull origin"
 alias grb="g rebase -S -i"
 alias gr="cd (g rev-parse --show-toplevel)"
 
-# Go aliases
-
-alias go16="/opt/homebrew/Cellar/go@1.16/1.16.11/libexec/bin/go"
- 
 # Other aliases
  
 alias ssh="TERM=xterm-256color command ssh"
