@@ -1,7 +1,7 @@
 if status is-interactive
     /opt/homebrew/bin/brew shellenv | source
 
-    fnm env --shell fish | source
+    fnm env --use-on-cd --shell fish | source
 end
 
 source ~/.config/fish/functions/lucid-prompt.fish
