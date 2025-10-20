@@ -18,3 +18,10 @@ function fish_prompt
         lucid_fish_prompt
     end
 end
+
+# pnpm
+set -gx PNPM_HOME "/Users/nmarier/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
