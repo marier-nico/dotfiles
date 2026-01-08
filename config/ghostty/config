@@ -6,3 +6,4 @@ font-size = 14
 theme = "light:Catppuccin Latte,dark:Catppuccin Macchiato"
 
 keybind = shift+enter=text:\x1b\r
+keybind = ctrl+,=text:\x1b[44;5u
