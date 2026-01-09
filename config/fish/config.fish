@@ -1,6 +1,8 @@
 if status is-interactive
     /opt/homebrew/bin/brew shellenv | source
 
+    direnv hook fish | source
+
     fnm env --use-on-cd --shell fish | source
 end
 
@@ -18,10 +20,3 @@ function fish_prompt
         lucid_fish_prompt
     end
 end
-
-# pnpm
-set -gx PNPM_HOME "/Users/nmarier/Library/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
