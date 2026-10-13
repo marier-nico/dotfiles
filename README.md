@@ -42,6 +42,7 @@ practice not to run random scripts you find.
 | Software  | Plugin                                                                      | Install                                                |
 | --------- | --------------------------------------------------------------------------- | ------------------------------------------------------ |
 | neovim    | Find all the plugins in `config/nvim/`                                      | `brew install neovim`                                  |
+|           | [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter) (required by nvim-treesitter) | `brew install tree-sitter-cli`                |
 | tmux      | Don't forget to install [tpm](https://github.com/tmux-plugins/tpm)          | `brew install tmux`                                    |
 | tms       | [tms](https://github.com/jrmoulton/tmux-sessionizer)                        | `brew install tmux-sessionizer`                        |
 | python    | [pipx](https://github.com/pypa/pipx)                                        | `brew install pipx`                                    |
